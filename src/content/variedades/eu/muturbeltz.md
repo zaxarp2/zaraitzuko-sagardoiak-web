@@ -13,6 +13,10 @@ pueblos:
 fotos:
   - src: /fotos/muturbeltz/muturbeltz-01.jpg
   - src: /fotos/muturbeltz/muturbeltz-02.jpg
+  - src: /uploads/Muturbeltz Benttura.webp
+    pie: ''
+  - src: /uploads/Muturbeltz Ripalda.webp
+    pie: ''
 otrosPueblos:
   - Ezcároz
 extraStatus: NUP bankua
