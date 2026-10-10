@@ -6,6 +6,10 @@ backend:
   name: github
   repo: zaxarp2/zaraitzuko-sagardoiak-web
   branch: main
+  # Inicio de sesión con GitHub a través del proveedor OAuth del proyecto de Netlify
+  # (la web ya no se aloja en Netlify; solo se usa para el login del editor)
+  base_url: https://api.netlify.com
+  site_domain: zaraitzuko-sagardoiak.netlify.app
 
 # Bilingüe: cada variedad/noticia vive como carpeta por idioma (es/ · eu/)
 i18n:
