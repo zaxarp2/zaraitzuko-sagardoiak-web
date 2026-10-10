@@ -31,7 +31,7 @@ origen: ''
 recogida: De principios a mediados de septiembre. Se conservan hasta Navidad.
 usos: ''
 otrasCar: ''
-obs: Algunas personas también denominan a esta variedad como Agostera, nombre genérico que se emplea mucho en el Valle para denominar a diversas variedades de maduración en verano.
+obs: Algunas personas también denominan a esta variedad como Agostera, nombre genérico que se emplea mucho en el Valle para denominar a diversas variedades que maduran en verano.
 epocaLabel: Principios de octubre
 lang: es
 tags:
