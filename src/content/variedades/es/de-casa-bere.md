@@ -9,7 +9,15 @@ color: '#a93838'
 colorAlt: '#c95050'
 pueblos:
   - Esparza
-fotos: []
+fotos:
+  - src: /uploads/20260905_111652.webp
+    pie: ''
+  - src: /uploads/recorte De Bere.webp
+    pie: ''
+  - src: /uploads/recorte De Bere.webp
+    pie: ''
+  - src: /uploads/recorte de Bere 2.webp
+    pie: ''
 otrosPueblos: []
 extraStatus: = Carapanón / Reineta del Camino
 antig: Más de 100 años
