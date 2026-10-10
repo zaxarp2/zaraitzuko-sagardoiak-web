@@ -689,3 +689,17 @@
     #noticias .news-grid:not(.news-grid-todas)::-webkit-scrollbar{display:none}
     #noticias .news-grid:not(.news-grid-todas) .news-item{flex:0 0 86%;scroll-snap-align:start}
   }
+
+  /* ============ LOGO (marca B: manzana y pera) ============ */
+  .logo-mark{width:auto;height:auto;color:var(--leaf-deep)}
+  .logo-mark img{display:none}
+  .logo-svg{width:52px;height:41px;display:block}
+  .logo-leaf{fill:var(--apple);stroke:var(--apple)}
+  .logo-text{display:flex;flex-direction:column;gap:2px;line-height:1}
+  .logo-name{font-family:'Fraunces',serif;font-size:19px;font-weight:400;color:var(--leaf-deep);letter-spacing:0}
+  .logo-name em{font-style:italic;color:var(--apple)}
+  .logo-sub{font-family:'Fraunces',serif;font-size:9px;font-weight:600;letter-spacing:0.38em;text-transform:uppercase;color:var(--leaf-deep)}
+  .footer-logo{display:block;color:var(--paper);margin-bottom:18px}
+  .footer-svg{width:72px;height:57px}
+  .footer-logo .logo-leaf{fill:var(--amber-soft);stroke:var(--amber-soft)}
+  @media (max-width:520px){ .logo-svg{width:42px;height:33px} .logo-name{font-size:16px} }

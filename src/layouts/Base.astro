@@ -26,6 +26,7 @@ const euHref = isEu ? '/eu/' : (alt ?? '/eu/');
     <meta name="description" content={D.footer.brandB} />
     <title>{title}</title>
     <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -37,11 +38,18 @@ const euHref = isEu ? '/eu/' : (alt ?? '/eu/');
   </head>
   <body>
     <nav class="topnav">
-      <a class="logo" href={home}>
-        <span class="logo-mark" aria-hidden="true"><img src="/favicon-192.png" width="34" height="34" alt="" /></span>
-        <span>
-          <strong>{D.brand}</strong>
-          <span class="subtitle">{D.brandSub}</span>
+      <a class="logo" href={home} aria-label="Zaraitzuko Sagardoiak Elkartea">
+        <span class="logo-mark">
+          <svg class="logo-svg" viewBox="0 0 140 110" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M50 40 C38 33 23 40 23 60 C23 80 36 95 50 92 C64 95 77 80 77 60 C77 40 62 33 50 40 Z" />
+            <path d="M101 36 C93 36 91 44 91 52 C91 58 84 62 82 74 C80 88 89 96 101 96 C113 96 122 88 120 74 C118 62 111 58 111 52 C111 44 109 36 101 36 Z" />
+            <path d="M50 40 C50 32 52 25 57 20 C70 12 88 14 101 26 L101 36" />
+            <path class="logo-leaf" d="M76 16 C80 6 93 3 100 5 C96 14 85 19 76 16 Z" />
+          </svg>
+        </span>
+        <span class="logo-text">
+          <span class="logo-name">Zaraitzuko <em>Sagardoiak</em></span>
+          <span class="logo-sub">Elkartea</span>
         </span>
       </a>
       <div class="nav-right">
@@ -73,6 +81,14 @@ const euHref = isEu ? '/eu/' : (alt ?? '/eu/');
 
     <footer class="footer">
       <div class="footer-brand">
+        <span class="footer-logo">
+          <svg class="logo-svg footer-svg" viewBox="0 0 140 110" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M50 40 C38 33 23 40 23 60 C23 80 36 95 50 92 C64 95 77 80 77 60 C77 40 62 33 50 40 Z" />
+            <path d="M101 36 C93 36 91 44 91 52 C91 58 84 62 82 74 C80 88 89 96 101 96 C113 96 122 88 120 74 C118 62 111 58 111 52 C111 44 109 36 101 36 Z" />
+            <path d="M50 40 C50 32 52 25 57 20 C70 12 88 14 101 26 L101 36" />
+            <path class="logo-leaf" d="M76 16 C80 6 93 3 100 5 C96 14 85 19 76 16 Z" />
+          </svg>
+        </span>
         <h3>{D.footer.brandH}</h3>
         <p>{D.footer.brandB}</p>
       </div>
