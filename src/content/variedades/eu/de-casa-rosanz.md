@@ -1,6 +1,6 @@
 ---
 especie: manzana
-n: 11
+n: 12
 name: De Casa Rosanz/Roja
 status: confirmed
 epoca: otono
