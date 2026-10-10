@@ -1,0 +1,312 @@
+---
+import ui from '../i18n/ui.json';
+import LaminaPendiente from './LaminaPendiente.astro';
+import { md } from '../lib/md';
+
+interface Props {
+  entry: any;
+  lang: 'es' | 'eu';
+  slug: string;
+  hasPlate: boolean;
+  /** 'catalogo': versión para el catálogo imprimible (sin carrusel, sin enlaces de vuelta) */
+  modo?: 'web' | 'catalogo';
+}
+const { entry, lang, slug, hasPlate, modo = 'web' } = Astro.props;
+const web = modo === 'web';
+const d = (ui as any)[lang];
+const D = entry.data;
+const home = lang === 'eu' ? '/eu/' : '/';
+
+const statusClass =
+  D.status === 'confirmed' ? 'status-confirmed' : D.status === 'pending' ? 'status-pending' : 'status-draft';
+
+// Apartados de la ficha (orden acordado con Ester, oct. 2026):
+// Estado · Potencial · Descripción morfológica · Caracterización molecular ·
+// Conocimiento local (con subapartados) · Observaciones
+const sec = (field: string, key: string) => (D[field] ? { label: d.vars.sec[key], html: md(D[field]) } : null);
+const principales = [
+  sec('estado', 'estado'), sec('potencial', 'potencial'), sec('fruto', 'fruto'), sec('molecular', 'molec'),
+].filter(Boolean) as { label: string; html: string }[];
+const conocimiento = [
+  sec('valoracion', 'valor'), sec('abundancia', 'abund'), sec('origen', 'origen'),
+  sec('recogida', 'recog'), sec('usos', 'usos'), sec('otrasCar', 'otras'),
+].filter(Boolean) as { label: string; html: string }[];
+const observaciones = sec('obs', 'obs');
+
+const latin = D.especie === 'pera' ? 'Pyrus communis' : 'Malus domestica';
+const pueblos = (D.pueblos ?? []).join(' · ');
+const fotos: { src: string; pie?: string }[] = D.fotos ?? [];
+const otros = (D.otrosPueblos ?? []).join(' · ');
+---
+
+<article class={`ficha ficha-${modo}`} id={`ficha-${slug}`}>
+  {web && <a class="volver no-print" href={`${home}#variedades`}>← {d.vars.eyebrow.split('·')[0].trim()}</a>}
+
+  <header class="ficha-head">
+    <div class="ficha-lamina">
+      {hasPlate ? (
+        <img src={`/laminas/${slug}.jpg`} alt={`Lámina de ${D.name}`} loading={web ? 'eager' : 'lazy'} />
+      ) : (
+        <LaminaPendiente name={D.name} n={D.n} label={d.pdf.pending} />
+      )}
+    </div>
+    <div class="ficha-intro">
+      <div class="ficha-num">N.º {String(D.n).padStart(2, '0')}</div>
+      <h1>{D.name}</h1>
+      <p class="ficha-latin">{latin} — var. «{D.name}»</p>
+      <div class={`variety-status ${statusClass} ficha-status`}>{d.statusLabels[D.status]}</div>
+      {D.extraStatus && <p class="ficha-extra">{D.extraStatus}</p>}
+
+      <dl class="ficha-facts">
+        {pueblos && (<><dt>{d.vars.quickLabels.pueblos}</dt><dd>{pueblos}</dd></>)}
+        {otros && (<><dt>{d.vars.quickLabels.otros}</dt><dd>{otros}</dd></>)}
+        {D.antig && (<><dt>{d.vars.quickLabels.antig}</dt><dd>{D.antig}</dd></>)}
+      </dl>
+
+      {web && (
+        <div class="ficha-pdf no-print">
+          <button type="button" class="btn btn-outline" data-imprimir data-preparing={d.pdf.preparing}>↓ {d.pdf.ficha}</button>
+          <p class="ficha-pdf-help">{d.pdf.help}</p>
+        </div>
+      )}
+    </div>
+  </header>
+
+
+  {D.quote && (
+    <blockquote class="ficha-quote no-print">
+      <p set:html={`“${D.quote}”`} />
+      <cite>{d.vars.quoteNote}</cite>
+    </blockquote>
+  )}
+
+  <div class="ficha-cols">
+    <!-- Cabecera de la versión impresa (formato de las fichas de Ester: datos y fotos en la primera columna) -->
+    <div class="pf-intro print-only">
+      <h1 class="pf-title">{D.n}. {D.name}</h1>
+      <p class="pf-latin">{latin} — var. «{D.name}» · {d.statusLabels[D.status]}</p>
+      {fotos.slice(0, web ? 3 : 2).map((f) => <img class="pf-foto" data-print-src={f.src} alt="" />)}
+      <dl class="pf-facts">
+        {pueblos && (<><dt>{d.vars.quickLabels.pueblos}</dt><dd>{pueblos}</dd></>)}
+        {otros && (<><dt>{d.vars.quickLabels.otros}</dt><dd>{otros}</dd></>)}
+        {D.antig && (<><dt>{d.vars.quickLabels.antig}</dt><dd>{D.antig}</dd></>)}
+        {D.extraStatus && (<><dt>{d.vars.quickLabels.nota}</dt><dd>{D.extraStatus}</dd></>)}
+      </dl>
+      {D.quote && <p class="pf-quote" set:html={`“${D.quote}”`} />}
+    </div>
+
+    <div class="ficha-body">
+      {principales.map((x) => (
+        <div class="ficha-sec">
+          <h2 class="ficha-h">{x.label}</h2>
+          <div class="ficha-prose" set:html={x.html} />
+        </div>
+      ))}
+      {conocimiento.length > 0 && (
+        <div class="ficha-sec ficha-grupo">
+          <h2 class="ficha-h">{d.vars.sec.local}</h2>
+          {conocimiento.map((x) => (
+            <div class="ficha-sub">
+              <h3 class="ficha-h3">{x.label}</h3>
+              <div class="ficha-prose" set:html={x.html} />
+            </div>
+          ))}
+        </div>
+      )}
+      {observaciones && (
+        <div class="ficha-sec">
+          <h2 class="ficha-h">{observaciones.label}</h2>
+          <div class="ficha-prose" set:html={observaciones.html} />
+        </div>
+      )}
+    </div>
+  </div>
+
+  {web && fotos.length > 0 && (
+    <div class="ficha-fotos no-print">
+      <h2 class="ficha-h">{d.vars.fotos} <span class="car-count"><span data-car-i>1</span> / {fotos.length}</span></h2>
+      <div class="carrusel" data-carrusel>
+        <div class="car-track" data-car-track tabindex="0" aria-label={d.vars.fotos}>
+          {fotos.map((f, i) => (
+            <figure class="car-slide">
+              <a href={f.src} target="_blank" rel="noopener">
+                <img src={f.src} alt={f.pie ?? `${D.name} · ${i + 1}`} loading={i < 2 ? 'eager' : 'lazy'} decoding="async" />
+              </a>
+              {f.pie && <figcaption>{f.pie}</figcaption>}
+            </figure>
+          ))}
+        </div>
+        {fotos.length > 1 && (
+          <>
+            <button class="car-btn car-prev" type="button" data-car-prev aria-label={d.vars.fotosPrev}>‹</button>
+            <button class="car-btn car-next" type="button" data-car-next aria-label={d.vars.fotosNext}>›</button>
+          </>
+        )}
+      </div>
+      {fotos.length > 1 && (
+        <div class="car-thumbs">
+          {fotos.map((f, i) => (
+            <button type="button" class={`car-thumb${i === 0 ? ' is-on' : ''}`} data-car-go={i} aria-label={`${i + 1}`}>
+              <img src={f.src} alt="" loading="lazy" decoding="async" />
+            </button>
+          ))}
+        </div>
+      )}
+    </div>
+  )}
+</article>
+
+<style>
+  .ficha { max-width: 860px; margin: 0 auto; padding: 120px 6vw 80px; }
+  .volver {
+    font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.08em;
+    text-transform: uppercase; color: var(--rust); text-decoration: none;
+  }
+  .volver:hover { color: var(--apple); }
+  .ficha-head { display: grid; grid-template-columns: 1fr 1.1fr; gap: 44px; align-items: center; margin: 28px 0 40px; }
+  .ficha-catalogo { padding-top: 60px; }
+  .ficha-pdf { margin-top: 22px; }
+  .ficha-pdf-help { font-size: 12px; color: var(--stone); font-style: italic; margin-top: 6px; }
+  .ficha-lamina img {
+    width: 100%; border: 1px solid var(--paper-edge);
+    box-shadow: 0 8px 30px rgba(31,58,46,0.12); background: var(--cream);
+  }
+  .ficha-num {
+    font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.14em;
+    color: var(--amber); margin-bottom: 8px;
+  }
+  .ficha-intro h1 { font-size: clamp(40px, 7vw, 68px); line-height: 1; margin-bottom: 6px; }
+  .ficha-latin { font-style: italic; color: var(--stone); margin-bottom: 16px; }
+  .ficha-status { display: inline-block; position: static; margin-bottom: 18px; }
+  .ficha-extra { font-size: 14px; color: var(--stone); font-style: italic; margin-bottom: 14px; }
+  .ficha-facts { display: grid; grid-template-columns: auto 1fr; gap: 4px 16px; font-size: 15px; margin: 10px 0 16px; }
+  .ficha-facts dt {
+    font-family: 'JetBrains Mono', monospace; font-size: 11px; text-transform: uppercase;
+    letter-spacing: 0.06em; color: var(--stone); padding-top: 3px; white-space: nowrap;
+  }
+  .ficha-facts dd { color: var(--ink); }
+  .ficha-tags { margin-top: 6px; }
+  .ficha-quote {
+    border-left: 3px solid var(--apple); padding: 6px 0 6px 22px; margin: 0 0 40px;
+    max-width: 640px;
+  }
+  .ficha-quote p { font-size: 22px; font-style: italic; color: var(--leaf-deep); line-height: 1.4; }
+  .ficha-quote cite { display: block; font-size: 12px; color: var(--stone); font-style: normal; margin-top: 8px; }
+  .ficha-body { max-width: 680px; }
+  .ficha-sec { margin-bottom: 30px; }
+  .ficha-sub { margin: 0 0 16px; }
+  .ficha-h3 { font-family: 'Fraunces', serif; font-size: 18px; font-weight: 500; font-style: italic; color: var(--leaf-deep); margin-bottom: 4px; }
+  .ficha-h {
+    font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 500;
+    text-transform: uppercase; letter-spacing: 0.1em; color: var(--rust);
+    border-bottom: 1px solid var(--paper-edge); padding-bottom: 6px; margin-bottom: 10px;
+  }
+  /* Carrusel de fotos */
+  .ficha-fotos { margin: 44px 0 0; }
+  .car-count { float: right; color: var(--stone); letter-spacing: 0.06em; }
+  .carrusel { position: relative; }
+  .car-track {
+    display: flex; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth;
+    scrollbar-width: none; background: rgba(31,58,46,0.06); border: 1px solid var(--paper-edge);
+  }
+  .car-track::-webkit-scrollbar { display: none; }
+  .car-slide { flex: 0 0 100%; scroll-snap-align: center; margin: 0; }
+  .car-slide a { display: block; }
+  .car-slide img { display: block; width: 100%; height: clamp(260px, 56vw, 520px); object-fit: contain; }
+  .car-slide figcaption { font-size: 14px; font-style: italic; color: var(--stone); padding: 8px 12px 10px; }
+  .car-btn {
+    position: absolute; top: 50%; transform: translateY(-50%); width: 42px; height: 42px; border-radius: 50%;
+    border: 1px solid var(--paper-edge); background: rgba(250,246,236,0.92); color: var(--ink);
+    font-size: 26px; line-height: 1; cursor: pointer; box-shadow: 0 2px 10px rgba(31,58,46,0.15);
+  }
+  .car-btn:hover { background: var(--cream); color: var(--rust); }
+  .car-prev { left: 10px; } .car-next { right: 10px; }
+  .car-thumbs { display: flex; gap: 8px; overflow-x: auto; padding: 10px 0 2px; }
+  .car-thumb { flex: 0 0 auto; width: 64px; height: 64px; padding: 0; border: 2px solid transparent; background: none; cursor: pointer; opacity: 0.6; }
+  .car-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .car-thumb.is-on, .car-thumb:hover { opacity: 1; border-color: var(--rust); }
+  .ficha-prose { font-size: 17px; line-height: 1.65; }
+  .ficha-prose :global(p + p) { margin-top: 0.7em; }
+  .lang-doubt { color: var(--apple); cursor: help; font-size: 0.8em; vertical-align: super; }
+  @media print {
+    /* Página 1: la lámina. Sin alturas fijas (Safari añade sus propios márgenes y deja páginas en blanco) */
+    .ficha { max-width: none; padding: 0; margin: 0; }
+    .ficha-head { display: block; margin: 0; }
+    .ficha-intro { display: none; }
+    .ficha-lamina { text-align: center; padding-top: 4mm; }
+    .ficha-lamina img { width: auto; max-width: 100%; max-height: 235mm; box-shadow: none; border: none; }
+    .ficha-lamina :global(.lamina-pendiente) { width: 165mm; margin: 0 auto; box-shadow: none; }
+
+    /* Páginas siguientes: dos columnas, como el borrador de fichas */
+    .ficha-cols { break-before: page; page-break-before: always; columns: 2; column-gap: 9mm; }
+    .pf-title { font-family: 'Fraunces', serif; font-size: 26pt; font-weight: 600; color: #2f7d4a; line-height: 1.05; margin: 0 0 1mm; }
+    .pf-latin { font-style: italic; font-size: 9.5pt; color: var(--stone); margin-bottom: 4mm; }
+    .pf-foto { display: block; width: 100%; height: 48mm; object-fit: cover; margin-bottom: 3mm; break-inside: avoid; }
+    .pf-facts { margin: 2mm 0 4mm; font-size: 10.5pt; line-height: 1.35; }
+    .pf-facts dt { font-weight: 600; color: #2f7d4a; margin-top: 2mm; }
+    .pf-facts dd { margin: 0; }
+    .pf-quote { font-style: italic; font-size: 11pt; color: var(--leaf-deep); border-left: 2px solid #2f7d4a; padding-left: 3mm; margin-bottom: 5mm; break-inside: avoid; }
+    .ficha-body { max-width: none; }
+    .ficha-sec { margin-bottom: 5mm; break-inside: avoid-column; }
+    .ficha-h {
+      font-family: 'Fraunces', serif; font-weight: 600; font-size: 10.5pt; letter-spacing: 0.02em;
+      color: #2f7d4a; border: none; padding: 0; margin: 0 0 1.5mm; break-after: avoid;
+    }
+    .ficha-h::before { content: ''; display: block; width: 11mm; height: 1.2mm; background: #2f7d4a; margin-bottom: 1.5mm; }
+    .ficha-prose { font-size: 10pt; line-height: 1.45; text-align: justify; hyphens: auto; }
+    .ficha-prose :global(p) { margin-bottom: 1.5mm; }
+    .ficha-grupo { break-inside: auto; }
+    .ficha-sub { margin-bottom: 3mm; break-inside: avoid-column; }
+    .ficha-h3 { font-size: 10pt; font-weight: 600; font-style: italic; color: var(--leaf-deep); margin: 0 0 1mm; }
+  }
+  @media (max-width: 720px) {
+    .ficha-head { grid-template-columns: 1fr; gap: 24px; }
+    .ficha { padding-top: 96px; }
+  }
+</style>
+
+<script>
+  // Descargar PDF: carga las láminas y fotos pendientes y abre el cuadro de impresión del navegador
+  document.querySelectorAll<HTMLButtonElement>('[data-imprimir]').forEach((btn) => {
+    btn.addEventListener('click', async () => {
+      const label = btn.textContent;
+      btn.disabled = true;
+      btn.textContent = btn.dataset.preparing ?? '…';
+      const imgs = Array.from(document.querySelectorAll<HTMLImageElement>('.ficha img'));
+      imgs.forEach((im) => {
+        if (im.dataset.printSrc && !im.src) im.src = im.dataset.printSrc;
+        im.loading = 'eager';
+      });
+      await Promise.all(imgs.map((im) => (im.complete && im.naturalWidth ? null : im.decode().catch(() => null))));
+      btn.disabled = false;
+      btn.textContent = label;
+      window.print();
+    });
+  });
+
+  document.querySelectorAll<HTMLElement>('[data-carrusel]').forEach((car) => {
+    const box = car.parentElement!;
+    const track = car.querySelector<HTMLElement>('[data-car-track]')!;
+    const n = track.children.length;
+    const idx = () => Math.round(track.scrollLeft / track.clientWidth);
+    const go = (i: number) => track.scrollTo({ left: ((i + n) % n) * track.clientWidth });
+    car.querySelector('[data-car-prev]')?.addEventListener('click', () => go(idx() - 1));
+    car.querySelector('[data-car-next]')?.addEventListener('click', () => go(idx() + 1));
+    const thumbs = box.querySelectorAll<HTMLElement>('[data-car-go]');
+    thumbs.forEach((t) => t.addEventListener('click', () => go(Number(t.dataset.carGo))));
+    track.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight') { e.preventDefault(); go(idx() + 1); }
+      if (e.key === 'ArrowLeft') { e.preventDefault(); go(idx() - 1); }
+    });
+    const out = box.querySelector('[data-car-i]');
+    let t: number | undefined;
+    track.addEventListener('scroll', () => {
+      clearTimeout(t);
+      t = window.setTimeout(() => {
+        const i = idx();
+        if (out) out.textContent = String(i + 1);
+        thumbs.forEach((th, j) => th.classList.toggle('is-on', j === i));
+      }, 60);
+    });
+  });
+</script>

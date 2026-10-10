@@ -1,0 +1,85 @@
+---
+import ui from '../i18n/ui.json';
+import '../styles/global.css';
+
+interface Props {
+  lang: 'es' | 'eu';
+  title: string;
+  /** Misma página en el otro idioma (para el selector ES/EU) */
+  alt?: string;
+}
+
+const { lang, title, alt } = Astro.props;
+const D = (ui as any)[lang];
+const isEu = lang === 'eu';
+// Rutas base de cada idioma (castellano sin prefijo, euskera bajo /eu/)
+const home = isEu ? '/eu/' : '/';
+const esHref = isEu ? (alt ?? '/') : '/';
+const euHref = isEu ? '/eu/' : (alt ?? '/eu/');
+---
+
+<!DOCTYPE html>
+<html lang={lang}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={D.footer.brandB} />
+    <title>{title}</title>
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,400&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="topnav">
+      <a class="logo" href={home}>
+        <span class="logo-mark" aria-hidden="true"><img src="/favicon-192.png" width="34" height="34" alt="" /></span>
+        <span>
+          <strong>{D.brand}</strong>
+          <span class="subtitle">{D.brandSub}</span>
+        </span>
+      </a>
+      <div class="nav-right">
+        <ul class="nav-links">
+          <li><a href={`${home}#variedades`}>{D.nav.apples}</a></li>
+          <li><a href={`${home}#peras`}>{D.nav.pears}</a></li>
+          <li><a href={`${home}#noticias`}>{D.nav.diary}</a></li>
+          <li><a href={`${home}#asociacion`}>{D.nav.assoc}</a></li>
+          <li><a href={`${home}#colabora`}>{D.nav.collab}</a></li>
+        </ul>
+        <div class="lang-switch">
+          <a
+            class:list={['lang-btn', { active: !isEu }]}
+            href={esHref}
+            aria-current={!isEu ? 'true' : undefined}>ES</a
+          >
+          <a
+            class:list={['lang-btn', { active: isEu }]}
+            href={euHref}
+            aria-current={isEu ? 'true' : undefined}>EU</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <slot />
+    </main>
+
+    <footer class="footer">
+      <div class="footer-brand">
+        <h3>{D.footer.brandH}</h3>
+        <p>{D.footer.brandB}</p>
+      </div>
+      <div class="footer-meta">
+        <p>{D.footer.author}</p>
+        <p>{D.footer.copy}</p>
+      </div>
+    </footer>
+  </body>
+</html>

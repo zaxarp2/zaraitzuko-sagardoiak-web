@@ -1,0 +1,67 @@
+---
+/** Tarjeta de variedad (portada, carruseles y páginas de listado) */
+import ui from '../i18n/ui.json';
+import plates from '../data/plates.json';
+interface Props { v: any; lang: 'es' | 'eu'; }
+const { v, lang } = Astro.props;
+const D = (ui as any)[lang];
+const fichaBase = lang === 'eu' ? '/eu/variedad/' : '/variedad/';
+const slug = v.id.split('/').pop();
+const hasPlate = (plates as string[]).includes(slug);
+const esPera = v.data.especie === 'pera';
+
+const RUSSET = new Set(['Beltza', 'Muturbeltz', 'Maestro Sagar']);
+
+function appleSvg(n: number, c1: string, c2: string, russet: boolean) {
+  const id = `ap${n}`;
+  return `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <defs>
+      <radialGradient id="g${id}" cx="35%" cy="35%">
+        <stop offset="0%" stop-color="${c2}"/>
+        <stop offset="100%" stop-color="${c1}"/>
+      </radialGradient>
+    </defs>
+    <path d="M 50 22 C 35 22, 26 35, 26 50 C 26 70, 36 82, 50 82 C 64 82, 74 70, 74 50 C 74 35, 65 22, 50 22 Z" fill="url(#g${id})"/>
+    ${russet ? `<ellipse cx="50" cy="28" rx="10" ry="5" fill="#5a3a1f" opacity="0.3"/>` : ''}
+    <path d="M 45 20 Q 48 12, 54 16" stroke="#2d4a3a" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+    <ellipse cx="52" cy="14" rx="6" ry="2.5" fill="#4a6b58" transform="rotate(25 52 14)"/>
+    <ellipse cx="38" cy="42" rx="6" ry="11" fill="${c2}" opacity="0.4"/>
+  </svg>`;
+}
+
+function statusClass(s: string) {
+  return s === 'confirmed' ? 'status-confirmed' : s === 'pending' ? 'status-pending' : 'status-draft';
+}
+
+function pueblosStr(pueblos: string[]) {
+  const p = pueblos ?? [];
+  return p.slice(0, 3).join(' · ') + (p.length > 3 ? '…' : '');
+}
+
+function pearSvg(n: number, c1: string, c2: string) {
+  const id = `pe${n}`;
+  return `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <defs><radialGradient id="g${id}" cx="38%" cy="55%"><stop offset="0%" stop-color="${c2}"/><stop offset="100%" stop-color="${c1}"/></radialGradient></defs>
+    <path d="M50 18 C43 18 41 27 41 34 C41 41 30 46 28 60 C26 75 37 86 50 86 C63 86 74 75 72 60 C70 46 59 41 59 34 C59 27 57 18 50 18 Z" fill="url(#g${id})"/>
+    <path d="M50 19 Q51 11 56 8" stroke="#2d4a3a" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+    <ellipse cx="58" cy="11" rx="6" ry="2.5" fill="#4a6b58" transform="rotate(25 58 11)"/>
+  </svg>`;
+}
+---
+<a class="variety-card" href={`${fichaBase}${slug}`}>
+  <div class="variety-illustration">
+    <div class="variety-num">N.º {String(v.data.n).padStart(2, '0')}</div>
+    <div class={`variety-status ${statusClass(v.data.status)}`}>{D.statusLabels[v.data.status]}</div>
+    {hasPlate ? (
+      <img class="variety-motif" src={`/motivos/${slug}.png`} alt={v.data.name} loading="lazy" />
+    ) : esPera ? (
+      <Fragment set:html={pearSvg(v.data.n, v.data.color, v.data.colorAlt)} />
+    ) : (
+      <Fragment set:html={appleSvg(v.data.n, v.data.color, v.data.colorAlt, v.data.status === 'confirmed' && RUSSET.has(v.data.name))} />
+    )}
+  </div>
+  <div class="variety-body">
+    <div class="variety-name">{v.data.name}</div>
+    <div class="variety-meta">{pueblosStr(v.data.pueblos)}</div>
+  </div>
+</a>

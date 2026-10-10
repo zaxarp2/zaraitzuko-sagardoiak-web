@@ -1,0 +1,584 @@
+{
+  "es": {
+    "brand": "Frutales del Valle de Salazar",
+    "brandSub": "· Zaraitzuko Sagardoiak Elkartea",
+    "nav": {
+      "home": "Inicio",
+      "project": "El proyecto",
+      "varieties": "Variedades",
+      "valley": "El Valle",
+      "diary": "Diario",
+      "collab": "Colabora",
+      "apples": "Manzanas",
+      "pears": "Peras",
+      "assoc": "Asociación"
+    },
+    "hero": {
+      "eyebrow": "Zaraitzuko Sagardoiak Elkartea · Valle de Salazar",
+      "title": "Variedades antiguas de <em>frutales</em> del Valle de Salazar.",
+      "lede": "Un trabajo de campo, etnografía y ciencia para recuperar las manzanas y peras que durante siglos sostuvieron las casas del valle, y que la agricultura industrial estuvo a punto de borrar.",
+      "stat1": "Variedades<br>descritas",
+      "stat2": "Personas<br>entrevistadas",
+      "stat3": "Pueblos<br>prospectados",
+      "stat4": "Muestras de<br>manzano · ADN"
+    },
+    "about": {
+      "eyebrow": "Sobre el proyecto",
+      "title": "Lo que se está <em>perdiendo</em>, y por qué importa.",
+      "lede": "El 75% de las variedades agrarias locales se extinguieron durante el siglo XX. Cuatro variedades comerciales — Golden, Gala, Red Delicious y Fuji — copan hoy el 90% de la producción mundial de manzana. Frente a esa homogeneización, este proyecto recupera el patrimonio frutícola del Valle de Salazar antes de que las personas que lo recuerdan ya no estén.",
+      "pillar1": {
+        "h": "Etnoagronomía",
+        "b": "Entrevistas semiestructuradas a informantes mayores: nombres locales, valoración, usos, época de maduración, abundancia y origen. El Conocimiento Ecológico Tradicional como punto de partida."
+      },
+      "pillar2": {
+        "h": "Caracterización morfológica",
+        "b": "Descriptores UPOV aplicados a cada fruto: forma, tamaño, color de fondo y sobrecolor, russeting, pedúnculo, firmeza de la carne, acidez y dulzor. Capacidad discriminante validada internacionalmente."
+      },
+      "pillar3": {
+        "h": "Identidad molecular",
+        "b": "16 marcadores microsatélite (SSR) por muestra, distribuidos en todos los cromosomas. Cotejo con bancos de germoplasma nacionales y europeos. El estándar de la fruticultura científica."
+      },
+      "howH": "Cómo se ha hecho.",
+      "whoH": "Quién lo hace.",
+      "how": [
+        [
+          "01",
+          "<strong>Selección de informantes clave:</strong> personas mayores, 29 entrevistadas, con frecuencia más de una sesión por persona."
+        ],
+        [
+          "02",
+          "<strong>Variedades candidatas:</strong> presencia mínima de 80 años en la zona. Localización georreferenciada de ejemplares vivos."
+        ],
+        [
+          "03",
+          "<strong>Caracterización morfológica</strong> del fruto con descriptores UPOV simplificados, manejables sobre el terreno."
+        ],
+        [
+          "04",
+          "<strong>Caracterización molecular</strong> en el laboratorio del Grupo de Fruticultura de la UPNA: 19 muestras de manzano y 8 de peral."
+        ],
+        [
+          "05",
+          "<strong>Multiplicación</strong> de las variedades seleccionadas por valoración, importancia local y peligro de extinción. 4 variedades, ~150 árboles, otoño de 2026."
+        ]
+      ],
+      "who": [
+        [
+          "·",
+          "<strong>Arrea</strong> — Asociación promotora del proyecto en el Valle de Salazar."
+        ],
+        [
+          "·",
+          "<strong>Red de Semillas de Navarra</strong> — coordinación, metodología etnoagronómica y multiplicación."
+        ],
+        [
+          "·",
+          "<strong>UPNA</strong> — Grupo de investigación en Fruticultura. Caracterización molecular y morfológica."
+        ],
+        [
+          "·",
+          "<strong>Junta del Valle de Salazar</strong> — apoyo institucional."
+        ],
+        [
+          "·",
+          "<strong>Las casas del Valle</strong> — sin las personas que han cuidado estos árboles durante un siglo, nada de esto existiría."
+        ]
+      ]
+    },
+    "vars": {
+      "eyebrow": "Catálogo · {n} variedades de manzana",
+      "title": "Las <em>manzanas</em> del Valle.",
+      "lede": "Cada ficha recoge la descripción local, la valoración de las personas que la conocen, la caracterización morfológica del fruto y, cuando hay resultados, el análisis molecular de su identidad varietal. Pincha en una variedad para abrir su ficha completa.",
+      "filter": "Filtrar",
+      "f": {
+        "all": "Todas",
+        "early": "Tempranas (agosto–septiembre)",
+        "autumn": "Otoño",
+        "late": "Tardías (noviembre–invierno)",
+        "spread": "Antes muy extendidas",
+        "minor": "Minoritarias"
+      },
+      "search": "Buscar por nombre o pueblo…",
+      "empty": "No hay variedades que coincidan con esa búsqueda. Prueba con otro nombre o filtro.",
+      "caption": "[ Fotografía pendiente del trabajo de campo ]",
+      "subtitle": "Variedad local de manzana · Valle de Salazar",
+      "epocaTags": {
+        "temprana": "Verano",
+        "otono": "Otoño",
+        "tardia": "Invierno"
+      },
+      "quickLabels": {
+        "pueblos": "Localizada en",
+        "otros": "Otras citas",
+        "antig": "Presencia en el Valle",
+        "epoca": "Época",
+        "molec": "Identidad molecular",
+        "nota": "Nota"
+      },
+      "sec": {
+        "estado": "Estado de conservación",
+        "potencial": "Potencial de reintroducción",
+        "fruto": "Descripción morfológica del fruto",
+        "valor": "Valoración",
+        "abund": "Abundancia relativa",
+        "origen": "Origen",
+        "recog": "Recogida y maduración",
+        "usos": "Usos citados",
+        "otras": "Otras características",
+        "molec": "Caracterización molecular",
+        "obs": "Observaciones",
+        "local": "Conocimiento local"
+      },
+      "quoteNote": "(cita literal en castellano, idioma original de la entrevista)",
+      "fotos": "Fotografías de campo",
+      "fotosPrev": "Foto anterior",
+      "fotosNext": "Foto siguiente",
+      "verTodas": "Ver todas las manzanas →",
+      "todasTitle": "Todas las manzanas"
+    },
+    "map": {
+      "eyebrow": "Geografía del proyecto",
+      "title": "Ocho pueblos, un <em>valle</em>.",
+      "lede": "El trabajo de campo se ha desarrollado en ocho municipios del Valle de Salazar, en el Pirineo navarro. Algunas variedades están presentes en varios pueblos; otras sólo se han localizado en una casa, en un solo lugar del mundo.",
+      "river": "Río Salazar",
+      "scale": "ESQUEMA · NO A ESCALA",
+      "listH": "Pueblos del estudio",
+      "varietySg": "variedad",
+      "varietyPl": "variedades"
+    },
+    "news": {
+      "eyebrow": "Diario del proyecto",
+      "title": "Cuaderno de <em>campo</em>.",
+      "lede": "Avances, jornadas, hallazgos y citas para los que se quieran sumar.",
+      "add": "+ Añadir entrada",
+      "promptTitle": "Título de la entrada:",
+      "promptBody": "Texto de la entrada:",
+      "promptTag": "Etiqueta (Jornada, Hallazgo, Formación…):",
+      "defaultTag": "Aviso"
+    },
+    "collab": {
+      "eyebrow": "Colabora",
+      "title": "¿Conoces una <em>variedad</em> que deberíamos buscar?",
+      "lede": "El inventario no está cerrado. Si conoces un manzano o peral antiguo en el Valle que pueda ser una variedad local — en una borda, en una casa abandonada, en un huerto que recuerdas de niño — cuéntanoslo. Una persona del proyecto se pondrá en contacto.",
+      "f": {
+        "name": "Tu nombre",
+        "namePh": "Cómo te llamas",
+        "contact": "Cómo contactar",
+        "contactPh": "Teléfono o email",
+        "variety": "Nombre local de la variedad (si lo sabes)",
+        "varietyPh": "Ej: Beltza, Maestro Sagar, De Hierro… o el de la casa",
+        "varietyHelp": "Si no sabes el nombre, no pasa nada — descríbela en el siguiente campo.",
+        "village": "Pueblo",
+        "villageOther": "Otro del Valle",
+        "house": "Casa / paraje (si procede)",
+        "housePh": "Ej: Casa Andía, Borda del Camino…",
+        "desc": "Cuéntanos lo que sepas",
+        "descPh": "Color, época de recogida, sabor, usos, quién la plantó, edad aproximada del árbol…",
+        "others": "¿El árbol sigue vivo? ¿Conoces a alguien que sepa más?",
+        "othersPh": "Estado del árbol, otras personas a quien preguntar…",
+        "send": "Enviar propuesta →",
+        "privacy": "Los datos solo se usan para contactar contigo dentro del proyecto. No se publican sin tu permiso expreso."
+      },
+      "successH": "Gracias",
+      "successB": "Hemos recibido tu propuesta. Una persona del equipo se pondrá en contacto contigo en los próximos días."
+    },
+    "footer": {
+      "brandH": "Frutales antiguos del Valle de Salazar",
+      "brandB": "Zaraitzuko Sagardoiak Elkartea. Conservación y recuperación de las variedades locales de frutales del Valle de Salazar y del conocimiento asociado a ellas.",
+      "org": "Promueven",
+      "support": "Con el apoyo de",
+      "contact": "Contacto",
+      "houses": "Las casas del Valle",
+      "propose": "Propón una variedad",
+      "copy": "© 2025–2026 · Zaraitzuko Sagardoiak Elkartea",
+      "author": "Texto y datos: Ester Montero · 2025"
+    },
+    "mockup": "Mockup para validación",
+    "statusLabels": {
+      "confirmed": "Validada",
+      "pending": "Pendiente molecular",
+      "draft": "Borrador"
+    },
+    "pdf": {
+      "ficha": "Descargar ficha (PDF)",
+      "catalogo": "Descargar catálogo completo (PDF)",
+      "help": "¿Quieres el PDF? Pulsa el botón y, en la ventana de imprimir, elige «Guardar como PDF» como destino.",
+      "preparing": "Preparando…",
+      "catTitle": "Catálogo de variedades de manzana",
+      "catSub": "Frutales antiguos del Valle de Salazar",
+      "catIndex": "Índice",
+      "catIntro": "Versión para descargar o imprimir con todas las fichas del catálogo. Cada ficha empieza con su lámina.",
+      "pending": "Lámina en preparación",
+      "generated": "Edición generada el",
+      "photos": "Fotografías de campo",
+      "coverTitle": "Recuperación de Frutales Antiguos del Valle de Salazar",
+      "coverSub": "Descripción e identificación de variedades en base al conocimiento ecológico tradicional, caracterización morfológica y molecular.",
+      "coverAuthor": "Texto y datos: Ester Montero"
+    },
+    "article": {
+      "back": "Diario",
+      "more": "Leer más →",
+      "others": "Otras entradas",
+      "all": "Ver todas las entradas →"
+    },
+    "mail": {
+      "eyebrow": "Colabora",
+      "title": "¿Tienes un <em>manzano o peral</em> antiguo?",
+      "lede": "El inventario no está cerrado. Si conoces un manzano o un peral antiguo en el Valle que pueda ser una variedad local — en casa, en una borda, en un huerto que recuerdas de niño — escríbenos. Para identificarlo nos ayudan mucho unas pocas fotos bien hechas.",
+      "stepsH": "Qué fotos mandar",
+      "steps": [
+        {
+          "h": "El árbol entero",
+          "p": "Una foto del árbol completo, de lejos, que se vea su forma y su tamaño."
+        },
+        {
+          "h": "La fruta por abajo",
+          "p": "Una manzana o pera vista desde el «culo» (el ojo, la parte opuesta al rabillo)."
+        },
+        {
+          "h": "La fruta por el rabillo",
+          "p": "La misma fruta vista desde arriba, que se vea bien el rabillo."
+        },
+        {
+          "h": "En la mano",
+          "p": "Una manzana o pera en la palma de la mano, para que se aprecie el tamaño."
+        }
+      ],
+      "extra": "Si puedes, añade una fruta partida por la mitad. Y mejor con luz de día, sin flash.",
+      "dataH": "Y cuéntanos",
+      "data": [
+        "Pueblo y, si quieres, casa o paraje donde está el árbol",
+        "Cómo llamáis a esa manzana o pera en casa (si tiene nombre)",
+        "Edad aproximada del árbol",
+        "Cuándo se recoge y cuánto aguanta",
+        "Para qué se usaba: comer, asar, compota, sidra, conserva…",
+        "Tu nombre y un teléfono para contactar"
+      ],
+      "btn": "Escribir a info@zaraitzukosagardoiak.org",
+      "note": "Adjunta las fotos al correo. Si pesan mucho, mándalas en dos o tres correos.",
+      "privacy": "Tus datos solo se usan para contactar contigo dentro del proyecto. No publicamos nada sin tu permiso.",
+      "subject": "Tengo un frutal antiguo",
+      "body": "Hola:\n\nCreo que tengo una variedad antigua de manzana o pera.\n\nPueblo:\nCasa o paraje (opcional):\nNombre que le damos:\nEdad aproximada del árbol:\nCuándo se recoge y cuánto aguanta:\nPara qué se usa:\n\nMi nombre:\nTeléfono:\n\nAdjunto las fotos: árbol entero, fruta por abajo, fruta por el rabillo y fruta en la mano.\n"
+    },
+    "peras": {
+      "eyebrow": "Catálogo · Peras",
+      "title": "Las <em>peras</em> del Valle.",
+      "lede": "Junto a los manzanos, en las casas del Valle se conservan perales antiguos. Durante el proyecto se han analizado molecularmente 8 muestras de peral, todas diferentes entre sí.",
+      "empty": "Las fichas de las variedades de pera se publicarán próximamente.",
+      "verTodas": "Ver todas las peras →",
+      "todasTitle": "Todas las peras"
+    },
+    "assoc": {
+      "eyebrow": "La asociación",
+      "title": "Zaraitzuko Sagardoiak <em>Elkartea</em>.",
+      "lede": "Zaraitzuko Sagardoiak Elkartea trabaja para conservar y recuperar las variedades locales de frutales del Valle de Salazar y el conocimiento que las acompaña. Nace del proyecto de recuperación de frutales antiguos del Valle y da continuidad a su trabajo.",
+      "blocks": [
+        {
+          "h": "Qué queremos",
+          "p": "Que las variedades locales de manzano y peral, y el conocimiento que las acompaña, sigan vivas en el Valle: localizarlas, documentarlas, multiplicarlas por injerto y repartirlas entre las casas y los pueblos."
+        },
+        {
+          "h": "Cómo lo hacemos",
+          "p": "Con trabajo común: preguntar, buscar, compartir, injertar, plantar, conservar… y comer manzanas. Organizamos jornadas, talleres de injerto y poda, y el reparto de árboles de las variedades seleccionadas."
+        },
+        {
+          "h": "Con quién",
+          "p": "Trabajamos junto a Arrea, la Red de Semillas de Navarra y el Grupo de Fruticultura de la UPNA, con el apoyo de la Junta del Valle de Salazar. Y, sobre todo, con las personas y las casas del Valle que han cuidado estos árboles."
+        }
+      ],
+      "joinH": "¿Quieres formar parte?",
+      "join": "Si te interesa, escríbenos a <a href=\"mailto:info@zaraitzukosagardoiak.org\">info@zaraitzukosagardoiak.org</a>."
+    }
+  },
+  "eu": {
+    "brand": "Zaraitzuko Fruta-arbolak",
+    "brandSub": "· Zaraitzuko Sagardoiak Elkartea",
+    "nav": {
+      "home": "Hasiera",
+      "project": "Proiektua",
+      "varieties": "Barietateak",
+      "valley": "Harana",
+      "diary": "Egunkaria",
+      "collab": "Lagundu",
+      "apples": "Sagarrak",
+      "pears": "Udareak",
+      "assoc": "Elkartea"
+    },
+    "hero": {
+      "eyebrow": "Zaraitzuko Sagardoiak Elkartea · Zaraitzu Ibarra",
+      "title": "Zaraitzuko <em>fruta-arbola</em> zaharrak.",
+      "lede": "Landa-lana, etnografia eta zientzia, mendetan herriko etxeak elikatu zituzten sagar eta udareak berreskuratzeko, nekazaritza industrialak ezabatu baino lehen.",
+      "stat1": "Barietate<br>deskribatu",
+      "stat2": "Pertsona<br>elkarrizketatu",
+      "stat3": "Herri<br>aztertu",
+      "stat4": "Sagar-laginak<br>· ADNa"
+    },
+    "about": {
+      "eyebrow": "Proiektuari buruz",
+      "title": "Galtzen ari dena, eta zergatik <em>axola</em> duen.",
+      "lede": "Bertako barietate nekazarien %75 desagertu ziren XX. mendean. Lau barietate komertzialek — Golden, Gala, Red Delicious eta Fuji — munduko sagar-ekoizpenaren %90 hartzen dute gaur egun. Homogeneizazio horren aurrean, proiektu honek Zaraitzu Haraneko fruta-ondarea berreskuratzen du, gogoratzen duten pertsonak joan baino lehen.",
+      "pillar1": {
+        "h": "Etnoagronomia",
+        "b": "Elkarrizketa erdiegituratuak adineko informatzaileei: bertako izenak, balorazioa, erabilerak, heltze-garaia, ugaritasuna eta jatorria. Bertako Ezagutza Ekologiko Tradizionala abiapuntu gisa."
+      },
+      "pillar2": {
+        "h": "Karakterizazio morfologikoa",
+        "b": "UPOV deskriptoreak fruituari aplikatuta: forma, tamaina, hondoko kolorea eta gainazaleko kolorea, russeting<span class='lang-doubt' title='Termino tekniko nazioartekoa, mailegutzat'>[?]</span>, pedunkulua, mamiaren gogortasuna, azidotasuna eta gozotasuna. Nazioartean baliozkotutako bereizteko gaitasuna."
+      },
+      "pillar3": {
+        "h": "Identitate molekularra",
+        "b": "16 mikrosatelite marka (SSR) lagineko, kromosoma guztietan banatuta. Estatuko eta Europako germoplasma-bankuekin alderaketa. Fruta-laborantza zientifikoaren estandarra."
+      },
+      "howH": "Nola egin den.",
+      "whoH": "Nork egiten duen.",
+      "how": [
+        [
+          "01",
+          "<strong>Funtsezko informatzaileen aukeraketa:</strong> adineko pertsonak, 29 elkarrizketatu, sarritan saio bat baino gehiago pertsonako."
+        ],
+        [
+          "02",
+          "<strong>Barietate hautagaiak:</strong> gutxienez 80 urteko presentzia eskualdean. Ale biziak georreferentziaz lokalizatuta."
+        ],
+        [
+          "03",
+          "<strong>Karakterizazio morfologikoa</strong> fruituarena UPOV deskriptore sinplifikatuekin, landan erabilgarriak."
+        ],
+        [
+          "04",
+          "<strong>Karakterizazio molekularra</strong> NUPeko Fruta-laborantza Ikerketa Taldearen laborategian: 19 sagar-lagin eta 8 udare-lagin."
+        ],
+        [
+          "05",
+          "<strong>Ugalketa</strong> aukeratutako barietateena balorazioagatik, tokiko garrantziagatik eta desagertzeko arriskuagatik. 4 barietate, ~150 zuhaitz, 2026ko udazkenean."
+        ]
+      ],
+      "who": [
+        [
+          "·",
+          "<strong>Arrea</strong> — Zaraitzu Haraneko proiektuaren elkarte sustatzailea."
+        ],
+        [
+          "·",
+          "<strong>Nafarroako Hazien Sarea</strong> — koordinazioa, metodologia etnoagronomikoa eta ugalketa."
+        ],
+        [
+          "·",
+          "<strong>NUP</strong> — Fruta-laborantzako ikerketa taldea. Karakterizazio molekularra eta morfologikoa."
+        ],
+        [
+          "·",
+          "<strong>Zaraitzu Haraneko Batzarra</strong><span class='lang-doubt' title='Junta del Valle de Salazar = Zaraitzuko Batzarra erabili daiteke ere'>[?]</span> — erakunde-laguntza."
+        ],
+        [
+          "·",
+          "<strong>Haraneko etxeak</strong> — zuhaitz hauek mende batez zaindu dituzten pertsonak gabe, hau ez litzateke existituko."
+        ]
+      ]
+    },
+    "vars": {
+      "eyebrow": "Katalogoa · {n} sagar-barietate",
+      "title": "Haraneko <em>sagarrak</em>.",
+      "lede": "Fitxa bakoitzak bertako deskripzioa, ezagutzen duten pertsonen balorazioa, fruituaren karakterizazio morfologikoa eta, emaitzak daudenean, identitate barietalaren analisi molekularra biltzen ditu. Egin klik barietate batean fitxa osoa irekitzeko.",
+      "filter": "Iragazi",
+      "f": {
+        "all": "Denak",
+        "early": "Goiztiarrak (abuztua–iraila)",
+        "autumn": "Udazkena",
+        "late": "Berantiarrak (azaroa–negua)",
+        "spread": "Lehen oso hedatuak",
+        "minor": "Gutxiengoak"
+      },
+      "search": "Bilatu izenez edo herriz…",
+      "empty": "Ez dago bilaketa horrekin bat datorren barietaterik. Saiatu beste izen edo iragazki batekin.",
+      "caption": "[ Landa-laneko argazkia falta da ]",
+      "subtitle": "Bertako sagar-barietatea · Zaraitzu Harana",
+      "epocaTags": {
+        "temprana": "Uda",
+        "otono": "Udazkena",
+        "tardia": "Negua"
+      },
+      "quickLabels": {
+        "pueblos": "Non aurkitua",
+        "otros": "Beste aipamenak",
+        "antig": "Haraneko presentzia",
+        "epoca": "Garaia",
+        "molec": "Identitate molekularra",
+        "nota": "Oharra"
+      },
+      "sec": {
+        "estado": "Kontserbazio-egoera",
+        "potencial": "Berriz sartzeko potentziala",
+        "fruto": "Fruituaren deskribapen morfologikoa",
+        "valor": "Balorazioa",
+        "abund": "Ugaritasun erlatiboa",
+        "origen": "Jatorria",
+        "recog": "Bilketa eta heltzea",
+        "usos": "Aipatutako erabilerak",
+        "otras": "Beste ezaugarri batzuk",
+        "molec": "Karakterizazio molekularra",
+        "obs": "Oharrak",
+        "local": "Tokiko ezagutza"
+      },
+      "quoteNote": "(aipu literala gaztelaniaz, elkarrizketaren jatorrizko hizkuntza)",
+      "fotos": "Landa-argazkiak",
+      "fotosPrev": "Aurreko argazkia",
+      "fotosNext": "Hurrengo argazkia",
+      "verTodas": "Ikusi sagar guztiak →",
+      "todasTitle": "Sagar guztiak"
+    },
+    "map": {
+      "eyebrow": "Proiektuaren geografia",
+      "title": "Zortzi herri, haran <em>bat</em>.",
+      "lede": "Landa-lana Zaraitzu Haraneko zortzi udalerritan egin da, Nafarroako Pirinioan. Barietate batzuk herri batean baino gehiagotan daude; beste batzuk etxe bakar batean baino ez dira aurkitu, munduko leku bakarrean.",
+      "river": "Zaraitzu ibaia",
+      "scale": "ESKEMA · EZ ESKALAN",
+      "listH": "Azterketako herriak",
+      "varietySg": "barietate",
+      "varietyPl": "barietate"
+    },
+    "news": {
+      "eyebrow": "Proiektuaren egunkaria",
+      "title": "<em>Landa</em>-koadernoa.",
+      "lede": "Aurrerapenak, jardunaldiak, aurkikuntzak eta hitzorduak parte hartu nahi dutenentzat.",
+      "add": "+ Sarrera berria",
+      "promptTitle": "Sarreraren izenburua:",
+      "promptBody": "Sarreraren testua:",
+      "promptTag": "Etiketa (Jardunaldia, Aurkikuntza, Prestakuntza…):",
+      "defaultTag": "Oharra"
+    },
+    "collab": {
+      "eyebrow": "Lagundu",
+      "title": "Bilatu beharko genukeen <em>barietateren</em> bat ezagutzen duzu?",
+      "lede": "Inbentarioa ez dago itxita. Haranean bertako barietatea izan daitekeen sagarrondo edo udareondo zaharra ezagutzen baduzu — borda batean, etxe abandonatu batean, txikitan gogoratzen duzun baratze batean — esan iezaguzu. Proiektuko pertsona bat zurekin harremanetan jarriko da.",
+      "f": {
+        "name": "Zure izena",
+        "namePh": "Nola deitzen zaren",
+        "contact": "Nola kontaktatu",
+        "contactPh": "Telefonoa edo emaila",
+        "variety": "Barietatearen tokiko izena (ezagutzen baduzu)",
+        "varietyPh": "Adib: Beltza, Maestro Sagar, De Hierro… edo etxearena",
+        "varietyHelp": "Izena ez badakizu, ez dago arazorik — hurrengo eremuan deskribatu.",
+        "village": "Herria",
+        "villageOther": "Haraneko beste bat",
+        "house": "Etxea / lekua (dagokionean)",
+        "housePh": "Adib: Andía Etxea, Bideko Borda…",
+        "desc": "Esan iezaguzu dakizuna",
+        "descPh": "Kolorea, bilketa-garaia, zaporea, erabilerak, nork landatu zuen, zuhaitzaren gutxi gorabeherako adina…",
+        "others": "Zuhaitza bizirik dago? Gehiago dakien norbait ezagutzen duzu?",
+        "othersPh": "Zuhaitzaren egoera, galde diezaiekegun beste pertsona batzuk…",
+        "send": "Proposamena bidali →",
+        "privacy": "Datuak proiektuaren barruan zurekin kontaktatzeko soilik erabiltzen dira. Ez dira zure baimen espresurik gabe argitaratzen."
+      },
+      "successH": "Eskerrik asko",
+      "successB": "Zure proposamena jaso dugu. Taldeko pertsona bat zurekin harremanetan jarriko da datozen egunetan."
+    },
+    "footer": {
+      "brandH": "Zaraitzuko fruta-arbola zaharrak",
+      "brandB": "Zaraitzuko Sagardoiak Elkartea. Zaraitzu Haraneko fruta-arbolen tokiko barietateen eta haiei lotutako ezagutzaren kontserbazioa eta berreskurapena.",
+      "org": "Sustatzaileak",
+      "support": "Laguntzaileak",
+      "contact": "Kontaktua",
+      "houses": "Haraneko etxeak",
+      "propose": "Proposatu barietate bat",
+      "copy": "© 2025–2026 · Zaraitzuko Sagardoiak Elkartea",
+      "author": "Testua eta datuak: Ester Montero · 2025"
+    },
+    "mockup": "Baliozkotzeko mockupa",
+    "statusLabels": {
+      "confirmed": "Baliozkotua",
+      "pending": "Molekular zain",
+      "draft": "Zirriborroa"
+    },
+    "pdf": {
+      "ficha": "Deskargatu fitxa (PDF)",
+      "catalogo": "Deskargatu katalogo osoa (PDF)",
+      "help": "PDFa nahi duzu? Sakatu botoia eta, inprimatzeko leihoan, aukeratu «Gorde PDF gisa» helmuga gisa.",
+      "preparing": "Prestatzen…",
+      "catTitle": "Sagar-barietateen katalogoa",
+      "catSub": "Zaraitzuko fruta-arbola zaharrak",
+      "catIndex": "Aurkibidea",
+      "catIntro": "Katalogoko fitxa guztiak dituen bertsioa, deskargatzeko edo inprimatzeko. Fitxa bakoitza bere xaflarekin hasten da.",
+      "pending": "Xafla prestatzen",
+      "generated": "Edizioaren data:",
+      "photos": "Landa-argazkiak",
+      "coverTitle": "Zaraitzuko Fruta-arbola Zaharren Berreskurapena",
+      "coverSub": "Barietateen deskribapena eta identifikazioa, ezagutza ekologiko tradizionalean eta karakterizazio morfologiko eta molekularrean oinarrituta.",
+      "coverAuthor": "Testua eta datuak: Ester Montero"
+    },
+    "article": {
+      "back": "Egunkaria",
+      "more": "Irakurri gehiago →",
+      "others": "Beste sarrera batzuk",
+      "all": "Ikusi sarrera guztiak →"
+    },
+    "mail": {
+      "eyebrow": "Lagundu",
+      "title": "<em>Sagarrondo edo udareondo</em> zaharren bat duzu?",
+      "lede": "Inbentarioa ez dago itxita. Haranean bertako barietatea izan daitekeen sagarrondo edo udareondo zaharren bat ezagutzen baduzu — etxean, borda batean, txikitan gogoratzen duzun baratze batean — idatz iezaguzu. Hura identifikatzeko, ondo ateratako argazki gutxi batzuk oso lagungarriak dira.",
+      "stepsH": "Zer argazki bidali",
+      "steps": [
+        {
+          "h": "Zuhaitz osoa",
+          "p": "Zuhaitz osoaren argazki bat, urrutitik, bere forma eta tamaina ikus daitezen."
+        },
+        {
+          "h": "Fruitua azpitik",
+          "p": "Sagar edo udare bat «ipurditik» ikusita (begia, txortenaren kontrako aldea)."
+        },
+        {
+          "h": "Fruitua txortenetik",
+          "p": "Fruitu bera goitik ikusita, txortena ondo ikus dadin."
+        },
+        {
+          "h": "Eskuan",
+          "p": "Sagar edo udare bat esku-ahurrean, tamaina ikus dadin."
+        }
+      ],
+      "extra": "Ahal baduzu, gehitu erditik ebakitako fruitu bat. Eta hobe egun-argitan, flashik gabe.",
+      "dataH": "Eta kontaiguzu",
+      "data": [
+        "Herria eta, nahi baduzu, zuhaitza dagoen etxea edo lekua",
+        "Nola deitzen diozuen sagar edo udare horri etxean (izenik badu)",
+        "Zuhaitzaren gutxi gorabeherako adina",
+        "Noiz biltzen den eta zenbat irauten duen",
+        "Zertarako erabiltzen zen: jateko, erretzeko, konpotarako, sagardorako, kontserbarako…",
+        "Zure izena eta harremanetarako telefono bat"
+      ],
+      "btn": "Idatzi info@zaraitzukosagardoiak.org helbidera",
+      "note": "Erantsi argazkiak mezuari. Asko pisatzen badute, bidali bizpahiru mezutan.",
+      "privacy": "Zure datuak proiektuaren barruan zurekin harremanetan jartzeko baino ez dira erabiltzen. Ez dugu ezer argitaratzen zure baimenik gabe.",
+      "subject": "Fruta-arbola zahar bat dut",
+      "body": "Kaixo:\n\nUste dut sagar edo udare barietate zahar bat dudala.\n\nHerria:\nEtxea edo lekua (aukerakoa):\nEtxean ematen diogun izena:\nZuhaitzaren gutxi gorabeherako adina:\nNoiz biltzen den eta zenbat irauten duen:\nZertarako erabiltzen den:\n\nNire izena:\nTelefonoa:\n\nArgazkiak erantsita: zuhaitz osoa, fruitua azpitik, fruitua txortenetik eta fruitua eskuan.\n"
+    },
+    "peras": {
+      "eyebrow": "Katalogoa · Udareak",
+      "title": "Haraneko <em>udareak</em>.",
+      "lede": "Sagarrondoekin batera, haraneko etxeetan udareondo zaharrak ere gordetzen dira. Proiektuan udareondoen 8 lagin aztertu dira molekularki, guztiak elkarren artean desberdinak.",
+      "empty": "Udare-barietateen fitxak laster argitaratuko dira.",
+      "verTodas": "Ikusi udare guztiak →",
+      "todasTitle": "Udare guztiak"
+    },
+    "assoc": {
+      "eyebrow": "Elkartea",
+      "title": "Zaraitzuko Sagardoiak <em>Elkartea</em>.",
+      "lede": "Zaraitzuko Sagardoiak Elkartea Zaraitzu Haraneko fruta-arbolen tokiko barietateak eta haiei lotutako ezagutza kontserbatzeko eta berreskuratzeko lanean ari da. Haraneko fruta-arbola zaharrak berreskuratzeko proiektutik sortu da eta haren lanari jarraipena ematen dio.",
+      "blocks": [
+        {
+          "h": "Zer nahi dugu",
+          "p": "Sagarrondo eta udareondoen tokiko barietateak, eta haiekin batera doan ezagutza, haranean bizirik jarraitzea: aurkitu, dokumentatu, txertoz ugaldu eta etxe eta herrien artean banatu."
+        },
+        {
+          "h": "Nola egiten dugu",
+          "p": "Lan komunarekin: galdetu, bilatu, partekatu, txertatu, landatu, kontserbatu… eta sagarrak jan. Jardunaldiak, txertaketa eta inausketa tailerrak eta aukeratutako barietateen zuhaitz-banaketa antolatzen ditugu."
+        },
+        {
+          "h": "Norekin",
+          "p": "Arrearekin, Nafarroako Hazien Sarearekin eta NUPeko Fruta-laborantza Taldearekin batera egiten dugu lan, Zaraitzuko Batzarraren laguntzarekin. Eta, batez ere, zuhaitz hauek zaindu dituzten haraneko pertsonekin eta etxeekin."
+        }
+      ],
+      "joinH": "Parte hartu nahi duzu?",
+      "join": "Interesa baduzu, idatz iezaguzu <a href=\"mailto:info@zaraitzukosagardoiak.org\">info@zaraitzukosagardoiak.org</a> helbidera."
+    }
+  }
+}

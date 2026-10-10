@@ -1,0 +1,17 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../../layouts/Base.astro';
+import Ficha from '../../../components/Ficha.astro';
+import plates from '../../../data/plates.json';
+
+export async function getStaticPaths() {
+  const items = await getCollection('variedades', (e) => e.id.startsWith('eu/'));
+  return items.map((e) => ({ params: { slug: e.id.split('/').pop() }, props: { entry: e } }));
+}
+const { entry } = Astro.props;
+const slug = entry.id.split('/').pop();
+---
+
+<Base lang="eu" title={`${entry.data.name} · Zaraitzuko Fruta-arbolak`} alt={`/variedad/${slug}/`}>
+  <Ficha entry={entry} lang="eu" slug={slug} hasPlate={(plates as string[]).includes(slug)} />
+</Base>

@@ -1,0 +1,90 @@
+# Configuración de Sveltia CMS
+# --------------------------------------------------------------------
+# Para activarlo hace falta un repositorio en GitHub (ver DESPLIEGUE).
+# Rellena `repo` con  usuario/repositorio  y elige la rama.
+backend:
+  name: github
+  repo: zaxarp2/zaraitzuko-sagardoiak-web
+  branch: main
+
+# Bilingüe: cada variedad/noticia vive como carpeta por idioma (es/ · eu/)
+i18n:
+  structure: multiple_folders
+  locales: [es, eu]
+  default_locale: es
+
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+# Las fotos que se suben desde el editor se reducen y se convierten a WebP en el navegador
+# (así no pesan y pierden los metadatos de la cámara, GPS incluido).
+media_libraries:
+  default:
+    config:
+      transformations:
+        raster_image:
+          format: webp
+          quality: 82
+          width: 1600
+          height: 1600
+
+collections:
+  - name: variedades
+    label: Variedades
+    label_singular: Variedad
+    folder: src/content/variedades
+    create: true
+    i18n: true
+    identifier_field: name
+    summary: "{{especie}} · N.º {{n}} · {{name}}"
+    sortable_fields: [n, name]
+    fields:
+      - { name: especie, label: "Especie", widget: select, default: manzana, i18n: duplicate,
+          options: [ {label: "Manzana", value: manzana}, {label: "Pera", value: pera} ] }
+      - { name: n, label: "Número", widget: number, value_type: int, i18n: duplicate }
+      - { name: name, label: "Nombre", widget: string, i18n: duplicate }
+      - { name: status, label: "Estado", widget: select, i18n: duplicate,
+          options: [ {label: "Validada", value: confirmed}, {label: "Pendiente molecular", value: pending}, {label: "Borrador", value: draft} ] }
+      - { name: epoca, label: "Época", widget: select, required: false, i18n: duplicate,
+          options: [ {label: "Temprana", value: temprana}, {label: "Otoño", value: otono}, {label: "Tardía", value: tardia} ] }
+      - { name: extension, label: "Extensión", widget: select, required: false, i18n: duplicate,
+          options: [ {label: "Antes extendida", value: extendida}, {label: "Minoritaria", value: minoritaria} ] }
+      - { name: color, label: "Color (hex)", widget: string, i18n: duplicate }
+      - { name: colorAlt, label: "Color secundario (hex)", widget: string, i18n: duplicate }
+      - { name: pueblos, label: "Localizada en (pueblos)", widget: list, field: {name: p, label: Pueblo, widget: string}, i18n: duplicate }
+      - { name: fotos, label: "Fotos (carrusel)", widget: list, required: false, i18n: duplicate,
+          summary: "{{fields.src}}",
+          fields: [ {name: src, label: "Imagen", widget: image}, {name: pie, label: "Pie de foto", widget: string, required: false} ] }
+      - { name: otrosPueblos, label: "Otras citas", widget: list, required: false, field: {name: p, label: Pueblo, widget: string}, i18n: duplicate }
+      # --- Campos bilingües (uno por idioma) ---
+      - { name: extraStatus, label: "Nota de estado", widget: string, required: false, i18n: true }
+      - { name: antig, label: "Presencia en el Valle", widget: string, required: false, i18n: true }
+      - { name: quote, label: "Cita literal", widget: string, required: false, i18n: true }
+      - { name: estado, label: "Estado de conservación", widget: markdown, required: false, i18n: true }
+      - { name: potencial, label: "Potencial de reintroducción", widget: markdown, required: false, i18n: true }
+      - { name: fruto, label: "Descripción morfológica del fruto", widget: markdown, required: false, i18n: true }
+      - { name: molecular, label: "Caracterización molecular", widget: markdown, required: false, i18n: true }
+      - { name: valoracion, label: "Conocimiento local · Valoración", widget: markdown, required: false, i18n: true }
+      - { name: abundancia, label: "Conocimiento local · Abundancia relativa", widget: markdown, required: false, i18n: true }
+      - { name: origen, label: "Conocimiento local · Origen", widget: markdown, required: false, i18n: true }
+      - { name: recogida, label: "Conocimiento local · Recogida y maduración", widget: markdown, required: false, i18n: true }
+      - { name: usos, label: "Conocimiento local · Usos citados", widget: markdown, required: false, i18n: true }
+      - { name: otrasCar, label: "Conocimiento local · Otras características", widget: markdown, required: false, i18n: true }
+      - { name: obs, label: "Observaciones", widget: markdown, required: false, i18n: true }
+
+  - name: noticias
+    label: Diario
+    label_singular: Entrada
+    folder: src/content/noticias
+    create: true
+    i18n: true
+    identifier_field: title
+    summary: "{{order}} · {{title}}"
+    sortable_fields: [order, date]
+    fields:
+      - { name: order, label: "Orden", widget: number, value_type: int, i18n: duplicate }
+      - { name: date, label: "Fecha (texto)", widget: string, i18n: true }
+      - { name: tag, label: "Etiqueta", widget: string, i18n: true }
+      - { name: title, label: "Título", widget: string, i18n: true }
+      - { name: resumen, label: "Resumen (tarjeta de portada)", widget: text, required: false, i18n: true }
+      - { name: body, label: "Texto", widget: markdown, i18n: true }

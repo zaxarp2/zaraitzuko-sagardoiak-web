@@ -1,0 +1,21 @@
+---
+import { getCollection } from 'astro:content';
+import ui from '../i18n/ui.json';
+import VarietyCard from './VarietyCard.astro';
+interface Props { lang: 'es' | 'eu'; especie: 'manzana' | 'pera'; }
+const { lang, especie } = Astro.props;
+const D = (ui as any)[lang];
+const items = (await getCollection('variedades', (e) => e.id.startsWith(lang + '/') && (e.data.especie ?? 'manzana') === especie))
+  .sort((a, b) => a.data.n - b.data.n);
+const T = especie === 'pera' ? D.peras : D.vars;
+const home = lang === 'eu' ? '/eu/' : '/';
+---
+<section class="section listado">
+  <a class="volver-listado" href={`${home}#${especie === 'pera' ? 'peras' : 'variedades'}`}>← {D.nav.home}</a>
+  <h1 class="section-title">{T.todasTitle}</h1>
+  {items.length > 0 ? (
+    <div class="varieties-grid">{items.map((v) => <VarietyCard v={v} lang={lang} />)}</div>
+  ) : (
+    <p class="peras-vacio">{D.peras.empty}</p>
+  )}
+</section>

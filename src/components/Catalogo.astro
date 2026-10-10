@@ -1,0 +1,87 @@
+---
+import { getCollection } from 'astro:content';
+import ui from '../i18n/ui.json';
+import plates from '../data/plates.json';
+import Ficha from './Ficha.astro';
+
+interface Props { lang: 'es' | 'eu'; }
+const { lang } = Astro.props;
+const d = (ui as any)[lang];
+const withPlate = new Set(plates as string[]);
+const variedades = (await getCollection('variedades', (e) => e.id.startsWith(lang + '/'))).sort((a, b) => ((a.data.especie ?? 'manzana') === (b.data.especie ?? 'manzana') ? a.data.n - b.data.n : a.data.especie === 'pera' ? 1 : -1));
+const fecha = new Date().toLocaleDateString(lang === 'eu' ? 'eu-ES' : 'es-ES', { day: 'numeric', month: 'long', year: 'numeric' });
+---
+
+<div class="catalogo">
+  <div class="cat-portada">
+    <p class="cat-eyebrow">{d.pdf.catTitle}</p>
+    <h1>{d.pdf.coverTitle}</h1>
+    <p class="cat-sub">{d.pdf.coverSub}</p>
+    <img class="cat-motivo" src="/hero-muturbeltz.png" alt="" />
+    <p class="cat-intro no-print">{d.pdf.catIntro}</p>
+    <div class="no-print cat-acciones">
+      <button type="button" class="btn" data-imprimir data-preparing={d.pdf.preparing}>↓ {d.pdf.catalogo}</button>
+      <p class="ficha-pdf-help">{d.pdf.help}</p>
+    </div>
+    <p class="cat-pie">Zaraitzuko Sagardoiak Elkartea · {d.pdf.coverAuthor} · {d.pdf.generated} {fecha}</p>
+  </div>
+
+  <nav class="cat-indice">
+    <h2>{d.pdf.catIndex}</h2>
+    <ol>
+      {variedades.map((v) => (
+        <li><a href={`#ficha-${v.id.split('/').pop()}`}><span>N.º {String(v.data.n).padStart(2, '0')}</span> {v.data.name}</a></li>
+      ))}
+    </ol>
+  </nav>
+
+  {variedades.map((v) => {
+    const slug = v.id.split('/').pop()!;
+    return (
+      <div class="cat-ficha">
+        <Ficha entry={v} lang={lang} slug={slug} hasPlate={withPlate.has(slug)} modo="catalogo" />
+      </div>
+    );
+  })}
+</div>
+
+<script>
+  if (new URLSearchParams(location.search).has('imprimir')) {
+    window.addEventListener('load', () => document.querySelector<HTMLButtonElement>('[data-imprimir]')?.click());
+  }
+</script>
+
+<style>
+  .catalogo { padding-top: 90px; }
+  .cat-portada { max-width: 860px; margin: 0 auto; padding: 40px 6vw 20px; text-align: center; }
+  .cat-eyebrow { font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--rust); }
+  .cat-portada h1 { font-size: clamp(38px, 6vw, 60px); margin: 12px 0 10px; }
+  .cat-motivo { width: 70%; max-width: 440px; mix-blend-mode: multiply; margin: 0 auto; display: block; }
+  .cat-intro { max-width: 560px; margin: 0 auto 18px; color: var(--stone); }
+  .cat-acciones { margin-bottom: 18px; }
+  .cat-pie { font-size: 13px; color: var(--stone); font-style: italic; }
+  .cat-indice { max-width: 860px; margin: 0 auto; padding: 20px 6vw 10px; }
+  .cat-indice h2 { font-family: 'JetBrains Mono', monospace; font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--rust); border-bottom: 1px solid var(--paper-edge); padding-bottom: 6px; margin-bottom: 10px; }
+  .cat-indice ol { list-style: none; columns: 2; column-gap: 40px; }
+  .cat-indice li { padding: 3px 0; break-inside: avoid; }
+  .cat-indice a { color: var(--ink); text-decoration: none; font-size: 17px; }
+  .cat-indice a span { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--amber); margin-right: 8px; }
+  .cat-ficha { border-top: 1px solid var(--paper-edge); }
+  .cat-sub { max-width: 560px; margin: 0 auto 10px; font-style: italic; color: var(--stone); }
+  @media print {
+    .catalogo { padding: 0; }
+    .cat-portada {
+      text-align: left; border-left: 7mm solid #2f7d4a; padding: 150mm 0 0 12mm; margin: 0;
+      max-width: none; position: relative; break-after: page; page-break-after: always;
+    }
+    .cat-motivo { position: absolute; top: 18mm; left: 30mm; width: 120mm; margin: 0; }
+    .cat-eyebrow { color: #2f7d4a; font-size: 10pt; }
+    .cat-portada h1 { font-size: 30pt; font-weight: 600; color: #2f7d4a; margin: 3mm 0 3mm; line-height: 1.05; }
+    .cat-sub { margin: 0 0 12mm; font-size: 12pt; max-width: 150mm; }
+    .cat-pie { font-size: 10pt; }
+    .cat-indice { padding: 0; max-width: none; }
+    .cat-indice h2 { font-size: 11px; }
+    .cat-indice a { font-size: 13pt; }
+    .cat-ficha { border: none; break-before: page; page-break-before: always; }
+  }
+</style>

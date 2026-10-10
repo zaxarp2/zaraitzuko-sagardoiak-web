@@ -1,0 +1,27 @@
+---
+import { getCollection } from 'astro:content';
+import ui from '../i18n/ui.json';
+interface Props { lang: 'es' | 'eu'; }
+const { lang } = Astro.props;
+const D = (ui as any)[lang];
+const home = lang === 'eu' ? '/eu/' : '/';
+const base = lang === 'eu' ? '/eu/diario/' : '/diario/';
+const noticias = (await getCollection('noticias', (e) => e.id.startsWith(lang + '/'))).sort((a, b) => a.data.order - b.data.order);
+const resumen = (n: any) => n.data.resumen ?? (n.body ?? '').split(/\n\s*\n/)[0].replace(/[*_#>\[\]]|\(\/[^)]*\)/g, '');
+---
+<section class="section listado">
+  <a class="volver-listado" href={`${home}#noticias`}>← {D.nav.home}</a>
+  <div class="section-eyebrow" set:html={D.news.eyebrow} />
+  <h1 class="section-title" set:html={D.news.title} />
+  <div class="news-grid news-grid-todas">
+    {noticias.map((n) => (
+      <a class="news-item" href={`${base}${n.id.split('/').pop()}/`}>
+        <div class="news-date">{n.data.date}</div>
+        <h3>{n.data.title}</h3>
+        <p>{resumen(n)}</p>
+        <span class="news-more">{D.article.more}</span>
+        <span class="news-tag">— {n.data.tag}</span>
+      </a>
+    ))}
+  </div>
+</section>

@@ -1,0 +1,16 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../../layouts/Base.astro';
+import Articulo from '../../../components/Articulo.astro';
+
+export async function getStaticPaths() {
+  const items = await getCollection('noticias', (e) => e.id.startsWith('eu/'));
+  return items.map((e) => ({ params: { slug: e.id.split('/').pop() }, props: { entry: e } }));
+}
+const { entry } = Astro.props;
+const slug = entry.id.split('/').pop();
+---
+
+<Base lang="eu" title={`${entry.data.title} · Zaraitzuko Fruta-arbolak`} alt={`/diario/${slug}/`}>
+  <Articulo entry={entry} lang="eu" />
+</Base>

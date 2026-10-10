@@ -1,0 +1,26 @@
+---
+/** Fila horizontal desplazable de tarjetas de variedad, con flechas */
+import VarietyCard from './VarietyCard.astro';
+interface Props { items: any[]; lang: 'es' | 'eu'; label: string; }
+const { items, lang, label } = Astro.props;
+---
+<div class="vcar" data-vcar>
+  <div class="vcar-track" data-vcar-track tabindex="0" aria-label={label}>
+    {items.map((v) => <div class="vcar-item"><VarietyCard v={v} lang={lang} /></div>)}
+  </div>
+  <button class="vcar-btn vcar-prev" type="button" data-vcar-prev aria-label="‹">‹</button>
+  <button class="vcar-btn vcar-next" type="button" data-vcar-next aria-label="›">›</button>
+</div>
+<script>
+  document.querySelectorAll<HTMLElement>('[data-vcar]').forEach((c) => {
+    const t = c.querySelector<HTMLElement>('[data-vcar-track]')!;
+    const step = () => (t.querySelector<HTMLElement>('.vcar-item')?.offsetWidth ?? 300) + 20;
+    c.querySelector('[data-vcar-prev]')?.addEventListener('click', () => t.scrollBy({ left: -step() * 2, behavior: 'smooth' }));
+    c.querySelector('[data-vcar-next]')?.addEventListener('click', () => t.scrollBy({ left: step() * 2, behavior: 'smooth' }));
+    const upd = () => {
+      c.classList.toggle('at-start', t.scrollLeft < 8);
+      c.classList.toggle('at-end', t.scrollLeft + t.clientWidth > t.scrollWidth - 8);
+    };
+    t.addEventListener('scroll', upd, { passive: true }); window.addEventListener('resize', upd); upd();
+  });
+</script>
