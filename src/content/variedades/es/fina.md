@@ -50,7 +50,7 @@ obs: |-
 
   El dueño actual no conoce el nombre que le daban en su casa a esta variedad; han sido otras personas quienes han identificado este ejemplar como Fina. 
 
-  Tampoco coinciden los caracteres del fruto ni la identificación molecular con la Fina conservada en el Banco de Germoplasma de Navarra, procedente de Ochagavía y descrita en el _Catálogo de Accesiones del Banco de Germoplasma de la Universidad Pública de Navarra_ _(Royo et al., 2009)_.
+  Tampoco coinciden los caracteres del fruto ni la identificación molecular con la Fina conservada en el Banco de Germoplasma de Navarra, procedente de Ochagavía y descrita en el Catálogo de Accesiones del Banco de Germoplasma de la Universidad Pública de Navarra _(Royo et al., 2009)_.
 epocaLabel: Cosecha en octubre
 lang: es
 tags:
