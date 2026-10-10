@@ -14,17 +14,24 @@ otrosPueblos: []
 extraStatus: = Carapanón / Reineta del Camino
 antig: Más de 100 años
 quote: ''
-estado: Un ejemplar localizado. Pendiente confirmar otro.
+estado: Tres ejemplares localizados (Casa Bere, Casa Angelo, Casa Eseberri).
 potencial: De interés, principalmente por su apreciado sabor.
-fruto: Manzana de tamaño medio, forma aplanada-globulosa. Color de fondo verde-amarillento, color superficial rojo oscuro. Piel brillante. Russeting en la cavidad del pedúnculo. Rabillo de longitud y grosor medio. Carne blanco-amarillenta, firmeza alta, acidez alta y dulzor medio.
-molecular: Variedad tradicional difundida, presente en el Banco de Germoplasma de la UPNA como Puente La Reina 03, Muneta 01, Reineta del Camino. En Zaragoza está recogida como Carapanón. Presente también en el Valle de Aezkoa, donde en Orbaizeta se conoce como De Casa Merino.
-valoracion: Sabor muy apreciado. Varias personas citan ir a “robarla los niños del pueblo”.
-abundancia: No parece haber sido extendida en el pueblo. Sólo se recuerda en esta casa.
+fruto: |-
+  Manzana de tamaño medio, forma aplanada-globulosa.
+
+  Color de fondo verde-amarillento, color superficial rojo oscuro. Piel brillante. Russeting en la cavidad del pedúnculo. 
+
+  Rabillo de longitud y grosor medio. 
+
+  Carne blanco-amarillenta, firmeza alta, acidez alta y dulzor medio.
+molecular: Se trata de una variedad tradicional difundida. En Navarra está presente en el Banco de Germoplasma como Apez Sagarra, Samuesa, Reineta del Camino, Muneta-01 o Puente la Reina-03. También se ha encontrado en Orbaizeta, denominada de Casa Merino (Prospección Arrea-Red de Semillas-2024). Fuera de Navarra, está recogida en el Banco de Germoplasma de Asturias o/y Zaragoza,  como Carapanón.
+valoracion: Variedad apreciada y conocida en el pueblo.  Valorada por su sabor. Varias personas citan ir a _“robarla de niños”._
+abundancia: Presente en varias casas.
 origen: ''
-recogida: Cosecha a principios de octubre. Se conservan hasta Navidad.
+recogida: De principios a mediados de septiembre. Se conservan hasta Navidad.
 usos: ''
 otrasCar: ''
-obs: ''
+obs: Algunas personas también denominan a esta variedad como Agostera, nombre genérico que se emplea mucho en el Valle para denominar a diversas variedades de maduración en verano.
 epocaLabel: Principios de octubre
 lang: es
 tags:
