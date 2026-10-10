@@ -12,6 +12,6 @@ const { entry } = Astro.props;
 const slug = entry.id.split('/').pop();
 ---
 
-<Base lang="es" title={`${entry.data.name} · Frutales del Valle de Salazar`} alt={`/eu/variedad/${slug}/`}>
+<Base lang="es" title={`${entry.data.name} · Zaraitzuko Sagardoiak`} alt={`/eu/variedad/${slug}/`}>
   <Ficha entry={entry} lang="es" slug={slug} hasPlate={(plates as string[]).includes(slug)} />
 </Base>
