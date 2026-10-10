@@ -1,7 +1,7 @@
 ---
 especie: manzana
 n: 9
-name: De Hierro/De Jandúa
+name: De Jandúa
 status: confirmed
 epoca: tardia
 extension: minoritaria
@@ -44,7 +44,7 @@ origen: ''
 recogida: Se mantiene en el árbol hasta principios de diciembre, se empieza a consumir entonces y se conserva durante varios meses. En compota y mermelada _“es exquisita”._
 usos: Consumo en fresco.
 otrasCar: ''
-obs: En Izalzu algunas personas la llaman de Hierro, otras de Jandúa, en alusión a la casa donde está presente el ejemplar más conocido.
+obs: En Izalzu las personas entrevistadas la han denominado mayoritariamente _"De Jandúa"_ en alusión a la casa de la que procede el ejemplar más conocido. Una persona la ha citado como _"De Hierro"_, según la denominaba una persona del pueblo ya fallecida.
 epocaLabel: Maduración muy tardía · diciembre
 lang: es
 tags:

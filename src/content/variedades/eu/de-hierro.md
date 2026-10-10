@@ -1,7 +1,7 @@
 ---
 especie: manzana
 n: 9
-name: De Hierro/De Jandúa
+name: De Jandúa
 status: confirmed
 epoca: tardia
 extension: minoritaria
