@@ -14,8 +14,6 @@ fotos:
     pie: ''
   - src: /uploads/recorte De Bere.webp
     pie: ''
-  - src: /uploads/recorte De Bere.webp
-    pie: ''
   - src: /uploads/recorte de Bere 2.webp
     pie: ''
 otrosPueblos: []
