@@ -1,6 +1,6 @@
 ---
 especie: manzana
-n: 12
+n: 11
 name: Fina
 status: confirmed
 epoca: otono
