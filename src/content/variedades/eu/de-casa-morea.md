@@ -4,13 +4,12 @@ n: 14
 name: De Casa Morea
 status: confirmed
 epoca: otono
-extension: minoritaria
+extension: ''
 color: '#d4a85a'
 colorAlt: '#e5be7d'
 pueblos:
   - Ibilcieta
 fotos:
-  - src: /fotos/de-casa-morea/de-casa-morea-07.jpg
   - src: /fotos/de-casa-morea/de-casa-morea-08.jpg
   - src: /fotos/de-casa-morea/de-casa-morea-06.jpg
   - src: /fotos/de-casa-morea/de-casa-morea-05.jpg

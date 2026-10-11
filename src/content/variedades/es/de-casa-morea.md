@@ -4,14 +4,12 @@ n: 14
 name: De Casa Morea
 status: confirmed
 epoca: otono
-extension: minoritaria
+extension: ''
 color: '#d4a85a'
 colorAlt: '#e5be7d'
 pueblos:
   - Ibilcieta
 fotos:
-  - src: /fotos/de-casa-morea/de-casa-morea-07.jpg
-    pie: ''
   - src: /fotos/de-casa-morea/de-casa-morea-08.jpg
     pie: ''
   - src: /fotos/de-casa-morea/de-casa-morea-06.jpg
@@ -30,8 +28,8 @@ otrosPueblos: []
 extraStatus: ''
 antig: Más de 80 años
 quote: ''
-estado: Tres ejemplares localizados (Casa Morea). Del más viejo, se han injertado los otros dos (uno en una rama de var. Fugi).
-potencial: Variedad apreciada por su sabor, olor, duración de la manzana tras la recogida y buena productividad.
+estado: Tres ejemplares localizados (Casa Morea). Del árbol original, muy envejecido, se han injertado los otros dos (uno de ellos en una rama de Fugi).
+potencial: De interés por su sabor, olor, duración de la manzana tras la recogida y buena productividad.
 fruto: |-
   Manzana aplanada-globulosa, tamaño mediano. 
 
@@ -45,25 +43,19 @@ molecular: |-
 
   La denominación o clasificación como Agostera parece errónea, ya que no se trata de una variedad de maduración temprana, por lo que no resulta lógico que la denominaran así. 
 
-  La variedad de Casa Morea, es una variedad antigua estadounidense del S.XIX, denominada Winter Banana[[1]](#_ftn1),  que según algunos autores pudo llegar de Europa[[2]](#_ftn2).
+  Por otro lado, la variedad de Casa Morea, coincide con la variedad antigua estadounidense del S.XIX, denominada Winter Banana[[1]](#_ftn1),  que según algunos autores pudo llegar de Europa[[2]](#_ftn2).
 
-
-
-
+  _____________
 
   [[1]](#_ftnref1) Urrestarazu, J., Denancé, C., Ravon, E. et al. Analysis of the genetic diversity and structure across a wide range of germplasm reveals prominent gene flow in apple at the European level. BMC Plant Biol 16, 130 (2016). https://doi.org/10.1186/s12870-016-0818-0
 
   [[2]](#_ftnref2) [https://es.wikipedia.org/wiki/Winter_Banana](https://es.wikipedia.org/wiki/Winter_Banana)
 
-
-
-
-
   [1] Urrestarazu, J., Denancé, C., Ravon, E. et al. Analysis of the genetic diversity and structure across a wide range of germplasm reveals prominent gene flow in apple at the European level. BMC Plant Biol 16, 130 (2016). https://doi.org/10.1186/s12870-016-0818-0
-valoracion: Apreciada por su agradable sabor y larga conservación hasta finales del invierno.
-abundancia: Se desconoce si era extendida en el pueblo.
+valoracion: 'Variedad apreciada por su agradable sabor, olor _“huele mucho y muy bien”_, buena conservación (hasta finales del invierno) y buena presencia: “_no se queda arrugada”._'
+abundancia: ''
 origen: ''
-recogida: Cosecha en octubre, se consume desde el momento de la recogida. Se conserva hasta comienzos del siguiente año.
+recogida: Cosecha:  En octubre.  Se consumen desde el momento de la recogida. Se conservan bien _“sin arrugarse”,_  hasta comienzos de primavera.
 usos: Consumo en fresco principalmente.
 otrasCar: ''
 obs: ''
