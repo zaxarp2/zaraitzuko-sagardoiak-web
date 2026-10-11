@@ -2,7 +2,7 @@
 especie: manzana
 n: 14
 name: De Casa Morea
-status: pending
+status: confirmed
 epoca: otono
 extension: minoritaria
 color: '#d4a85a'
