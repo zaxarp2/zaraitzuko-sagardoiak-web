@@ -33,11 +33,11 @@ potencial: De interés por su sabor, olor, duración de la manzana tras la recog
 fruto: |-
   Manzana aplanada-globulosa, tamaño mediano. 
 
-  Color de fondo verde-amarillento y color superficial rosado. Piel lisa, mate. Russeting débil en la cavidad del pedúnculo. 
+  Color de fondo verde-amarillento y color superficial rosado. Piel lisa, mate. Russeting débil, en la cavidad del pedúnculo. 
 
   Rabillo de longitud y grosor medio. 
 
-  Carne blanco-amarillenta, firmeza media, baja acidez y dulzor medio.
+  Carne blanco-amarillenta, firmeza media, baja acidez y dulzor alto.
 molecular: |-
   Coincide con la variedad recogida como Agostera en Izalzu en 1986, presente en el Banco de Germoplasma de Navarra.
 
