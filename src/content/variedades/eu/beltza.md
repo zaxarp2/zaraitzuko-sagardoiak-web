@@ -1,6 +1,6 @@
 ---
 especie: manzana
-n: 1
+'n': 1
 name: Beltza
 status: confirmed
 epoca: otono
