@@ -48,7 +48,7 @@ usos: |-
 
    Aún la siguen consumiendo en las casas donde se ha mantenido.
 otrasCar: ''
-obs: En Ezcároz, la han citado algunas personas, otras entrevistadas no la nombran ni conocen.
+obs: En Ezcároz, la han citado algunas personas, otras entrevistadas no la nombran cuando se les pregunta por variedades antiguas ni les suena el nombre.
 epocaLabel: Finales de septiembre · principios de octubre
 lang: es
 tags:
