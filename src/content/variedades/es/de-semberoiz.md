@@ -39,7 +39,7 @@ origen: ''
 recogida: 'Cosecha: A mediados de octubre, se conservan hasta finales de invierno.'
 usos: Consumo en fresco.
 otrasCar: ''
-obs: ''
+obs: Se injertó de un árbol que iba a desaparecer por su apreciado sabor y vinculación emocional.
 epocaLabel: Por confirmar
 lang: es
 tags:
