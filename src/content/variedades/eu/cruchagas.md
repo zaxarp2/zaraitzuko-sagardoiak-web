@@ -16,8 +16,8 @@ fotos:
     pie: ''
   - src: /uploads/20260919_120212.webp
     pie: ''
-  - src: /uploads/FRUTO INMADURO.webp
-    pie: Fruto inmaduro
+  - src: /uploads/FRUTO INMADURO 1.webp
+    pie: ''
 otrosPueblos:
   - Izalzu
 extraStatus: ''
