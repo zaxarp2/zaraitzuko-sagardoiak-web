@@ -14,7 +14,7 @@ otrosPueblos: []
 extraStatus: ''
 antig: Al menos 80 años
 quote: ''
-estado: Sólo este ejemplar localizado. Envejecido. Apareció al desbrozar una antigua parcela.
+estado: Sólo este ejemplar localizado (Casa Balisa). Envejecido. Apareció al desbrozar una antigua parcela.
 potencial: ''
 fruto: ''
 molecular: Sólo recogida en el Valle.
