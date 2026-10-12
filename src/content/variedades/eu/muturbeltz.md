@@ -1,6 +1,6 @@
 ---
 especie: manzana
-n: 2
+'n': 2
 name: Muturbeltz
 status: confirmed
 epoca: otono
