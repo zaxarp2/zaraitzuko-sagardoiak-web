@@ -8,7 +8,7 @@ extension: minoritaria
 color: '#b8842c'
 colorAlt: '#c89940'
 pueblos:
-  - Por confirmar
+  - Esparza
 fotos:
   - src: /fotos/de-semberoiz/de-semberoiz-01.jpg
     pie: ''

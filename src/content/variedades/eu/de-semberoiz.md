@@ -8,7 +8,7 @@ extension: minoritaria
 color: '#b8842c'
 colorAlt: '#c89940'
 pueblos:
-  - Berresteko
+  - Esparza
 fotos:
   - src: /fotos/de-semberoiz/de-semberoiz-01.jpg
   - src: /fotos/de-semberoiz/de-semberoiz-03.jpg
