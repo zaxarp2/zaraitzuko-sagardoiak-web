@@ -39,10 +39,7 @@ origen: ''
 recogida: 'Cosecha: A mediados de octubre, se conservan hasta final de primavera: _“Era de las que más se guardaba”._'
 usos: Consumo en fresco y asadas.
 otrasCar: ''
-obs: |-
-  Se desconoce si se trata de una misma variedad que estaba presente en varios pueblos, o si el nombre de Manzana Pera es un sinónimo que recoge diferentes variedades con la característica común de tener una forma de fruto cónica.
-
-  #
+obs: Se desconoce si bajo el nombre de Manzana Pera hay una sola variedad que estaba presente en varios pueblos, o si es un mismo nombre que agrupa diferentes variedades con la característica común de tener una forma de fruto cónica.
 epocaLabel: Mediados de octubre · conserva hasta primavera
 lang: es
 tags:
