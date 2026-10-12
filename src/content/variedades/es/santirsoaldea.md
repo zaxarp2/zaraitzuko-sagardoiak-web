@@ -1,7 +1,7 @@
 ---
 especie: manzana
 'n': 19
-name: Santirsoaldea
+name: De Santirsoaldea
 status: draft
 epoca: ''
 extension: ''
