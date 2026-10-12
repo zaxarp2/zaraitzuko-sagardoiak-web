@@ -2,7 +2,7 @@
 especie: manzana
 'n': 17
 name: De Semberoiz
-status: draft
+status: confirmed
 epoca: otono
 extension: minoritaria
 color: '#b8842c'
