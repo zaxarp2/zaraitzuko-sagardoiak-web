@@ -27,7 +27,7 @@ fotos:
 otrosPueblos: []
 extraStatus: ''
 antig: Más de 100 años
-quote: '"Lo pondría mi abuelo, en la época de mi padre cuando llegó el tractor, molestaba todo"'
+quote: '"Este manzano lo pondría mi abuelo, en la época de mi padre cuando llegó el tractor, molestaba todo"'
 estado: Un ejemplar centenario localizado (Casa Bidondo), en buen estado de conservación. Recientemente se ha injertado otro ejemplar procedente de éste. No se conocen más.
 potencial: ''
 fruto: |-
