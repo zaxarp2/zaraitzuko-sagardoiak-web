@@ -17,10 +17,10 @@ fotos:
     pie: 'Foto: Gloria Azkoiti (Casa Pedro Blas)'
   - src: /uploads/20260723_195612.webp
     pie: ''
-  - src: /uploads/kike.webp
+  - src: /uploads/kike-1.webp
     pie: 'Foto: Kike Pascual'
   - src: /uploads/WhatsApp Image 2026-08-28 at 06.30.50.webp
-    pie: ''
+    pie: 'Foto: Kike Pascual'
 otrosPueblos: []
 extraStatus: Presente fuera del Valle = Aldunate-01 Navarra,  Beauty of Bath
 antig: Más de 100 años
