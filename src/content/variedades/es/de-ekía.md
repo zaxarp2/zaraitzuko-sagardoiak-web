@@ -16,6 +16,8 @@ fotos:
     pie: ''
   - src: /uploads/20260919_094547.webp
     pie: ''
+  - src: /uploads/20261013_102449.webp
+    pie: ''
 otrosPueblos: []
 extraStatus: ''
 antig: Más de 100 años
