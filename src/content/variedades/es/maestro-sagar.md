@@ -48,7 +48,7 @@ origen: |-
 recogida: Cosecha en otoño, se consume desde el momento de la recogida. Se conserva hasta comienzos de la primavera.
 usos: Consumo en fresco y asadas.
 otrasCar: ''
-obs: Bajo el nombre de Maestro Sagar se agrupan manzanas antiguas con las características de la Reineta Blanca, pero con algunas diferencias entre ellas.  Se desconoce aún si las diferencias morfológicas entre ellas se deben a motivos genéticos, ambientales, de manejo, etc. También si existen subtipos diferenciado con características locales específicas.
+obs: Bajo el nombre de Maestro Sagar se agrupan manzanas antiguas con las características de la Reineta Blanca, pero con algunas diferencias entre ellas.  Se desconoce aún si las diferencias se deben a motivos genéticos, ambientales o de manejo. También si existen subtipos de la variedad con características específicas locales.
 epocaLabel: Otoño · conserva hasta primavera
 lang: es
 tags:
