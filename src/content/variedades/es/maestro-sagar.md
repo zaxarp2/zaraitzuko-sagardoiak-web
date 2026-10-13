@@ -34,7 +34,7 @@ fruto: |-
   Rabillo corto y grueso. 
 
   Carne blanco-amarillenta, firmeza media, acidez y dulzor altos.
-molecular: Las dos muestras analizadas de Maestro Sagar (De Izalzu y Esparza), se han identificado como Reineta Blanca/Reineta Gris.
+molecular: Las tres muestras analizadas de diferentes Maestro Sagar del Valle (De Izalzu, Esparza e Igal), se han identificado como Reineta Blanca/Reineta Gris.
 valoracion: Muy apreciada por su rusticidad, permanencia del fruto en el árbol, sabor, buena conservación tras la recogida y carácter local.
 abundancia: Una de las variedades más extendidas, presente en prácticamente todos los pueblos del valle y en numerosas casas.
 origen: |-
