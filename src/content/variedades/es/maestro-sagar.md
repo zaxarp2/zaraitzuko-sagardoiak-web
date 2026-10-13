@@ -21,7 +21,7 @@ fotos:
     pie: ''
 otrosPueblos:
   - Todos los pueblos del Valle
-extraStatus: = Reineta Blanca
+extraStatus: Presente fuera del Valle= Reineta Blanca
 antig: Más de 100 años
 quote: ''
 estado: 'Varios ejemplares localizados: Casa Xinxoan (Ochagavía), Casa Bidondo (Oronz), Casa Arrese (Ezcároz), Casa Landa (Esparza), Casa Mikeleiz (Izalzu), Casa Ezker (Igal), Casa Morea (Ibilzieta).'
@@ -34,14 +34,14 @@ fruto: |-
   Rabillo corto y grueso. 
 
   Carne blanco-amarillenta, firmeza media, acidez y dulzor altos.
-molecular: La Maestro Sagar de Esparza se ha identificado como Reineta Blanca.
+molecular: Las dos muestras analizadas de Maestro Sagar (De Izalzu y Esparza), se han identificado como Reineta Blanca/Reineta Gris.
 valoracion: Muy apreciada por su rusticidad, permanencia del fruto en el árbol, sabor, buena conservación tras la recogida y carácter local.
-abundancia: Una de las variedades más extendidas, presente en todos los pueblos del valle y en numerosas casas.
-origen: ''
+abundancia: Una de las variedades más extendidas, presente en prácticamente todos los pueblos del valle y en numerosas casas.
+origen: Seguramente las vías de
 recogida: Cosecha en otoño, se consume desde el momento de la recogida. Se conserva hasta comienzos de la primavera.
 usos: Consumo en fresco y asadas.
 otrasCar: ''
-obs: Bajo el nombre de Maestro Sagar se agrupan manzanas antiguas con las características de la Reineta Blanca. Queda abierto si existen subtipos diferenciados con características locales específicas.
+obs: Bajo el nombre de Maestro Sagar se agrupan manzanas antiguas con las características de la Reineta Blanca, pero con algunas diferencias entre ellas.  Se desconoce aún si las diferencias morfológicas entre ellas se deben a motivos genéticos, ambientales, de manejo, etc. También si existen subtipos diferenciado con características locales específicas.
 epocaLabel: Otoño · conserva hasta primavera
 lang: es
 tags:
