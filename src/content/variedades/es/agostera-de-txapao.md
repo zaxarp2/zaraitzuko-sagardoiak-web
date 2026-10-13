@@ -8,8 +8,8 @@ extension: ''
 color: '#b8352c'
 colorAlt: '#d9614f'
 pueblos:
-  - Ochagavía (De Txapao)
-  - Izalzu (De Blaixko)
+  - Ochagavía
+  - Izalzu
 fotos:
   - src: /fotos/agostera-de-txapao/agostera-de-txapao-01.jpg
     pie: ''
