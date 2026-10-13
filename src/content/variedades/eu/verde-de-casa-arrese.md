@@ -1,6 +1,6 @@
 ---
 especie: manzana
-n: 15
+'n': 15
 name: Verde de Casa Arrese
 status: confirmed
 epoca: tardia

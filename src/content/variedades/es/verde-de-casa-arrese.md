@@ -1,6 +1,6 @@
 ---
 especie: manzana
-n: 15
+'n': 15
 name: Verde de Casa Arrese
 status: confirmed
 epoca: tardia
@@ -29,7 +29,7 @@ fotos:
 otrosPueblos: []
 extraStatus: Sólo recogida en el Valle
 antig: Más de 100 años.
-quote: ''
+quote: '"Se conserva en casa hasta bien entrada la primavera"'
 estado: Solamente un ejemplar localizado (Casa Arrese). Centenario, en relativamente buen estado de conservación.
 potencial: Gran Interés por su apreciado sabor, larga conservación, vistosidad y buena productividad.
 fruto: |-
