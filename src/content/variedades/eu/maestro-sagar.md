@@ -18,6 +18,12 @@ pueblos:
   - Sarriés
 fotos:
   - src: /fotos/maestro-sagar/maestro-sagar-01.jpg
+  - src: /uploads/20250909_ReinetaAntigua_Igal.webp
+    pie: ''
+  - src: /uploads/Manzana Maestro Sagar1.webp
+    pie: ''
+  - src: /uploads/Maestro sagar, Satur Ezcároz.webp
+    pie: ''
 otrosPueblos:
   - Haraneko herri guztiak
 extraStatus: = Reineta Blanca

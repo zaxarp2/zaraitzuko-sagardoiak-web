@@ -19,6 +19,12 @@ pueblos:
 fotos:
   - src: /fotos/maestro-sagar/maestro-sagar-01.jpg
     pie: ''
+  - src: /uploads/20250909_ReinetaAntigua_Igal.webp
+    pie: ''
+  - src: /uploads/Manzana Maestro Sagar1.webp
+    pie: ''
+  - src: /uploads/Maestro sagar, Satur Ezcároz.webp
+    pie: ''
 otrosPueblos:
   - Todos los pueblos del Valle
 extraStatus: Presente fuera del Valle= Reineta Blanca
