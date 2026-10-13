@@ -14,6 +14,12 @@ fotos:
   - src: /fotos/agostera-de-txapao/agostera-de-txapao-01.jpg
   - src: /fotos/agostera-de-txapao/agostera-de-txapao-02.jpg
     pie: 'Argazkia: Gloria Azkoiti (Pedro Blas Etxea)'
+  - src: /uploads/20260723_195612.webp
+    pie: ''
+  - src: /uploads/kike.webp
+    pie: 'Foto: Kike Pascual'
+  - src: /uploads/WhatsApp Image 2026-08-28 at 06.30.50.webp
+    pie: ''
 otrosPueblos: []
 extraStatus: Beauty of Bath gisa identifikatua, barietate ingelesa
 antig: 100 urte baino gehiago
