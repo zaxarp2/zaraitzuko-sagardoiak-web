@@ -44,7 +44,7 @@ recogida: |-
   Se las considera delicadas en este sentido: _“hay que recogerlas rápido sino se caen y estropean”_.
 usos: Consumo en fresco y en compota.
 otrasCar: |-
-  Es una variedad rústica, resistente a plagas y enfermedades, árboles de buena presencia y aspecto sano.
+  Es una variedad rústica, resistente a plagas y enfermedades, árboles de buena presencia y aspecto sano. 
 
   De buena producción y segura.
 obs: ''
