@@ -3,7 +3,7 @@
     "inicio": {
       "antetitulo": "Zaraitzuko Sagardoiak Elkartea · Valle de Salazar",
       "titulo": "Variedades antiguas de <em>frutales</em> del Valle de Salazar.",
-      "entradilla": "Un trabajo de campo, etnografía y ciencia para recuperar las manzanas y peras que durante siglos sostuvieron las casas del valle, y que la agricultura industrial estuvo a punto de borrar.",
+      "entradilla": "Un trabajo campo, conocimiento tradicional y ciencia para recuperar los frutales que durante siglos sostuvieron las casas del valle, y que la agricultura industrial estuvo a punto de borrar.",
       "cifras": [
         {
           "num": "22",
@@ -25,7 +25,7 @@
     },
     "manzanas": {
       "titulo": "Las <em>manzanas</em> del Valle.",
-      "entradilla": "Cada ficha recoge la descripción local, la valoración de las personas que la conocen, la caracterización morfológica del fruto y, cuando hay resultados, el análisis molecular de su identidad varietal. Pincha en una variedad para abrir su ficha completa."
+      "entradilla": "Cada ficha recoge la descripción local, la valoración de las personas que la conocen, la caracterización morfológica del fruto y el análisis molecular de su identidad varietal. Pincha en una variedad para abrir su ficha completa."
     },
     "peras": {
       "titulo": "Las <em>peras</em> del Valle.",
@@ -37,7 +37,7 @@
     },
     "asociacion": {
       "titulo": "Zaraitzuko Sagardoiak <em>Elkartea</em>.",
-      "entradilla": "Zaraitzuko Sagardoiak Elkartea trabaja para conservar y recuperar las variedades locales de frutales del Valle de Salazar y el conocimiento que las acompaña. Nace del proyecto de recuperación de frutales antiguos del Valle y da continuidad a su trabajo.",
+      "entradilla": "Zaraitzuko Sagardoiak Elkartea trabaja para conservar y recuperar las variedades locales de frutales del Valle de Salazar y el conocimiento que las acompaña. Nace del proyecto de recuperación de frutales antiguos del Valle iniciado por La Red de Semillas de Navarra y Arrea para dar continuidad al trabajo.",
       "bloques": [
         {
           "titulo": "Qué queremos",
