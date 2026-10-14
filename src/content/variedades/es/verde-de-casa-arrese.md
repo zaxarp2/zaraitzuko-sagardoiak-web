@@ -27,7 +27,7 @@ fotos:
   - src: /uploads/20260722_200418.webp
     pie: ''
 otrosPueblos: []
-extraStatus: Sólo recogida en el Valle
+ambito: valle
 antig: Más de 100 años.
 quote: '"Se conserva en casa hasta bien entrada la primavera"'
 estado: Solamente un ejemplar localizado (Casa Arrese). Centenario, en relativamente buen estado de conservación.

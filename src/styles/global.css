@@ -115,7 +115,7 @@
     font-weight:300;
   }
   .hero-stats{
-    display:flex;gap:36px;flex-wrap:wrap;
+    display:flex;gap:30px;flex-wrap:wrap;
     padding-top:28px;border-top:1px solid var(--paper-edge);
   }
   .hero-stat .num{
@@ -126,6 +126,7 @@
   .hero-stat .lbl{
     font-size:13px;color:var(--stone);
     font-style:italic;margin-top:6px;
+    max-width:7.5em;line-height:1.3;
   }
   .hero-visual{
     position:relative;
@@ -261,6 +262,8 @@
   .status-confirmed{background:rgba(45,74,58,0.1);color:var(--leaf-deep)}
   .status-pending{background:rgba(184,132,44,0.15);color:var(--rust)}
   .status-draft{background:rgba(124,45,45,0.12);color:var(--apple)}
+  .status-fruto{background:rgba(160,110,40,0.13);color:#8a5a1c}
+  .status-info{background:rgba(124,45,45,0.12);color:var(--apple)}
   .variety-body{padding:22px 24px 26px}
   .variety-name{
     font-family:'Fraunces',serif;font-size:26px;

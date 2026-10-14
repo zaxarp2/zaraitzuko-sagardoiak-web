@@ -3,7 +3,7 @@ especie: manzana
 'n': 12
 name: De Casa Rosanz/Roja
 status: confirmed
-epoca: otono
+epoca: media
 extension: minoritaria
 color: '#c95050'
 colorAlt: '#d97070'
@@ -23,7 +23,8 @@ fotos:
     pie: ''
 otrosPueblos:
   - 'Izalzu: “carga mucho y da casi todos los años”.'
-extraStatus: = San Miguela / Ascara
+ambito: fuera
+fueraNombres: 'San Miguela / Ascara'
 antig: Más de 80 años
 quote: ''
 estado: |-

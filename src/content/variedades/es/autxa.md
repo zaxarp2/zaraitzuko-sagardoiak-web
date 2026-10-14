@@ -3,7 +3,7 @@ especie: manzana
 'n': 3
 name: Autxa
 status: confirmed
-epoca: otono
+epoca: media
 extension: extendida
 color: '#a93838'
 colorAlt: '#c95050'
@@ -22,7 +22,8 @@ fotos:
   - src: /fotos/autxa/autxa-05.jpg
     pie: ''
 otrosPueblos: []
-extraStatus: Presente fuera del Valle= Arizkun-01 / Naranjina / Colorada
+ambito: fuera
+fueraNombres: 'Arizkun-01 / Naranjina / Colorada'
 antig: Más de 100 años
 quote: ''
 estado: Dos ejemplares centenarios localizados en Ochagavía (Casa Menddi, Casa Pistolo), uno en buen estado de conservación, el otro muy envejecido y abandonado. En Ezcároz se ha identificado otro árbol de esta variedad pero sin nombre (Casa Arrese).

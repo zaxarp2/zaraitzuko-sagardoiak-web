@@ -1,0 +1,116 @@
+{
+  "es": {
+    "inicio": {
+      "antetitulo": "Zaraitzuko Sagardoiak Elkartea · Valle de Salazar",
+      "titulo": "Variedades antiguas de <em>frutales</em> del Valle de Salazar.",
+      "entradilla": "Un trabajo de campo, etnografía y ciencia para recuperar las manzanas y peras que durante siglos sostuvieron las casas del valle, y que la agricultura industrial estuvo a punto de borrar.",
+      "cifras": [
+        {
+          "num": "22",
+          "texto": "Variedades descritas"
+        },
+        {
+          "num": "29",
+          "texto": "Personas entrevistadas"
+        },
+        {
+          "num": "8",
+          "texto": "Pueblos prospectados"
+        },
+        {
+          "num": "19",
+          "texto": "Muestras de manzano · ADN"
+        }
+      ]
+    },
+    "manzanas": {
+      "titulo": "Las <em>manzanas</em> del Valle.",
+      "entradilla": "Cada ficha recoge la descripción local, la valoración de las personas que la conocen, la caracterización morfológica del fruto y, cuando hay resultados, el análisis molecular de su identidad varietal. Pincha en una variedad para abrir su ficha completa."
+    },
+    "peras": {
+      "titulo": "Las <em>peras</em> del Valle.",
+      "entradilla": "Junto a los manzanos, en las casas del Valle se conservan perales antiguos. Durante el proyecto se han analizado molecularmente 8 muestras de peral, todas diferentes entre sí."
+    },
+    "diario": {
+      "titulo": "Cuaderno de <em>campo</em>.",
+      "entradilla": "Avances, jornadas, hallazgos y citas para los que se quieran sumar."
+    },
+    "asociacion": {
+      "titulo": "Zaraitzuko Sagardoiak <em>Elkartea</em>.",
+      "entradilla": "Zaraitzuko Sagardoiak Elkartea trabaja para conservar y recuperar las variedades locales de frutales del Valle de Salazar y el conocimiento que las acompaña. Nace del proyecto de recuperación de frutales antiguos del Valle y da continuidad a su trabajo.",
+      "bloques": [
+        {
+          "titulo": "Qué queremos",
+          "texto": "Que las variedades locales de manzano y peral, y el conocimiento que las acompaña, sigan vivas en el Valle: localizarlas, documentarlas, multiplicarlas por injerto y repartirlas entre las casas y los pueblos."
+        },
+        {
+          "titulo": "Cómo lo hacemos",
+          "texto": "Con trabajo común: preguntar, buscar, compartir, injertar, plantar, conservar… y comer manzanas. Organizamos jornadas, talleres de injerto y poda, y el reparto de árboles de las variedades seleccionadas."
+        },
+        {
+          "titulo": "Con quién",
+          "texto": "Trabajamos junto a Arrea, la Red de Semillas de Navarra y el Grupo de Fruticultura de la UPNA, con el apoyo de la Junta del Valle de Salazar. Y, sobre todo, con las personas y las casas del Valle que han cuidado estos árboles."
+        }
+      ],
+      "socioTitulo": "¿Quieres formar parte?",
+      "socioTexto": "Si te interesa, escríbenos a <a href=\"mailto:info@zaraitzukosagardoiak.org\">info@zaraitzukosagardoiak.org</a>."
+    }
+  },
+  "eu": {
+    "inicio": {
+      "antetitulo": "Zaraitzuko Sagardoiak Elkartea · Zaraitzu Ibarra",
+      "titulo": "Zaraitzuko <em>fruta-arbola</em> zaharrak.",
+      "entradilla": "Landa-lana, etnografia eta zientzia, mendetan herriko etxeak elikatu zituzten sagar eta udareak berreskuratzeko, nekazaritza industrialak ezabatu baino lehen.",
+      "cifras": [
+        {
+          "num": "22",
+          "texto": "Barietate deskribatu"
+        },
+        {
+          "num": "29",
+          "texto": "Pertsona elkarrizketatu"
+        },
+        {
+          "num": "8",
+          "texto": "Herri aztertu"
+        },
+        {
+          "num": "19",
+          "texto": "Sagar-laginak · ADNa"
+        }
+      ]
+    },
+    "manzanas": {
+      "titulo": "Haraneko <em>sagarrak</em>.",
+      "entradilla": "Fitxa bakoitzak bertako deskripzioa, ezagutzen duten pertsonen balorazioa, fruituaren karakterizazio morfologikoa eta, emaitzak daudenean, identitate barietalaren analisi molekularra biltzen ditu. Egin klik barietate batean fitxa osoa irekitzeko."
+    },
+    "peras": {
+      "titulo": "Haraneko <em>udareak</em>.",
+      "entradilla": "Sagarrondoekin batera, haraneko etxeetan udareondo zaharrak ere gordetzen dira. Proiektuan udareondoen 8 lagin aztertu dira molekularki, guztiak elkarren artean desberdinak."
+    },
+    "diario": {
+      "titulo": "<em>Landa</em>-koadernoa.",
+      "entradilla": "Aurrerapenak, jardunaldiak, aurkikuntzak eta hitzorduak parte hartu nahi dutenentzat."
+    },
+    "asociacion": {
+      "titulo": "Zaraitzuko Sagardoiak <em>Elkartea</em>.",
+      "entradilla": "Zaraitzuko Sagardoiak Elkartea Zaraitzu Haraneko fruta-arbolen tokiko barietateak eta haiei lotutako ezagutza kontserbatzeko eta berreskuratzeko lanean ari da. Haraneko fruta-arbola zaharrak berreskuratzeko proiektutik sortu da eta haren lanari jarraipena ematen dio.",
+      "bloques": [
+        {
+          "titulo": "Zer nahi dugu",
+          "texto": "Sagarrondo eta udareondoen tokiko barietateak, eta haiekin batera doan ezagutza, haranean bizirik jarraitzea: aurkitu, dokumentatu, txertoz ugaldu eta etxe eta herrien artean banatu."
+        },
+        {
+          "titulo": "Nola egiten dugu",
+          "texto": "Lan komunarekin: galdetu, bilatu, partekatu, txertatu, landatu, kontserbatu… eta sagarrak jan. Jardunaldiak, txertaketa eta inausketa tailerrak eta aukeratutako barietateen zuhaitz-banaketa antolatzen ditugu."
+        },
+        {
+          "titulo": "Norekin",
+          "texto": "Arrearekin, Nafarroako Hazien Sarearekin eta NUPeko Fruta-laborantza Taldearekin batera egiten dugu lan, Zaraitzuko Batzarraren laguntzarekin. Eta, batez ere, zuhaitz hauek zaindu dituzten haraneko pertsonekin eta etxeekin."
+        }
+      ],
+      "socioTitulo": "Parte hartu nahi duzu?",
+      "socioTexto": "Interesa baduzu, idatz iezaguzu <a href=\"mailto:info@zaraitzukosagardoiak.org\">info@zaraitzukosagardoiak.org</a> helbidera."
+    }
+  }
+}

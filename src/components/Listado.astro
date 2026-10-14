@@ -2,11 +2,12 @@
 import { getCollection } from 'astro:content';
 import ui from '../i18n/ui.json';
 import VarietyCard from './VarietyCard.astro';
+import { ordenar } from '../lib/numeros';
 interface Props { lang: 'es' | 'eu'; especie: 'manzana' | 'pera'; }
 const { lang, especie } = Astro.props;
 const D = (ui as any)[lang];
 const items = (await getCollection('variedades', (e) => e.id.startsWith(lang + '/') && (e.data.especie ?? 'manzana') === especie))
-  .sort((a, b) => a.data.n - b.data.n);
+  .sort(ordenar);
 const T = especie === 'pera' ? D.peras : D.vars;
 const home = lang === 'eu' ? '/eu/' : '/';
 ---

@@ -22,7 +22,8 @@ fotos:
   - src: /uploads/WhatsApp Image 2026-08-28 at 06.30.50.webp
     pie: 'Foto: Kike Pascual'
 otrosPueblos: []
-extraStatus: Presente fuera del Valle = Aldunate-01 Navarra,  Beauty of Bath
+ambito: fuera
+fueraNombres: 'Aldunate-01 Navarra, Beauty of Bath'
 antig: Más de 100 años
 quote: ''
 estado: Varios ejemplares localizados en Ochagavía (Casa Txapao, Casa Gayarre, Casa Pedro Blas), en Izalzu (Casa Juana, procedente del bordal de Blaixko).

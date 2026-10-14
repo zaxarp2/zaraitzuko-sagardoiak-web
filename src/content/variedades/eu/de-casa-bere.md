@@ -3,7 +3,7 @@ especie: manzana
 n: 13
 name: De Casa Bere
 status: confirmed
-epoca: otono
+epoca: media
 extension: minoritaria
 color: '#a93838'
 colorAlt: '#c95050'
@@ -17,7 +17,8 @@ fotos:
   - src: /uploads/recorte de Bere 2.webp
     pie: ''
 otrosPueblos: []
-extraStatus: = Carapanón / Reineta del Camino
+ambito: fuera
+fueraNombres: 'Carapanón / Reineta del Camino'
 antig: 100 urte baino gehiago
 quote: ''
 estado: Ale bat lokalizatua. Beste bat berresteke.

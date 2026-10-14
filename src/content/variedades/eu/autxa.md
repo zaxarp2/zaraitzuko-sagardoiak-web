@@ -3,7 +3,7 @@ especie: manzana
 'n': 3
 name: Autxa
 status: confirmed
-epoca: otono
+epoca: media
 extension: extendida
 color: '#a93838'
 colorAlt: '#c95050'
@@ -17,7 +17,8 @@ fotos:
   - src: /fotos/autxa/autxa-01.jpg
   - src: /fotos/autxa/autxa-05.jpg
 otrosPueblos: []
-extraStatus: = Arizkun-01 / Naranjina / Colorada
+ambito: fuera
+fueraNombres: 'Arizkun-01 / Naranjina / Colorada'
 antig: 100 urte baino gehiago
 quote: ''
 estado: Bi ale mendetsuak Ochagavían (Mendi Etxea, Pistolo Etxea), bata egoera onean, bestea oso zaharkitua.

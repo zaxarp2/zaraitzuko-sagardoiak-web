@@ -25,7 +25,7 @@ fotos:
   - src: /uploads/20260909_101318.webp
     pie: ''
 otrosPueblos: []
-extraStatus: Sólo recogida en el Valle.
+ambito: valle
 antig: Más de 100 años
 quote: ''
 estado: Un ejemplar localizado (Casa Sarriés), Izalzu.

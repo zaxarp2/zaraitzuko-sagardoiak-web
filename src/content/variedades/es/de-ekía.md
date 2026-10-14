@@ -19,7 +19,6 @@ fotos:
   - src: /uploads/20261013_102449.webp
     pie: ''
 otrosPueblos: []
-extraStatus: ''
 antig: Más de 100 años
 quote: ''
 estado: Un ejemplar vivo localizado (Casa Ekía). Centenario. Relativamente bien conservado.

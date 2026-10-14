@@ -3,7 +3,7 @@ especie: manzana
 'n': 2
 name: Muturbeltz
 status: confirmed
-epoca: otono
+epoca: media
 extension: minoritaria
 color: '#b8842c'
 colorAlt: '#d4a851'
@@ -21,7 +21,6 @@ fotos:
     pie: ''
 otrosPueblos:
   - Ezcároz
-extraStatus: ''
 antig: Más de 100 años
 quote: “Es de las primeras variedades de otoño en madurar. No aguanta mucho en el árbol, hay que cogerla rápido para que no se caiga”.
 estado: |-

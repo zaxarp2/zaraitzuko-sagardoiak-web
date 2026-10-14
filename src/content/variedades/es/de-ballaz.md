@@ -21,7 +21,6 @@ fotos:
   - src: /uploads/20260921_173144.webp
     pie: ''
 otrosPueblos: []
-extraStatus: ''
 antig: Más de 100 años
 quote: ''
 estado: Un ejemplar centenario localizado (Casa Ballaz), en buen estado de conservación.

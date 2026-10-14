@@ -3,7 +3,7 @@ especie: manzana
 n: 14
 name: De Casa Morea
 status: confirmed
-epoca: otono
+epoca: media
 extension: ''
 color: '#d4a85a'
 colorAlt: '#e5be7d'
@@ -18,7 +18,6 @@ fotos:
   - src: /fotos/de-casa-morea/de-casa-morea-02.jpg
   - src: /fotos/de-casa-morea/de-casa-morea-04.jpg
 otrosPueblos: []
-extraStatus: haranean soilik identifikatua
 antig: 80 urte baino gehiago
 quote: ''
 estado: Ale bat lokalizatua (Morea Etxea), beste bat egon liteke (Iriarte Etxea).

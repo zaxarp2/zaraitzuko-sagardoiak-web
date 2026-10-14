@@ -19,7 +19,6 @@ fotos:
   - src: /uploads/20260921_180818.webp
     pie: ''
 otrosPueblos: []
-extraStatus: ''
 antig: Más de 80 años.
 quote: ''
 estado: Un ejemplar vivo localizado. En Baratxarra.  Puede quedar alguno más.

@@ -2,7 +2,7 @@
 especie: manzana
 'n': 19
 name: De Santirsoaldea
-status: draft
+status: info
 epoca: ''
 extension: ''
 color: '#7c4a2b'
@@ -11,7 +11,6 @@ pueblos:
   - Esparza
 fotos: []
 otrosPueblos: []
-extraStatus: ''
 antig: ''
 quote: ''
 estado: ''

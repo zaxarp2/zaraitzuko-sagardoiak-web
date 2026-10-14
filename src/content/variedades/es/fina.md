@@ -3,7 +3,7 @@ especie: manzana
 n: 11
 name: Fina
 status: confirmed
-epoca: otono
+epoca: media
 extension: extendida
 color: '#a8b46a'
 colorAlt: '#c4cd87'
@@ -21,7 +21,7 @@ fotos:
   - src: /fotos/fina/fina-05.jpg
     pie: ''
 otrosPueblos: []
-extraStatus: Sin registro fuera del Valle
+ambito: valle
 antig: Más de 100 años
 quote: ''
 estado: |-

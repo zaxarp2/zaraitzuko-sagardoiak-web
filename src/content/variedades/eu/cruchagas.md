@@ -2,7 +2,7 @@
 especie: manzana
 'n': 18
 name: Cruchagas
-status: draft
+status: info
 epoca: ''
 extension: ''
 color: '#7c4a2b'
@@ -18,7 +18,6 @@ fotos:
     pie: Fruto inmaduro
 otrosPueblos:
   - Izalzu
-extraStatus: ''
 antig: ''
 quote: ''
 estado: ''

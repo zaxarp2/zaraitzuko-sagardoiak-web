@@ -3,7 +3,7 @@ especie: manzana
 n: 11
 name: Fina
 status: confirmed
-epoca: otono
+epoca: media
 extension: extendida
 color: '#a8b46a'
 colorAlt: '#c4cd87'
@@ -16,7 +16,7 @@ fotos:
   - src: /fotos/fina/fina-01.jpg
   - src: /fotos/fina/fina-05.jpg
 otrosPueblos: []
-extraStatus: Haranetik kanpo erregistratu gabea
+ambito: valle
 antig: 100 urte baino gehiago
 quote: ''
 estado: 'Ale bat lokalizatua (Benttura Etxea). Bi barietate txertatuak dituen zuhaitza: Fina adar batean eta Maestro Sagar (ziurrenik) bestean.'

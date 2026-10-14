@@ -22,7 +22,7 @@ fotos:
   - src: /uploads/20260909_101318.webp
     pie: ''
 otrosPueblos: []
-extraStatus: erreferentziazko bildumetako inongo barietaterekin bat ez datorrena
+ambito: valle
 antig: 100 urte baino gehiago
 quote: ''
 estado: Ale bat aurkitu da (Sarriés Etxea), Izaltzun.

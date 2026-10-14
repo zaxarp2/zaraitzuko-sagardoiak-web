@@ -1,13 +1,17 @@
 ---
 import { getCollection } from 'astro:content';
 import ui from '../i18n/ui.json';
+import portada from '../data/portada.json';
 import CarruselVariedades from './CarruselVariedades.astro';
+import { ordenar } from '../lib/numeros';
 
 interface Props {
   lang: 'es' | 'eu';
 }
 const { lang } = Astro.props;
 const D = (ui as any)[lang];
+// Textos de portada editables desde el editor (/admin → Textos de portada)
+const P = (portada as any)[lang];
 const L = lang === 'eu' ? '/eu' : '';
 const diarioBase = lang === 'eu' ? '/eu/diario/' : '/diario/';
 const catalogoHref = lang === 'eu' ? '/eu/catalogo/' : '/catalogo/';
@@ -22,7 +26,7 @@ const ICONS = [
   `<svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="34" cy="24" r="13"/><path d="M34 11l2-5M8 40c8 0 14 4 22 4h14c4 0 4 5 0 5H31M44 44l10-6c4-2 6 3 3 5L41 54H20l-12-4"/></svg>`,
 ];
 
-const todas = (await getCollection('variedades', (e) => e.id.startsWith(lang + '/'))).sort((a, b) => a.data.n - b.data.n);
+const todas = (await getCollection('variedades', (e) => e.id.startsWith(lang + '/'))).sort(ordenar);
 const variedades = todas.filter((v) => (v.data.especie ?? 'manzana') === 'manzana');
 const peras = todas.filter((v) => v.data.especie === 'pera');
 const noticias = (await getCollection('noticias', (e) => e.id.startsWith(lang + '/'))).sort(
@@ -30,27 +34,22 @@ const noticias = (await getCollection('noticias', (e) => e.id.startsWith(lang + 
 );
 
 // Cifras clave del hero: variedades (dinámico) + informantes / pueblos / muestras ADN (fijos del proyecto)
-const stats = [
-  { num: String(variedades.length), lbl: D.hero.stat1 },
-  { num: '29', lbl: D.hero.stat2 },
-  { num: '8', lbl: D.hero.stat3 },
-  { num: '19', lbl: D.hero.stat4 },
-];
+const stats = (P.inicio.cifras ?? []).map((c: any) => ({ num: c.num, lbl: c.texto }));
 
 ---
 
 <!-- ============ HERO ============ -->
 <section class="hero" id="inicio">
   <div>
-    <div class="hero-eyebrow">{D.hero.eyebrow}</div>
-    <h1 set:html={D.hero.title} />
-    <p class="hero-lede">{D.hero.lede}</p>
+    <div class="hero-eyebrow">{P.inicio.antetitulo}</div>
+    <h1 set:html={P.inicio.titulo} />
+    <p class="hero-lede">{P.inicio.entradilla}</p>
     <div class="hero-stats">
       {
         stats.map((s) => (
           <div class="hero-stat">
             <div class="num">{s.num}</div>
-            <div class="lbl" set:html={s.lbl} />
+            <div class="lbl">{s.lbl}</div>
           </div>
         ))
       }
@@ -65,8 +64,8 @@ const stats = [
 <!-- ============ MANZANAS ============ -->
 <section class="section" id="variedades">
   <div class="section-eyebrow" set:html={D.vars.eyebrow.replace('{n}', String(variedades.length))} />
-  <h2 class="section-title" set:html={D.vars.title} />
-  <p class="section-lede">{D.vars.lede}</p>
+  <h2 class="section-title" set:html={P.manzanas.titulo} />
+  <p class="section-lede">{P.manzanas.entradilla}</p>
   <CarruselVariedades items={variedades} lang={lang} label={D.nav.apples} />
   <div class="vcar-links">
     <a class="btn" href={`${L}/manzanas/`}>{D.vars.verTodas}</a>
@@ -78,8 +77,8 @@ const stats = [
 <!-- ============ PERAS ============ -->
 <section class="section" id="peras">
   <div class="section-eyebrow">{D.peras.eyebrow}</div>
-  <h2 class="section-title" set:html={D.peras.title} />
-  <p class="section-lede">{D.peras.lede}</p>
+  <h2 class="section-title" set:html={P.peras.titulo} />
+  <p class="section-lede">{P.peras.entradilla}</p>
   {peras.length > 0 ? (
     <>
       <CarruselVariedades items={peras} lang={lang} label={D.nav.pears} />
@@ -93,8 +92,8 @@ const stats = [
 <!-- ============ NOTICIAS / DIARIO ============ -->
 <section class="section" id="noticias">
   <div class="section-eyebrow" set:html={D.news.eyebrow} />
-  <h2 class="section-title" set:html={D.news.title} />
-  <p class="section-lede">{D.news.lede}</p>
+  <h2 class="section-title" set:html={P.diario.titulo} />
+  <p class="section-lede">{P.diario.entradilla}</p>
 
   <div class="news-grid">
     {
@@ -115,16 +114,16 @@ const stats = [
 <!-- ============ ASOCIACIÓN ============ -->
 <section class="section" id="asociacion">
   <div class="section-eyebrow">{D.assoc.eyebrow}</div>
-  <h2 class="section-title" set:html={D.assoc.title} />
-  <p class="section-lede">{D.assoc.lede}</p>
+  <h2 class="section-title" set:html={P.asociacion.titulo} />
+  <p class="section-lede">{P.asociacion.entradilla}</p>
   <div class="asoc-grid">
-    {D.assoc.blocks.map((x: any) => (
-      <div class="asoc-bloque"><h3>{x.h}</h3><p>{x.p}</p></div>
+    {(P.asociacion.bloques ?? []).map((x: any) => (
+      <div class="asoc-bloque"><h3>{x.titulo}</h3><p>{x.texto}</p></div>
     ))}
   </div>
   <div class="asoc-socio">
-    <h3>{D.assoc.joinH}</h3>
-    <p set:html={D.assoc.join} />
+    <h3>{P.asociacion.socioTitulo}</h3>
+    <p set:html={P.asociacion.socioTexto} />
   </div>
 </section>
 

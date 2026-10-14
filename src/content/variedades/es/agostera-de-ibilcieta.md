@@ -21,7 +21,7 @@ fotos:
   - src: /uploads/20260905_133103.webp
     pie: ''
 otrosPueblos: []
-extraStatus: sólo identificada en el Valle
+ambito: valle
 antig: Más de 100 años
 quote: ''
 estado: Dos ejemplares localizados (Casa Morea), uno centenario y otro joven, procedente del anterior e injertado hace pocos años. Recientemente ha injertado otro en un _“Golden que era muy malo”._

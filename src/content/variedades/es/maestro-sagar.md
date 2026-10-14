@@ -3,7 +3,7 @@ especie: manzana
 'n': 4
 name: Maestro Sagar
 status: confirmed
-epoca: otono
+epoca: media
 extension: extendida
 color: '#b8842c'
 colorAlt: '#c89940'
@@ -27,7 +27,8 @@ fotos:
     pie: ''
 otrosPueblos:
   - Todos los pueblos del Valle
-extraStatus: Presente fuera del Valle= Reineta Blanca
+ambito: fuera
+fueraNombres: 'Reineta Blanca'
 antig: Más de 100 años
 quote: ''
 estado: 'Varios ejemplares localizados: Casa Xinxoan (Ochagavía), Casa Bidondo (Oronz), Casa Arrese (Ezcároz), Casa Landa (Esparza), Casa Mikeleiz (Izalzu), Casa Ezker (Igal), Casa Morea (Ibilzieta).'

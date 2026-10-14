@@ -21,7 +21,7 @@ fotos:
   - src: /fotos/de-hierro/de-hierro-04.jpg
   - src: /fotos/de-hierro/de-hierro-10.jpg
 otrosPueblos: []
-extraStatus: De Jandúarekin sinonimia posiblea
+ambito: valle
 antig: 100 urte baino gehiago
 quote: Son muy dulces, tienen un dulzor especial. Se cae la manzana después que las hojas. Son las que más se guardan.
 estado: 'Bi ale lokalizatuak: bata Izalzun (Jandúa Etxea), bestea Izalen (Ballaz Etxea).'

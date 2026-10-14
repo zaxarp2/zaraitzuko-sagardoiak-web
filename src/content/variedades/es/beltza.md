@@ -3,7 +3,7 @@ especie: manzana
 'n': 1
 name: Beltza
 status: confirmed
-epoca: otono
+epoca: media
 extension: extendida
 color: '#7c4a2b'
 colorAlt: '#a06b3e'
@@ -27,7 +27,7 @@ fotos:
 otrosPueblos:
   - Ezcároz
   - Izalzu
-extraStatus: Sólo registrada en el Valle
+ambito: valle
 antig: Más de 100 años
 quote: Tiene mucho sabor, es viva, muy jugosa, ácida…
 estado: |-

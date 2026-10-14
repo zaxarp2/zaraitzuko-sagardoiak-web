@@ -19,7 +19,7 @@ fotos:
   - src: /uploads/20260905_133103.webp
     pie: ''
 otrosPueblos: []
-extraStatus: haranean soilik identifikatua
+ambito: valle
 antig: 100 urte baino gehiago
 quote: ''
 estado: Bi ale lokalizatuak (Morea Etxea).

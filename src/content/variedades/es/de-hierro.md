@@ -31,7 +31,7 @@ fotos:
   - src: /fotos/de-hierro/de-hierro-10.jpg
     pie: ''
 otrosPueblos: []
-extraStatus: Sólo registrada en el Valle
+ambito: valle
 antig: Más de 100 años
 quote: '"Son muy dulces, tienen un dulzor especial. Se cae la manzana después que las hojas "Son las que más se guardan".'
 estado: Un ejemplar localizado en Izalzu (Casa Jandúa). Puede quedar alguno más.

@@ -3,7 +3,7 @@ especie: manzana
 'n': 17
 name: De Semberoiz
 status: confirmed
-epoca: otono
+epoca: media
 extension: minoritaria
 color: '#b8842c'
 colorAlt: '#c89940'
@@ -15,7 +15,7 @@ fotos:
   - src: /fotos/de-semberoiz/de-semberoiz-02.jpg
   - src: /fotos/de-semberoiz/de-semberoiz-04.jpg
 otrosPueblos: []
-extraStatus: haranean soilik
+ambito: valle
 antig: Aztertzen
 quote: ''
 estado: Haranean soilik dagoen barietate gisa identifikatua. Fitxa osatzeke.

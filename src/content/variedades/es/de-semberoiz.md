@@ -3,7 +3,7 @@ especie: manzana
 'n': 17
 name: De Semberoiz
 status: confirmed
-epoca: otono
+epoca: media
 extension: minoritaria
 color: '#b8842c'
 colorAlt: '#c89940'
@@ -19,7 +19,7 @@ fotos:
   - src: /fotos/de-semberoiz/de-semberoiz-04.jpg
     pie: ''
 otrosPueblos: []
-extraStatus: Recogida sólo en el Valle
+ambito: valle
 antig: Más de 100 años.
 quote: ''
 estado: Dos ejemplares localizados en Esparza (Casa Mailua), jóvenes, injertados de otro árbol de un familiar, que a su vez injertó en su parcela, cuando iban a desaparecer los ejemplares antiguos de Casa Semberoiz para construir nueva vivienda.

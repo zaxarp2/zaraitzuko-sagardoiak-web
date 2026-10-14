@@ -21,7 +21,6 @@ fotos:
   - src: /uploads/20260921_173144.webp
     pie: ''
 otrosPueblos: []
-extraStatus: ''
 antig: ''
 quote: ''
 estado: ''

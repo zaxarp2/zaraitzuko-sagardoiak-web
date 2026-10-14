@@ -3,7 +3,7 @@ especie: manzana
 'n': 2
 name: Muturbeltz
 status: confirmed
-epoca: otono
+epoca: media
 extension: minoritaria
 color: '#b8842c'
 colorAlt: '#d4a851'
@@ -19,7 +19,6 @@ fotos:
     pie: ''
 otrosPueblos:
   - Ezcároz
-extraStatus: NUP bankua
 antig: 100 urte baino gehiago
 quote: ''
 estado: Bi ale lokalizatu dira Ochagavían (Xin Xoan Etxea, Manex Etxea) eta beste bi Izalzun (Adot Etxea eta Santso Etxea). Beste zuhaitzen bat bizirik dagoelaren erreferentziak daude.

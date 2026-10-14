@@ -40,17 +40,22 @@ collections:
     create: true
     i18n: true
     identifier_field: name
-    summary: "{{especie}} · N.º {{n}} · {{name}}"
+    summary: "{{especie}} · {{n}} · {{name}}"
     sortable_fields: [n, name]
     fields:
       - { name: especie, label: "Especie", widget: select, default: manzana, i18n: duplicate,
           options: [ {label: "Manzana", value: manzana}, {label: "Pera", value: pera} ] }
-      - { name: n, label: "Número", widget: number, value_type: int, i18n: duplicate }
+      - { name: n, label: "Orden en el catálogo", widget: number, value_type: float, i18n: duplicate,
+          hint: "La web numera sola (1, 2, 3…) siguiendo este orden. Para meter una variedad entre la 1 y la 2, pon 1.5; el resto se renumera automáticamente." }
       - { name: name, label: "Nombre", widget: string, i18n: duplicate }
       - { name: status, label: "Estado", widget: select, i18n: duplicate,
-          options: [ {label: "Validada", value: confirmed}, {label: "Pendiente molecular", value: pending}, {label: "Borrador", value: draft} ] }
-      - { name: epoca, label: "Época", widget: select, required: false, i18n: duplicate,
-          options: [ {label: "Temprana", value: temprana}, {label: "Otoño", value: otono}, {label: "Tardía", value: tardia} ] }
+          options: [ {label: "Validada", value: confirmed}, {label: "Pendiente molecular", value: pending}, {label: "Pendiente fruto", value: fruto}, {label: "Pendiente más información", value: info} ] }
+      - { name: epoca, label: "Época de recolección", widget: select, required: false, i18n: duplicate,
+          options: [ {label: "Temprana", value: temprana}, {label: "Media", value: media}, {label: "Tardía", value: tardia} ] }
+      - { name: ambito, label: "Presencia fuera del Valle", widget: select, required: false, i18n: duplicate,
+          options: [ {label: "Solo registrada en el Valle", value: valle}, {label: "Presente fuera del Valle", value: fuera} ] }
+      - { name: fueraNombres, label: "Nombres fuera del Valle", widget: string, required: false, i18n: duplicate,
+          hint: "Solo si está presente fuera del Valle (p. ej. «Reineta Blanca» o «Carapanón / Reineta del Camino»)." }
       - { name: extension, label: "Extensión", widget: select, required: false, i18n: duplicate,
           options: [ {label: "Antes extendida", value: extendida}, {label: "Minoritaria", value: minoritaria} ] }
       - { name: color, label: "Color (hex)", widget: string, i18n: duplicate }
@@ -61,7 +66,6 @@ collections:
           fields: [ {name: src, label: "Imagen", widget: image}, {name: pie, label: "Pie de foto", widget: string, required: false} ] }
       - { name: otrosPueblos, label: "Otras citas", widget: list, required: false, field: {name: p, label: Pueblo, widget: string}, i18n: duplicate }
       # --- Campos bilingües (uno por idioma) ---
-      - { name: extraStatus, label: "Nota de estado", widget: string, required: false, i18n: true }
       - { name: antig, label: "Presencia en el Valle", widget: string, required: false, i18n: true }
       - { name: quote, label: "Cita literal", widget: string, required: false, i18n: true }
       - { name: estado, label: "Estado de conservación", widget: markdown, required: false, i18n: true }
@@ -92,3 +96,120 @@ collections:
       - { name: title, label: "Título", widget: string, i18n: true }
       - { name: resumen, label: "Resumen (tarjeta de portada)", widget: text, required: false, i18n: true }
       - { name: body, label: "Texto", widget: markdown, i18n: true }
+
+  - name: textos
+    label: Textos de portada
+    files:
+      - name: portada
+        label: "Portada (inicio, cifras e introducciones)"
+        file: src/data/portada.json
+        format: json
+        fields:
+          - name: es
+            label: "Castellano"
+            widget: object
+            collapsed: false
+            fields:
+              - name: inicio
+                label: "Inicio (cabecera de la portada)"
+                widget: object
+                fields:
+                  - { name: antetitulo, label: "Antetítulo", widget: string }
+                  - { name: titulo, label: "Título", widget: string, hint: "Lo que va entre <em> y </em> sale en cursiva y en color." }
+                  - { name: entradilla, label: "Introducción", widget: text }
+                  - name: cifras
+                    label: "Cifras"
+                    label_singular: "Cifra"
+                    widget: list
+                    summary: "{{fields.num}} · {{fields.texto}}"
+                    fields:
+                      - { name: num, label: "Número", widget: string }
+                      - { name: texto, label: "Texto", widget: string }
+              - name: manzanas
+                label: "Sección Manzanas"
+                widget: object
+                fields:
+                  - { name: titulo, label: "Título", widget: string }
+                  - { name: entradilla, label: "Introducción", widget: text }
+              - name: peras
+                label: "Sección Peras"
+                widget: object
+                fields:
+                  - { name: titulo, label: "Título", widget: string }
+                  - { name: entradilla, label: "Introducción", widget: text }
+              - name: diario
+                label: "Sección Diario"
+                widget: object
+                fields:
+                  - { name: titulo, label: "Título", widget: string }
+                  - { name: entradilla, label: "Introducción", widget: text }
+              - name: asociacion
+                label: "Sección Asociación"
+                widget: object
+                fields:
+                  - { name: titulo, label: "Título", widget: string }
+                  - { name: entradilla, label: "Introducción", widget: text }
+                  - name: bloques
+                    label: "Bloques"
+                    label_singular: "Bloque"
+                    widget: list
+                    summary: "{{fields.titulo}}"
+                    fields:
+                      - { name: titulo, label: "Título", widget: string }
+                      - { name: texto, label: "Texto", widget: text }
+                  - { name: socioTitulo, label: "Hazte socio · título", widget: string }
+                  - { name: socioTexto, label: "Hazte socio · texto", widget: text, hint: "Puede llevar el enlace de correo tal cual está." }
+          - name: eu
+            label: "Euskera"
+            widget: object
+            collapsed: true
+            fields:
+              - name: inicio
+                label: "Inicio (cabecera de la portada)"
+                widget: object
+                fields:
+                  - { name: antetitulo, label: "Antetítulo", widget: string }
+                  - { name: titulo, label: "Título", widget: string, hint: "Lo que va entre <em> y </em> sale en cursiva y en color." }
+                  - { name: entradilla, label: "Introducción", widget: text }
+                  - name: cifras
+                    label: "Cifras"
+                    label_singular: "Cifra"
+                    widget: list
+                    summary: "{{fields.num}} · {{fields.texto}}"
+                    fields:
+                      - { name: num, label: "Número", widget: string }
+                      - { name: texto, label: "Texto", widget: string }
+              - name: manzanas
+                label: "Sección Manzanas"
+                widget: object
+                fields:
+                  - { name: titulo, label: "Título", widget: string }
+                  - { name: entradilla, label: "Introducción", widget: text }
+              - name: peras
+                label: "Sección Peras"
+                widget: object
+                fields:
+                  - { name: titulo, label: "Título", widget: string }
+                  - { name: entradilla, label: "Introducción", widget: text }
+              - name: diario
+                label: "Sección Diario"
+                widget: object
+                fields:
+                  - { name: titulo, label: "Título", widget: string }
+                  - { name: entradilla, label: "Introducción", widget: text }
+              - name: asociacion
+                label: "Sección Asociación"
+                widget: object
+                fields:
+                  - { name: titulo, label: "Título", widget: string }
+                  - { name: entradilla, label: "Introducción", widget: text }
+                  - name: bloques
+                    label: "Bloques"
+                    label_singular: "Bloque"
+                    widget: list
+                    summary: "{{fields.titulo}}"
+                    fields:
+                      - { name: titulo, label: "Título", widget: string }
+                      - { name: texto, label: "Texto", widget: text }
+                  - { name: socioTitulo, label: "Hazte socio · título", widget: string }
+                  - { name: socioTexto, label: "Hazte socio · texto", widget: text, hint: "Puede llevar el enlace de correo tal cual está." }

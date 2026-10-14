@@ -3,7 +3,7 @@ especie: manzana
 'n': 4
 name: Maestro Sagar
 status: confirmed
-epoca: otono
+epoca: media
 extension: extendida
 color: '#b8842c'
 colorAlt: '#c89940'
@@ -26,7 +26,8 @@ fotos:
     pie: ''
 otrosPueblos:
   - Haraneko herri guztiak
-extraStatus: = Reineta Blanca
+ambito: fuera
+fueraNombres: 'Reineta Blanca'
 antig: 100 urte baino gehiago
 quote: ''
 estado: 'Hainbat ale lokalizatu dira: Xinxoan Etxea (Ochagavía), Bidondo Etxea (Oronz), Arrese Etxea (Ezcároz), Landa Etxea (Esparza), Mikeleiz Etxea (Izalzu), Ezker Etxea (Igal).'

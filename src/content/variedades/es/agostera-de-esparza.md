@@ -23,7 +23,7 @@ fotos:
   - src: /uploads/IMG-20260824-WA0021.webp
     pie: ''
 otrosPueblos: []
-extraStatus: Sólo registrada en el Valle
+ambito: valle
 antig: Al menos 80 años
 quote: ''
 estado: Un ejemplar localizado en Esparza (Casa Maisterra).

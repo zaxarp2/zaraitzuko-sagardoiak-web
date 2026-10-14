@@ -20,7 +20,7 @@ fotos:
   - src: /uploads/IMG-20260824-WA0021.webp
     pie: ''
 otrosPueblos: []
-extraStatus: homonimia kasua
+ambito: valle
 antig: Gutxienez 70-80 urte
 quote: ''
 estado: Ale bat lokalizatua Esparzan (Maisterra Etxea). Beste bat Eseberri Etxean (berresteke).

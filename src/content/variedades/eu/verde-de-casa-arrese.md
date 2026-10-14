@@ -23,7 +23,7 @@ fotos:
   - src: /uploads/20260722_200418.webp
     pie: ''
 otrosPueblos: []
-extraStatus: haranean soilik
+ambito: valle
 antig: Aztertzen
 quote: ''
 estado: Haranean soilik dagoen barietate gisa identifikatua. Fitxa osatzeke.

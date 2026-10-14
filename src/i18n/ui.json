@@ -111,9 +111,9 @@
         "pueblos": "Localizada en",
         "otros": "Otras citas",
         "antig": "Presencia en el Valle",
-        "epoca": "Época",
+        "epoca": "Época de recolección",
         "molec": "Identidad molecular",
-        "nota": "Nota"
+        "nota": "Ámbito"
       },
       "sec": {
         "estado": "Estado de conservación",
@@ -134,7 +134,16 @@
       "fotosPrev": "Foto anterior",
       "fotosNext": "Foto siguiente",
       "verTodas": "Ver todas las manzanas →",
-      "todasTitle": "Todas las manzanas"
+      "todasTitle": "Todas las manzanas",
+      "epocas": {
+        "temprana": "Temprana",
+        "media": "Media",
+        "tardia": "Tardía"
+      },
+      "ambito": {
+        "valle": "Solo registrada en el Valle",
+        "fuera": "Presente fuera del Valle"
+      }
     },
     "map": {
       "eyebrow": "Geografía del proyecto",
@@ -197,7 +206,8 @@
     "statusLabels": {
       "confirmed": "Validada",
       "pending": "Pendiente molecular",
-      "draft": "Borrador"
+      "fruto": "Pendiente fruto",
+      "info": "Pendiente más información"
     },
     "pdf": {
       "ficha": "Descargar ficha (PDF)",
@@ -402,9 +412,9 @@
         "pueblos": "Non aurkitua",
         "otros": "Beste aipamenak",
         "antig": "Haraneko presentzia",
-        "epoca": "Garaia",
+        "epoca": "Bilketa-garaia",
         "molec": "Identitate molekularra",
-        "nota": "Oharra"
+        "nota": "Eremua"
       },
       "sec": {
         "estado": "Kontserbazio-egoera",
@@ -425,7 +435,16 @@
       "fotosPrev": "Aurreko argazkia",
       "fotosNext": "Hurrengo argazkia",
       "verTodas": "Ikusi sagar guztiak →",
-      "todasTitle": "Sagar guztiak"
+      "todasTitle": "Sagar guztiak",
+      "epocas": {
+        "temprana": "Goiztiarra",
+        "media": "Erdikoa",
+        "tardia": "Berantiarra"
+      },
+      "ambito": {
+        "valle": "Haranean bakarrik erregistratua",
+        "fuera": "Haranetik kanpo ere badago"
+      }
     },
     "map": {
       "eyebrow": "Proiektuaren geografia",
@@ -488,7 +507,8 @@
     "statusLabels": {
       "confirmed": "Baliozkotua",
       "pending": "Molekular zain",
-      "draft": "Zirriborroa"
+      "fruto": "Fruituaren zain",
+      "info": "Informazio gehiagoren zain"
     },
     "pdf": {
       "ficha": "Deskargatu fitxa (PDF)",

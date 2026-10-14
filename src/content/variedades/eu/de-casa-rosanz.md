@@ -3,7 +3,7 @@ especie: manzana
 'n': 12
 name: De Casa Rosanz/Roja
 status: confirmed
-epoca: otono
+epoca: media
 extension: minoritaria
 color: '#c95050'
 colorAlt: '#d97070'
@@ -21,7 +21,8 @@ fotos:
     pie: ''
 otrosPueblos:
   - 'Izalzu: “carga mucho y da casi todos los años”.'
-extraStatus: = San Miguela / Ascara
+ambito: fuera
+fueraNombres: 'San Miguela / Ascara'
 antig: Seguruenik 100 urte baino gehiago
 quote: ''
 estado: Ale bat lokalizatua. Rosanz Bordako alea bizirik dagoen berretsi behar.

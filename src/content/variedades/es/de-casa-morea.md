@@ -3,7 +3,7 @@ especie: manzana
 n: 14
 name: De Casa Morea
 status: confirmed
-epoca: otono
+epoca: media
 extension: ''
 color: '#d4a85a'
 colorAlt: '#e5be7d'
@@ -25,7 +25,6 @@ fotos:
   - src: /fotos/de-casa-morea/de-casa-morea-04.jpg
     pie: ''
 otrosPueblos: []
-extraStatus: ''
 antig: Más de 80 años
 quote: ''
 estado: Tres ejemplares localizados (Casa Morea). Del árbol original, muy envejecido, se han injertado los otros dos (uno de ellos en una rama de Fugi).

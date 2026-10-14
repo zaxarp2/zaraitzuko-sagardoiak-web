@@ -2,6 +2,7 @@
 import ui from '../i18n/ui.json';
 import LaminaPendiente from './LaminaPendiente.astro';
 import { md } from '../lib/md';
+import { numeros, dos, statusClass as claseEstado } from '../lib/numeros';
 
 interface Props {
   entry: any;
@@ -17,8 +18,13 @@ const d = (ui as any)[lang];
 const D = entry.data;
 const home = lang === 'eu' ? '/eu/' : '/';
 
-const statusClass =
-  D.status === 'confirmed' ? 'status-confirmed' : D.status === 'pending' ? 'status-pending' : 'status-draft';
+const statusClass = claseEstado(D.status);
+const num = (await numeros(lang)).get(slug);
+// Presencia fuera del Valle y época de recolección
+const ambitoTxt = D.ambito === 'fuera'
+  ? d.vars.ambito.fuera + (D.fueraNombres ? `: ${D.fueraNombres}` : '')
+  : D.ambito === 'valle' ? d.vars.ambito.valle : '';
+const epocaTxt = D.epoca ? d.vars.epocas[D.epoca] : '';
 
 // Apartados de la ficha (orden acordado con Ester, oct. 2026):
 // Estado · Potencial · Descripción morfológica · Caracterización molecular ·
@@ -47,20 +53,21 @@ const otros = (D.otrosPueblos ?? []).join(' · ');
       {hasPlate ? (
         <img src={`/laminas/${slug}.jpg`} alt={`Lámina de ${D.name}`} loading={web ? 'eager' : 'lazy'} />
       ) : (
-        <LaminaPendiente name={D.name} n={D.n} label={d.pdf.pending} />
+        <LaminaPendiente name={D.name} especie={D.especie} label={d.pdf.pending} />
       )}
     </div>
     <div class="ficha-intro">
-      <div class="ficha-num">N.º {String(D.n).padStart(2, '0')}</div>
+      <div class="ficha-num">N.º {dos(num)}</div>
       <h1>{D.name}</h1>
       <p class="ficha-latin">{latin} — var. «{D.name}»</p>
       <div class={`variety-status ${statusClass} ficha-status`}>{d.statusLabels[D.status]}</div>
-      {D.extraStatus && <p class="ficha-extra">{D.extraStatus}</p>}
+      {ambitoTxt && <p class="ficha-extra">{ambitoTxt}</p>}
 
       <dl class="ficha-facts">
         {pueblos && (<><dt>{d.vars.quickLabels.pueblos}</dt><dd>{pueblos}</dd></>)}
         {otros && (<><dt>{d.vars.quickLabels.otros}</dt><dd>{otros}</dd></>)}
         {D.antig && (<><dt>{d.vars.quickLabels.antig}</dt><dd>{D.antig}</dd></>)}
+        {epocaTxt && (<><dt>{d.vars.quickLabels.epoca}</dt><dd>{epocaTxt}</dd></>)}
       </dl>
 
       {web && (
@@ -83,14 +90,15 @@ const otros = (D.otrosPueblos ?? []).join(' · ');
   <div class="ficha-cols">
     <!-- Cabecera de la versión impresa (formato de las fichas de Ester: datos y fotos en la primera columna) -->
     <div class="pf-intro print-only">
-      <h1 class="pf-title">{D.n}. {D.name}</h1>
+      <h1 class="pf-title">{num}. {D.name}</h1>
       <p class="pf-latin">{latin} — var. «{D.name}» · {d.statusLabels[D.status]}</p>
       {fotos.slice(0, web ? 3 : 2).map((f) => <img class="pf-foto" data-print-src={f.src} alt="" />)}
       <dl class="pf-facts">
         {pueblos && (<><dt>{d.vars.quickLabels.pueblos}</dt><dd>{pueblos}</dd></>)}
         {otros && (<><dt>{d.vars.quickLabels.otros}</dt><dd>{otros}</dd></>)}
         {D.antig && (<><dt>{d.vars.quickLabels.antig}</dt><dd>{D.antig}</dd></>)}
-        {D.extraStatus && (<><dt>{d.vars.quickLabels.nota}</dt><dd>{D.extraStatus}</dd></>)}
+        {epocaTxt && (<><dt>{d.vars.quickLabels.epoca}</dt><dd>{epocaTxt}</dd></>)}
+        {ambitoTxt && (<><dt>{d.vars.quickLabels.nota}</dt><dd>{ambitoTxt}</dd></>)}
       </dl>
       {D.quote && <p class="pf-quote" set:html={`“${D.quote}”`} />}
     </div>
@@ -241,7 +249,7 @@ const otros = (D.otrosPueblos ?? []).join(' · ');
     .ficha-cols { break-before: page; page-break-before: always; columns: 2; column-gap: 9mm; }
     .pf-title { font-family: 'Fraunces', serif; font-size: 26pt; font-weight: 600; color: #2f7d4a; line-height: 1.05; margin: 0 0 1mm; }
     .pf-latin { font-style: italic; font-size: 9.5pt; color: var(--stone); margin-bottom: 4mm; }
-    .pf-foto { display: block; width: 100%; height: 48mm; object-fit: cover; margin-bottom: 3mm; break-inside: avoid; }
+    .pf-foto { display: block; width: auto; max-width: 100%; height: auto; max-height: 62mm; margin: 0 auto 3mm; break-inside: avoid; page-break-inside: avoid; }
     .pf-facts { margin: 2mm 0 4mm; font-size: 10.5pt; line-height: 1.35; }
     .pf-facts dt { font-weight: 600; color: #2f7d4a; margin-top: 2mm; }
     .pf-facts dd { margin: 0; }

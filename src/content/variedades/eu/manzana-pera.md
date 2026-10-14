@@ -3,7 +3,7 @@ especie: manzana
 'n': 16
 name: Manzana Pera
 status: confirmed
-epoca: otono
+epoca: media
 extension: extendida
 color: '#c4cd87'
 colorAlt: '#d8df9f'
@@ -20,7 +20,6 @@ otrosPueblos:
   - Ibilzieta
   - Jaurrieta
   - Gallués
-extraStatus: barietate berezia
 antig: Gutxienez 80 urte
 quote: ''
 estado: Ale bizia Esparzan lokalizatua (Eseberri Etxea). Ochagavían desagertu zela dirudi.

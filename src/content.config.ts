@@ -14,12 +14,18 @@ const variedades = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/variedades' }),
   schema: z.object({
     // Comunes (no cambian entre idiomas)
+    // Orden en el catálogo (admite decimales: 1.5 va entre la 1 y la 2). El número que se ve en la web se calcula solo.
     n: z.number(),
     name: z.string(),
     // Manzana o pera (cada especie tiene su propia numeración y su sección)
     especie: z.enum(['manzana', 'pera']).default('manzana'),
-    status: z.enum(['confirmed', 'pending', 'draft']),
-    epoca: z.preprocess(vacioAUndefined, z.enum(['temprana', 'otono', 'tardia']).optional()),
+    // 'draft' (Borrador) ya no existe: si aparece en algún fichero antiguo se trata como «Pendiente más información»
+    status: z.preprocess((v) => (v === 'draft' ? 'info' : v), z.enum(['confirmed', 'pending', 'fruto', 'info'])),
+    // Época de recolección (la antigua «otoño» pasa a «media»)
+    epoca: z.preprocess((v) => (v === 'otono' ? 'media' : vacioAUndefined(v)), z.enum(['temprana', 'media', 'tardia']).optional()),
+    // Presencia: solo registrada en el Valle / presente también fuera (con los nombres que recibe fuera)
+    ambito: z.preprocess(vacioAUndefined, z.enum(['valle', 'fuera']).optional()),
+    fueraNombres: z.string().optional(),
     extension: z.preprocess(vacioAUndefined, z.enum(['extendida', 'minoritaria']).optional()),
     color: z.string(),
     colorAlt: z.string(),

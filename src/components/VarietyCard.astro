@@ -2,6 +2,7 @@
 /** Tarjeta de variedad (portada, carruseles y páginas de listado) */
 import ui from '../i18n/ui.json';
 import plates from '../data/plates.json';
+import { numeros, dos, statusClass } from '../lib/numeros';
 interface Props { v: any; lang: 'es' | 'eu'; }
 const { v, lang } = Astro.props;
 const D = (ui as any)[lang];
@@ -9,6 +10,7 @@ const fichaBase = lang === 'eu' ? '/eu/variedad/' : '/variedad/';
 const slug = v.id.split('/').pop();
 const hasPlate = (plates as string[]).includes(slug);
 const esPera = v.data.especie === 'pera';
+const num = (await numeros(lang)).get(slug);
 
 const RUSSET = new Set(['Beltza', 'Muturbeltz', 'Maestro Sagar']);
 
@@ -29,9 +31,6 @@ function appleSvg(n: number, c1: string, c2: string, russet: boolean) {
   </svg>`;
 }
 
-function statusClass(s: string) {
-  return s === 'confirmed' ? 'status-confirmed' : s === 'pending' ? 'status-pending' : 'status-draft';
-}
 
 function pueblosStr(pueblos: string[]) {
   const p = pueblos ?? [];
@@ -50,7 +49,7 @@ function pearSvg(n: number, c1: string, c2: string) {
 ---
 <a class="variety-card" href={`${fichaBase}${slug}`}>
   <div class="variety-illustration">
-    <div class="variety-num">N.º {String(v.data.n).padStart(2, '0')}</div>
+    <div class="variety-num">N.º {dos(num)}</div>
     <div class={`variety-status ${statusClass(v.data.status)}`}>{D.statusLabels[v.data.status]}</div>
     {hasPlate ? (
       <img class="variety-motif" src={`/motivos/${slug}.png`} alt={v.data.name} loading="lazy" />
