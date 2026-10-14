@@ -1,6 +1,6 @@
 ---
 especie: manzana
-n: 12
+'n': 12
 name: De Casa Rosanz/Roja
 status: confirmed
 epoca: otono
@@ -8,8 +8,8 @@ extension: minoritaria
 color: '#c95050'
 colorAlt: '#d97070'
 pueblos:
-  - Esparza (denominada de Casa Rosanz)
-  - Izalzu (denominada Roja).
+  - Esparza
+  - Izalzu
 fotos:
   - src: /fotos/de-casa-rosanz/de-casa-rosanz-01.jpg
   - src: /fotos/de-casa-rosanz/de-casa-rosanz-02.jpg
