@@ -2,10 +2,14 @@
 order: 4
 date: Marzo 2026
 tag: Hallazgo
-title: Nuevo ejemplar de Beltza localizado en Oronz
-resumen: Casa Bidondo conserva un ejemplar centenario de la variedad Beltza, hasta ahora documentada en Ochagavía y Esparza. Confirma la presencia histórica de la variedad en al menos tres pueblos del Valle.
+title: Nueva variedad Beltza localizado en Oronz
+resumen: |-
+  Casa Bidondo conserva un ejemplar de Beltza, hasta ahora documentada en Ochagavía y Esparza. 
+  Pero según la caracterización molecular, se trata de otra variedad diferente a la Beltza de Ochagavía y Esparza.
+  Seguiremos investigando qué diferencias presentan y cómo las agrupamos o diferenciamos.
 lang: es
 ---
+
 En **Oronz**, en **Casa Bidondo**, se conserva un ejemplar centenario de **Beltza**. Hasta ahora la variedad estaba documentada en Ochagavía y en Esparza. Con este hallazgo son **tres los pueblos** del Valle en los que se ha localizado.
 
 ## Una manzana muy querida

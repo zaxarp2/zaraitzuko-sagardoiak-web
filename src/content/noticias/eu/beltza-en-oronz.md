@@ -6,6 +6,7 @@ title: Beltza ale berria aurkitu da Oronzen
 resumen: Bidondo Etxeak Beltza barietatearen ale mendetsua gordetzen du, orain arte Ochagavían eta Esparzan dokumentatua. Barietatearen presentzia historikoa berresten du haraneko gutxienez hiru herritan.
 lang: eu
 ---
+
 **Oronzen**, **Bidondo Etxean**, **Beltza** baten ale mendetsua gordetzen da. Orain arte barietatea Ochagavían eta Esparzan zegoen dokumentatuta. Aurkikuntza honekin, haraneko **hiru herritan** aurkitu da.
 
 ## Oso maitatua den sagarra
