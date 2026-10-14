@@ -95,18 +95,25 @@ const stats = (P.inicio.cifras ?? []).map((c: any) => ({ num: c.num, lbl: c.text
   <h2 class="section-title" set:html={P.diario.titulo} />
   <p class="section-lede">{P.diario.entradilla}</p>
 
-  <div class="news-grid">
-    {
-      noticias.map((n) => (
-        <a class="news-item" href={`${diarioBase}${n.id.split('/').pop()}/`}>
-          <div class="news-date">{n.data.date}</div>
-          <h3>{n.data.title}</h3>
-          <p>{resumen(n)}</p>
-          <span class="news-more">{D.article.more}</span>
-          <span class="news-tag">— {n.data.tag}</span>
-        </a>
-      ))
-    }
+  <!-- Mismo formato que manzanas y peras: fila horizontal con flechas y «Ver todas» -->
+  <div class="vcar vcar-news" data-vcar>
+    <div class="vcar-track" data-vcar-track tabindex="0" aria-label={D.nav.diary}>
+      {
+        noticias.map((n) => (
+          <div class="vcar-item vcar-item-news">
+            <a class="news-item" href={`${diarioBase}${n.id.split('/').pop()}/`}>
+              <div class="news-date">{n.data.date}</div>
+              <h3>{n.data.title}</h3>
+              <p>{resumen(n)}</p>
+              <span class="news-more">{D.article.more}</span>
+              <span class="news-tag">— {n.data.tag}</span>
+            </a>
+          </div>
+        ))
+      }
+    </div>
+    <button class="vcar-btn vcar-prev" type="button" data-vcar-prev aria-label="‹">‹</button>
+    <button class="vcar-btn vcar-next" type="button" data-vcar-next aria-label="›">›</button>
   </div>
   <div class="vcar-links"><a class="btn" href={diarioBase}>{D.article.all}</a></div>
 </section>

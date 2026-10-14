@@ -663,6 +663,10 @@
   @media (max-width:880px){ .vcar{--gut:6vw} .vcar-prev{left:-4px} .vcar-next{right:-4px} }
   .vcar.at-start .vcar-prev,.vcar.at-end .vcar-next{opacity:0;pointer-events:none}
   .vcar-links{display:flex;gap:14px;flex-wrap:wrap;margin-top:18px}
+  .vcar-item-news{flex:0 0 clamp(280px,31vw,380px)}
+  .vcar-item-news .news-item{height:100%}
+  .vcar-news .vcar-btn{top:50%;transform:translateY(-50%)}
+  @media (max-width:720px){ .vcar-item-news{flex-basis:84%} }
   .vcar-links + .catalogo-nota{margin-top:8px}
   .variety-card{text-decoration:none;display:block}
   #peras{background:var(--paper-warm);border-top:1px solid var(--paper-edge)}
