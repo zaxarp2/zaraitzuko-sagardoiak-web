@@ -6,7 +6,7 @@ title: Nueva variedad Beltza localizado en Oronz
 resumen: |-
   Casa Bidondo conserva un ejemplar de Beltza, hasta ahora documentada en Ochagavía y Esparza. 
   Pero según la caracterización molecular, se trata de otra variedad diferente a la Beltza de Ochagavía y Esparza.
-  Seguiremos investigando qué diferencias presentan y cómo las agrupamos o diferenciamos.
+  Seguiremos investigando qué similitudes presentan y cómo las agrupamos o diferenciamos.
 lang: es
 ---
 
