@@ -2,7 +2,8 @@
 especie: manzana
 'n': 16
 name: Manzana Pera
-status: confirmed
+status:
+  - confirmed
 epoca: media
 extension: extendida
 color: '#c4cd87'

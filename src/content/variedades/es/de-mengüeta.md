@@ -2,7 +2,8 @@
 especie: manzana
 'n': 22
 name: De Mengüeta
-status: pending
+status:
+  - pending
 epoca: ''
 extension: ''
 color: '#7c4a2b'

@@ -2,7 +2,8 @@
 especie: manzana
 'n': 6
 name: Agostera de Ibilcieta
-status: confirmed
+status:
+  - confirmed
 epoca: temprana
 extension: minoritaria
 color: '#8c9d52'

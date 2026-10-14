@@ -2,7 +2,8 @@
 especie: manzana
 n: 11
 name: Fina
-status: confirmed
+status:
+  - confirmed
 epoca: media
 extension: extendida
 color: '#a8b46a'

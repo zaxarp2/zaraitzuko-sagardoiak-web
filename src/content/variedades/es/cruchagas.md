@@ -2,7 +2,8 @@
 especie: manzana
 'n': 18
 name: Cruchagas
-status: info
+status:
+  - info
 epoca: ''
 extension: ''
 color: '#7c4a2b'

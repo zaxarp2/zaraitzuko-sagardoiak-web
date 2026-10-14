@@ -2,7 +2,7 @@
 import ui from '../i18n/ui.json';
 import LaminaPendiente from './LaminaPendiente.astro';
 import { md } from '../lib/md';
-import { numeros, dos, statusClass as claseEstado } from '../lib/numeros';
+import { numeros, dos, statusClass as claseEstado, estados } from '../lib/numeros';
 
 interface Props {
   entry: any;
@@ -18,7 +18,7 @@ const d = (ui as any)[lang];
 const D = entry.data;
 const home = lang === 'eu' ? '/eu/' : '/';
 
-const statusClass = claseEstado(D.status);
+const misEstados = estados(D.status);
 const num = (await numeros(lang)).get(slug);
 // Presencia fuera del Valle y época de recolección
 const ambitoTxt = D.ambito === 'fuera'
@@ -60,7 +60,9 @@ const otros = (D.otrosPueblos ?? []).join(' · ');
       <div class="ficha-num">N.º {dos(num)}</div>
       <h1>{D.name}</h1>
       <p class="ficha-latin">{latin} — var. «{D.name}»</p>
-      <div class={`variety-status ${statusClass} ficha-status`}>{d.statusLabels[D.status]}</div>
+      <div class="ficha-estados">
+        {misEstados.map((s) => <div class={`variety-status ${claseEstado(s)} ficha-status`}>{d.statusLabels[s]}</div>)}
+      </div>
       {ambitoTxt && <p class="ficha-extra">{ambitoTxt}</p>}
 
       <dl class="ficha-facts">
@@ -91,7 +93,7 @@ const otros = (D.otrosPueblos ?? []).join(' · ');
     <!-- Cabecera de la versión impresa (formato de las fichas de Ester: datos y fotos en la primera columna) -->
     <div class="pf-intro print-only">
       <h1 class="pf-title">{num}. {D.name}</h1>
-      <p class="pf-latin">{latin} — var. «{D.name}» · {d.statusLabels[D.status]}</p>
+      <p class="pf-latin">{latin} — var. «{D.name}» · {misEstados.map((s) => d.statusLabels[s]).join(' · ')}</p>
       {fotos.slice(0, web ? 3 : 2).map((f) => <img class="pf-foto" data-print-src={f.src} alt="" />)}
       <dl class="pf-facts">
         {pueblos && (<><dt>{d.vars.quickLabels.pueblos}</dt><dd>{pueblos}</dd></>)}
@@ -185,7 +187,8 @@ const otros = (D.otrosPueblos ?? []).join(' · ');
   }
   .ficha-intro h1 { font-size: clamp(40px, 7vw, 68px); line-height: 1; margin-bottom: 6px; }
   .ficha-latin { font-style: italic; color: var(--stone); margin-bottom: 16px; }
-  .ficha-status { display: inline-block; position: static; margin-bottom: 18px; }
+  .ficha-estados { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 18px; }
+  .ficha-status { display: inline-block; position: static; }
   .ficha-extra { font-size: 14px; color: var(--stone); font-style: italic; margin-bottom: 14px; }
   .ficha-facts { display: grid; grid-template-columns: auto 1fr; gap: 4px 16px; font-size: 15px; margin: 10px 0 16px; }
   .ficha-facts dt {

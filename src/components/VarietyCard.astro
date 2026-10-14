@@ -2,7 +2,7 @@
 /** Tarjeta de variedad (portada, carruseles y páginas de listado) */
 import ui from '../i18n/ui.json';
 import plates from '../data/plates.json';
-import { numeros, dos, statusClass } from '../lib/numeros';
+import { numeros, dos, statusClass, estados } from '../lib/numeros';
 interface Props { v: any; lang: 'es' | 'eu'; }
 const { v, lang } = Astro.props;
 const D = (ui as any)[lang];
@@ -50,13 +50,15 @@ function pearSvg(n: number, c1: string, c2: string) {
 <a class="variety-card" href={`${fichaBase}${slug}`}>
   <div class="variety-illustration">
     <div class="variety-num">N.º {dos(num)}</div>
-    <div class={`variety-status ${statusClass(v.data.status)}`}>{D.statusLabels[v.data.status]}</div>
+    <div class="variety-estados">
+      {estados(v.data.status).map((s) => <div class={`variety-status ${statusClass(s)}`}>{D.statusLabels[s]}</div>)}
+    </div>
     {hasPlate ? (
       <img class="variety-motif" src={`/motivos/${slug}.png`} alt={v.data.name} loading="lazy" />
     ) : esPera ? (
       <Fragment set:html={pearSvg(v.data.n, v.data.color, v.data.colorAlt)} />
     ) : (
-      <Fragment set:html={appleSvg(v.data.n, v.data.color, v.data.colorAlt, v.data.status === 'confirmed' && RUSSET.has(v.data.name))} />
+      <Fragment set:html={appleSvg(v.data.n, v.data.color, v.data.colorAlt, estados(v.data.status).includes('confirmed') && RUSSET.has(v.data.name))} />
     )}
   </div>
   <div class="variety-body">

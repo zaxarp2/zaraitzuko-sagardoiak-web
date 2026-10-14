@@ -2,7 +2,8 @@
 especie: manzana
 'n': 5
 name: Agostera de Maisterra
-status: confirmed
+status:
+  - confirmed
 epoca: temprana
 extension: ''
 color: '#8c9d52'

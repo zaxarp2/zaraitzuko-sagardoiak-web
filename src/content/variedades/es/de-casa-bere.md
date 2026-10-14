@@ -2,7 +2,8 @@
 especie: manzana
 n: 13
 name: De Casa Bere
-status: confirmed
+status:
+  - confirmed
 epoca: media
 extension: minoritaria
 color: '#a93838'

@@ -2,7 +2,8 @@
 especie: manzana
 'n': 19
 name: De Santirsoaldea
-status: info
+status:
+  - info
 epoca: ''
 extension: ''
 color: '#7c4a2b'

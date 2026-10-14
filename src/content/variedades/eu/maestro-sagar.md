@@ -2,7 +2,8 @@
 especie: manzana
 'n': 4
 name: Maestro Sagar
-status: confirmed
+status:
+  - confirmed
 epoca: media
 extension: extendida
 color: '#b8842c'

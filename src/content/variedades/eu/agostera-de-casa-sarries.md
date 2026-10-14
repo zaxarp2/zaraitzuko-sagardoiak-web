@@ -2,7 +2,8 @@
 especie: manzana
 'n': 8
 name: Agostera de Casa Sarriés
-status: confirmed
+status:
+  - confirmed
 epoca: temprana
 extension: ''
 color: '#d6b24a'

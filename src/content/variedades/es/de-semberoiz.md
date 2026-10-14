@@ -2,7 +2,8 @@
 especie: manzana
 'n': 17
 name: De Semberoiz
-status: confirmed
+status:
+  - confirmed
 epoca: media
 extension: minoritaria
 color: '#b8842c'

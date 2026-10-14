@@ -2,7 +2,8 @@
 especie: manzana
 'n': 9
 name: De Jandúa
-status: confirmed
+status:
+  - confirmed
 epoca: tardia
 extension: minoritaria
 color: '#a93838'

@@ -2,7 +2,8 @@
 especie: manzana
 'n': 21
 name: De Ekía
-status: pending
+status:
+  - pending
 epoca: ''
 extension: ''
 color: '#7c4a2b'

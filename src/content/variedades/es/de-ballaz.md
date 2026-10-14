@@ -2,7 +2,8 @@
 especie: manzana
 n: 10
 name: De Ballaz
-status: confirmed
+status:
+  - confirmed
 epoca: tardia
 extension: ''
 color: '#7c4a2b'

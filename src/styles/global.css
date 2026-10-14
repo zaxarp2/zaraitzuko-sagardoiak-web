@@ -259,6 +259,8 @@
     padding:3px 8px;border-radius:50px;
     letter-spacing:0.1em;text-transform:uppercase;
   }
+  .variety-estados{position:absolute;top:12px;right:14px;display:flex;flex-direction:column;align-items:flex-end;gap:4px;z-index:1}
+  .variety-estados .variety-status{position:static}
   .status-confirmed{background:rgba(45,74,58,0.1);color:var(--leaf-deep)}
   .status-pending{background:rgba(184,132,44,0.15);color:var(--rust)}
   .status-draft{background:rgba(124,45,45,0.12);color:var(--apple)}

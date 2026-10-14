@@ -200,7 +200,9 @@
       "houses": "Las casas del Valle",
       "propose": "Propón una variedad",
       "copy": "© 2025–2026 · Zaraitzuko Sagardoiak Elkartea",
-      "author": "Texto y datos: Ester Montero · 2025"
+      "author": "Texto y datos: Ester Montero · 2025",
+      "license": "Los textos, láminas y fotografías de esta web se publican con licencia",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"
     },
     "mockup": "Mockup para validación",
     "statusLabels": {
@@ -501,7 +503,9 @@
       "houses": "Haraneko etxeak",
       "propose": "Proposatu barietate bat",
       "copy": "© 2025–2026 · Zaraitzuko Sagardoiak Elkartea",
-      "author": "Testua eta datuak: Ester Montero · 2025"
+      "author": "Testua eta datuak: Ester Montero · 2025",
+      "license": "Webgune honetako testuak, xaflak eta argazkiak lizentzia honekin argitaratzen dira:",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/deed.eu"
     },
     "mockup": "Baliozkotzeko mockupa",
     "statusLabels": {

@@ -2,7 +2,8 @@
 especie: manzana
 n: 14
 name: De Casa Morea
-status: confirmed
+status:
+  - confirmed
 epoca: media
 extension: ''
 color: '#d4a85a'

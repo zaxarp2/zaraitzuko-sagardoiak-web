@@ -39,3 +39,6 @@ export const dos = (n: number | undefined) => String(n ?? '').padStart(2, '0');
 export const statusClass = (s: string) =>
   ({ confirmed: 'status-confirmed', pending: 'status-pending', fruto: 'status-fruto', info: 'status-info' } as Record<string, string>)[s] ??
   'status-info';
+
+/** Estados de una variedad como lista (admite el formato antiguo de un solo valor) */
+export const estados = (s: unknown): string[] => (Array.isArray(s) ? s : s ? [String(s)] : []);

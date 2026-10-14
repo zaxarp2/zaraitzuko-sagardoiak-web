@@ -2,7 +2,8 @@
 especie: manzana
 'n': 2
 name: Muturbeltz
-status: confirmed
+status:
+  - confirmed
 epoca: media
 extension: minoritaria
 color: '#b8842c'

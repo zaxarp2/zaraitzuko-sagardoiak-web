@@ -2,7 +2,8 @@
 especie: manzana
 'n': 3
 name: Autxa
-status: confirmed
+status:
+  - confirmed
 epoca: media
 extension: extendida
 color: '#a93838'

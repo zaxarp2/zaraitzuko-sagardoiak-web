@@ -2,7 +2,8 @@
 especie: manzana
 'n': 1
 name: Beltza
-status: confirmed
+status:
+  - confirmed
 epoca: media
 extension: extendida
 color: '#7c4a2b'

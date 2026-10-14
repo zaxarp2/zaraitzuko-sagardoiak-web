@@ -48,7 +48,7 @@ collections:
       - { name: n, label: "Orden en el catálogo", widget: number, value_type: float, i18n: duplicate,
           hint: "La web numera sola (1, 2, 3…) siguiendo este orden. Para meter una variedad entre la 1 y la 2, pon 1.5; el resto se renumera automáticamente." }
       - { name: name, label: "Nombre", widget: string, i18n: duplicate }
-      - { name: status, label: "Estado", widget: select, i18n: duplicate,
+      - { name: status, label: "Estado (se pueden marcar varios)", widget: select, multiple: true, min: 1, i18n: duplicate,
           options: [ {label: "Validada", value: confirmed}, {label: "Pendiente molecular", value: pending}, {label: "Pendiente fruto", value: fruto}, {label: "Pendiente más información", value: info} ] }
       - { name: epoca, label: "Época de recolección", widget: select, required: false, i18n: duplicate,
           options: [ {label: "Temprana", value: temprana}, {label: "Media", value: media}, {label: "Tardía", value: tardia} ] }

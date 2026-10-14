@@ -19,8 +19,12 @@ const variedades = defineCollection({
     name: z.string(),
     // Manzana o pera (cada especie tiene su propia numeración y su sección)
     especie: z.enum(['manzana', 'pera']).default('manzana'),
-    // 'draft' (Borrador) ya no existe: si aparece en algún fichero antiguo se trata como «Pendiente más información»
-    status: z.preprocess((v) => (v === 'draft' ? 'info' : v), z.enum(['confirmed', 'pending', 'fruto', 'info'])),
+    // Estado: se pueden marcar varios (p. ej. «Pendiente fruto» + «Pendiente molecular»).
+    // Acepta también el formato antiguo de un solo valor; 'draft' (Borrador) ya no existe y pasa a «Pendiente más información».
+    status: z.preprocess(
+      (v) => (Array.isArray(v) ? v : v == null || v === '' ? [] : [v]).map((x) => (x === 'draft' ? 'info' : x)),
+      z.array(z.enum(['confirmed', 'pending', 'fruto', 'info'])).min(1)
+    ),
     // Época de recolección (la antigua «otoño» pasa a «media»)
     epoca: z.preprocess((v) => (v === 'otono' ? 'media' : vacioAUndefined(v)), z.enum(['temprana', 'media', 'tardia']).optional()),
     // Presencia: solo registrada en el Valle / presente también fuera (con los nombres que recibe fuera)

@@ -2,7 +2,8 @@
 especie: manzana
 'n': 15
 name: Verde de Casa Arrese
-status: confirmed
+status:
+  - confirmed
 epoca: tardia
 extension: minoritaria
 color: '#b8842c'

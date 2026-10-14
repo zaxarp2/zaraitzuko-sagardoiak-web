@@ -2,7 +2,8 @@
 especie: manzana
 'n': 12
 name: De Casa Rosanz/Roja
-status: confirmed
+status:
+  - confirmed
 epoca: media
 extension: minoritaria
 color: '#c95050'

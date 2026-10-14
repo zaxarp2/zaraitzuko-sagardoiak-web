@@ -2,7 +2,8 @@
 especie: manzana
 'n': 20
 name: Inxertas
-status: pending
+status:
+  - pending
 epoca: ''
 extension: ''
 color: '#7c4a2b'

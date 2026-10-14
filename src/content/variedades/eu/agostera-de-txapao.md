@@ -2,7 +2,8 @@
 especie: manzana
 'n': 7
 name: Agostera de Txapao/Agostera de Blaixko
-status: confirmed
+status:
+  - confirmed
 epoca: temprana
 extension: ''
 color: '#b8352c'
