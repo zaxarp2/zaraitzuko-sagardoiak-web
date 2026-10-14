@@ -1,6 +1,6 @@
 ---
 especie: manzana
-n: 9
+'n': 9
 name: De Jandúa
 status: confirmed
 epoca: tardia
@@ -31,7 +31,7 @@ fotos:
   - src: /fotos/de-hierro/de-hierro-10.jpg
     pie: ''
 otrosPueblos: []
-extraStatus: posible sinonimia con De Jandúa
+extraStatus: Sólo registrada en el Valle
 antig: Más de 100 años
 quote: '"Son muy dulces, tienen un dulzor especial. Se cae la manzana después que las hojas "Son las que más se guardan".'
 estado: Un ejemplar localizado en Izalzu (Casa Jandúa). Puede quedar alguno más.

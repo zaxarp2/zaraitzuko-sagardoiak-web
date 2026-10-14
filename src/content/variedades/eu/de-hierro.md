@@ -1,6 +1,6 @@
 ---
 especie: manzana
-n: 9
+'n': 9
 name: De Jandúa
 status: confirmed
 epoca: tardia
