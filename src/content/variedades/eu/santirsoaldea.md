@@ -4,13 +4,17 @@ especie: manzana
 name: De Santirsoaldea
 status:
   - info
-epoca: ''
+epoca: media
+ambito: ''
+fueraNombres: ''
 extension: ''
 color: '#7c4a2b'
 colorAlt: '#a06b3e'
 pueblos:
   - Esparza
-fotos: []
+fotos:
+  - src: /uploads/santirsoaldea 1.webp
+  - src: /uploads/santirsoaldea.webp
 otrosPueblos: []
 antig: ''
 quote: ''
