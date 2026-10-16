@@ -10,11 +10,11 @@
           "texto": "Variedades descritas"
         },
         {
-          "num": "29",
+          "num": "91",
           "texto": "Personas entrevistadas"
         },
         {
-          "num": "8",
+          "num": "14",
           "texto": "Pueblos prospectados"
         },
         {
@@ -25,7 +25,7 @@
     },
     "manzanas": {
       "titulo": "Las <em>manzanas</em> del Valle.",
-      "entradilla": "Cada ficha recoge la descripción local, la valoración de las personas que la conocen, la caracterización morfológica del fruto y el análisis molecular de su identidad varietal. Pincha en una variedad para abrir su ficha completa."
+      "entradilla": "Cada ficha recoge la descripción local, la valoración de las personas que la conocen, el diagnóstico de la variedad, características de interés para su reintroducción, la descripción morfológica del fruto y el análisis molecular de su identidad varietal. Pincha en una variedad para abrir su ficha completa."
     },
     "peras": {
       "titulo": "Las <em>peras</em> del Valle.",
@@ -49,7 +49,7 @@
         },
         {
           "titulo": "Con quién",
-          "texto": "Trabajamos junto a Arrea, la Red de Semillas de Navarra y el Grupo de Fruticultura de la UPNA, con el apoyo de la Junta del Valle de Salazar. Y, sobre todo, con las personas y las casas del Valle que han cuidado estos árboles."
+          "texto": "Trabajamos junto a Arrea, la Red de Semillas de Navarra y el Grupo de Fruticultura de la UPNA, con el apoyo de la Junta del Valle de Salazar y Gobierno de Navarra. Y, sobre todo, con las personas y las casas del Valle que han cuidado estos árboles."
         }
       ],
       "socioTitulo": "¿Quieres formar parte?",
