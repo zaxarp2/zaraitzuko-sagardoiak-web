@@ -712,3 +712,11 @@
   .footer-svg{width:72px;height:57px}
   .footer-logo .logo-leaf{fill:var(--amber-soft);stroke:var(--amber-soft)}
   @media (max-width:520px){ .logo-svg{width:42px;height:33px} .logo-name{font-size:16px} }
+
+  /* ============ EUSKERA EN PREPARACIÓN ============ */
+  .eu-obras{max-width:640px;margin:0 auto;padding:180px 8vw 120px;text-align:center;min-height:70vh}
+  .eu-obras-eyebrow{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:var(--rust);margin-bottom:14px}
+  .eu-obras h1{font-size:clamp(44px,8vw,76px);line-height:1;margin-bottom:22px}
+  .eu-obras h1 em{color:var(--apple)}
+  .eu-obras-txt{font-size:20px;line-height:1.5;margin-bottom:10px}
+  .eu-obras-es{font-style:italic;color:var(--stone);font-size:17px;margin-bottom:30px}

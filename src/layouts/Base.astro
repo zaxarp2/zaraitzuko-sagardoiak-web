@@ -1,6 +1,7 @@
 ---
 import ui from '../i18n/ui.json';
 import '../styles/global.css';
+import { EU_PUBLICADO } from '../lib/config';
 
 interface Props {
   lang: 'es' | 'eu';
@@ -15,7 +16,9 @@ const isEu = lang === 'eu';
 // Rutas base de cada idioma (castellano sin prefijo, euskera bajo /eu/)
 const home = isEu ? '/eu/' : '/';
 const esHref = isEu ? (alt ?? '/') : '/';
-const euHref = isEu ? '/eu/' : (alt ?? '/eu/');
+const euHref = isEu ? '/eu/' : EU_PUBLICADO ? (alt ?? '/eu/') : '/eu/';
+// Euskera aún sin publicar: las páginas /eu/ muestran un aviso en lugar del contenido
+const euEnObras = isEu && !EU_PUBLICADO;
 ---
 
 <!DOCTYPE html>
@@ -24,7 +27,8 @@ const euHref = isEu ? '/eu/' : (alt ?? '/eu/');
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={D.footer.brandB} />
-    <title>{title}</title>
+    <title>{euEnObras ? 'Laster · Zaraitzuko Sagardoiak' : title}</title>
+    {euEnObras && <meta name="robots" content="noindex" />}
     <link rel="icon" href="/favicon.ico" sizes="any" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
@@ -53,13 +57,13 @@ const euHref = isEu ? '/eu/' : (alt ?? '/eu/');
         </span>
       </a>
       <div class="nav-right">
-        <ul class="nav-links">
+        {!euEnObras && (<ul class="nav-links">
           <li><a href={`${home}#variedades`}>{D.nav.apples}</a></li>
           <li><a href={`${home}#peras`}>{D.nav.pears}</a></li>
           <li><a href={`${home}#noticias`}>{D.nav.diary}</a></li>
           <li><a href={`${home}#asociacion`}>{D.nav.assoc}</a></li>
           <li><a href={`${home}#colabora`}>{D.nav.collab}</a></li>
-        </ul>
+        </ul>)}
         <div class="lang-switch">
           <a
             class:list={['lang-btn', { active: !isEu }]}
@@ -76,7 +80,17 @@ const euHref = isEu ? '/eu/' : (alt ?? '/eu/');
     </nav>
 
     <main>
-      <slot />
+      {euEnObras ? (
+        <section class="eu-obras">
+          <p class="eu-obras-eyebrow">Euskara · Euskera</p>
+          <h1>Laster <em>euskaraz</em>.</h1>
+          <p class="eu-obras-txt">Webgunearen euskarazko bertsioa prestatzen ari gara. Laster argitaratuko dugu.</p>
+          <p class="eu-obras-txt eu-obras-es">La versión en euskera de la web está en preparación y se publicará próximamente.</p>
+          <a class="btn" href={esHref}>Gaztelaniaz ikusi · Ver en castellano →</a>
+        </section>
+      ) : (
+        <slot />
+      )}
     </main>
 
     <footer class="footer">
