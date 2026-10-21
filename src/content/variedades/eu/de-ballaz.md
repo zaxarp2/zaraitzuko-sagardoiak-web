@@ -6,7 +6,7 @@ status:
   - confirmed
 epoca: tardia
 ambito: fuera
-fueraNombres: ''
+fueraNombres: Hierro
 extension: ''
 color: '#7c4a2b'
 colorAlt: '#a06b3e'
