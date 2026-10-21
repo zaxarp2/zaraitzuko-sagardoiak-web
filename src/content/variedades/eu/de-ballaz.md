@@ -1,10 +1,12 @@
 ---
 especie: manzana
-n: 10
+'n': 10
 name: De Ballaz
 status:
   - confirmed
 epoca: tardia
+ambito: fuera
+fueraNombres: ''
 extension: ''
 color: '#7c4a2b'
 colorAlt: '#a06b3e'
