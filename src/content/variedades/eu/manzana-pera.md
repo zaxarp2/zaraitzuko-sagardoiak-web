@@ -6,7 +6,7 @@ status:
   - confirmed
 epoca: media
 ambito: ''
-fueraNombres: ''
+fueraNombres: Pero Mingán / Peruco
 extension: extendida
 color: '#c4cd87'
 colorAlt: '#d8df9f'
