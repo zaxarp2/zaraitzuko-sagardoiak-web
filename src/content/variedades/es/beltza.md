@@ -5,6 +5,8 @@ name: Beltza
 status:
   - confirmed
 epoca: media
+ambito: valle
+fueraNombres: ''
 extension: extendida
 color: '#7c4a2b'
 colorAlt: '#a06b3e'
@@ -28,18 +30,19 @@ fotos:
 otrosPueblos:
   - Ezcároz
   - Izalzu
-ambito: valle
 antig: Más de 100 años
 quote: Tiene mucho sabor, es viva, muy jugosa, ácida…
 estado: |-
   Varios ejemplares localizados, algunos de ellos centenarios y muy envejecidos. En Ochagavía (Casa Pedro Andía, Casa Portal, Casa Sangüesino), en Esparza (Casa Balisa, procedente de Ochagavía).
 
-  Quedan más ejemplares vivos. En los últimos años se han realizado nuevos injertos con púas procedentes del Beltzo centenario de Ochagavía, por hortelanos locales. También se han reintroducido ejemplares dentro de este proyecto de recuperación de frutales.
+  Quedan más árboles vivos. En los últimos años se han realizado nuevos injertos con púas procedentes del _Beltzo_ centenario de Ochagavía, por hortelanos locales. También se han reintroducido ejemplares con este proyecto de recuperación.
 potencial: Gran interés de cara a su reintroducción por su apreciado sabor, larga conservación, presencia centenaria en el valle y ausencia de registros en otros lugares.
 fruto: |-
-  Manzana achatada, tamaño pequeño-mediano. Piel áspera y mate, completamente marrón por la presencia de russeting. 
+  Manzana achatada, tamaño pequeño-mediano. 
 
-  Rabillo corto y grosor medio. 
+  Piel completamente marrón por la presencia de russeting (pardeamiento áspero superficial de la piel, característico de algunas manzanas y peras).
+
+  Pedúnculo corto, grosor medio. 
 
   Carne blanca-amarillenta, firmeza alta, dulzor y acidez altos.
 molecular: |-

@@ -5,6 +5,8 @@ name: Beltza
 status:
   - confirmed
 epoca: media
+ambito: valle
+fueraNombres: ''
 extension: extendida
 color: '#7c4a2b'
 colorAlt: '#a06b3e'
@@ -22,7 +24,6 @@ fotos:
 otrosPueblos:
   - Ezcároz
   - Izalzu
-ambito: valle
 antig: 100 urte baino gehiago
 quote: Tiene mucho sabor, es viva, muy jugosa, ácida…
 estado: Hiru ale lokalizatu dira (bi mendetsuak eta oso zaharkituak) Ochagavían (Pedro Andía Etxea), Esparzan (Balisa Etxea, Ochagavíatik etorria) eta Oronzen (Bidondo Etxea). Litekeena da beste batzuk bizirik egotea. Azken urteotan, Ochagavíako zuhaitz mendetsutik txerto berriak egin dituzte tokiko ortuzainek eta proiektuaren barruan.
