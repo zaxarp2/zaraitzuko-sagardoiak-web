@@ -3,8 +3,11 @@ especie: manzana
 'n': 18
 name: Cruchagas
 status:
-  - info
+  - pending
+  - fruto
 epoca: ''
+ambito: ''
+fueraNombres: ''
 extension: ''
 color: '#7c4a2b'
 colorAlt: '#a06b3e'
