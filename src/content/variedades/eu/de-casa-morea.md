@@ -1,10 +1,12 @@
 ---
 especie: manzana
-n: 14
+'n': 14
 name: De Casa Morea
 status:
   - confirmed
 epoca: media
+ambito: fuera
+fueraNombres: ''
 extension: ''
 color: '#d4a85a'
 colorAlt: '#e5be7d'
