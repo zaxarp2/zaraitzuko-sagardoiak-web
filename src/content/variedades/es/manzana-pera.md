@@ -3,7 +3,7 @@ especie: manzana
 'n': 16
 name: Manzana Pera
 status:
-  - confirmed
+  - fruto
 epoca: media
 ambito: ''
 fueraNombres: Pero Mingán / Peruco
