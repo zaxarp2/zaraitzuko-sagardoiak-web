@@ -14,9 +14,9 @@ colorAlt: '#a06b3e'
 pueblos:
   - Ochagavía
 fotos:
-  - src: /uploads/20260618_211611.webp
-    pie: ''
   - src: /uploads/20260919_120212.webp
+    pie: ''
+  - src: /uploads/20260618_211611.webp
     pie: ''
   - src: /uploads/FRUTO INMADURO 1.webp
     pie: Fruto inmaduro
