@@ -5,6 +5,8 @@ name: Manzana Pera
 status:
   - confirmed
 epoca: media
+ambito: ''
+fueraNombres: ''
 extension: extendida
 color: '#c4cd87'
 colorAlt: '#d8df9f'
@@ -33,13 +35,13 @@ molecular: Coincide con la variedad denominada Pero Mingan, de origen asturiano,
 valoracion: |-
   Apreciada por su singularidad, vinculación local y larga conservación.
 
-  En Ochagavía no era de las variedades más apreciadas, la mayoría de personas entrevistadas la describen como _“sosa”._ Pero en otros pueblos como Izal, la consideran _"muy buena de sabor"._
+  En Ochagavía no era de las variedades más apreciadas para consumo como manzana de mesa, la mayoría de personas entrevistadas la describen como _“sosa”._ Pero en otros pueblos como Izal, la consideran _"muy buena de sabor"._
 abundancia: Parece que era una variedad extendida, al menos en algunos pueblos como Ochagavía, donde estaba presente en varias casas.
 origen: ''
 recogida: 'Cosecha: A mediados de octubre, se conservan hasta final de primavera: _“Era de las que más se guardaba”._'
 usos: Consumo en fresco y asadas.
 otrasCar: ''
-obs: Se desconoce si bajo el nombre de Manzana Pera hay una sola variedad que estaba presente en varios pueblos, o si es un mismo nombre que agrupa diferentes variedades con la característica común de tener una forma de fruto cónica.
+obs: Se desconoce si bajo el nombre de Manzana Pera había una sola variedad que estaba presente en varios pueblos, o si eran diferentes variedades con la característica común de tener una forma de fruto cónica.
 epocaLabel: Mediados de octubre · conserva hasta primavera
 lang: es
 tags:

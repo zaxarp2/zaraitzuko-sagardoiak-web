@@ -5,6 +5,8 @@ name: Manzana Pera
 status:
   - confirmed
 epoca: media
+ambito: ''
+fueraNombres: ''
 extension: extendida
 color: '#c4cd87'
 colorAlt: '#d8df9f'
