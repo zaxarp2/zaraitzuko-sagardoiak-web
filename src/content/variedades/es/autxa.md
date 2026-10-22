@@ -34,7 +34,7 @@ fruto: |-
 
   Color de fondo amarillo y color superficial rojo oscuro. 
 
-  Piel lisa y brillante con abundante pruina. 
+  Piel lisa y brillante. Abundante pruina (capa cerosa de aspecto blanquecino polvoriento que recubre la piel de algunas manzanas o ciruelas).
 
   Rabillo de longitud y grosor medios. 
 
