@@ -40,7 +40,7 @@ fruto: |-
 
   Carne amarillenta, firmeza y acidez baja, dulzor medio.
 molecular: Variedad tradicional minoritaria, presente en el Banco de Germoplasma de Navarra y recogida como Arizkun-01 (pueblo cercano a la frontera vascofrancesa, como Ochagavía), Naranjina y Colorada.
-valoracion: En la Casa donde aún se mantiene y se consume la valoran muy positivamente, especialmente por el sabor. No obstante, otras personas del pueblo la describen como _“sosa”._
+valoracion: En la Casa donde aún se mantiene y se consume la valoran muy positivamente, especialmente por el sabor. Otras personas entrevistadas la describen como _“un poco sosa”._
 abundancia: En Ochagavía era una variedad muy conocida y presente en varias casas, pero en la mayoría ha desaparecido.
 origen: |-
   Una informante cuenta que oyó a su padre decir que la variedad venía de Francia. 
