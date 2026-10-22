@@ -5,6 +5,8 @@ name: Maestro Sagar
 status:
   - confirmed
 epoca: media
+ambito: fuera
+fueraNombres: Reineta Blanca
 extension: extendida
 color: '#b8842c'
 colorAlt: '#c89940'
@@ -28,12 +30,10 @@ fotos:
     pie: ''
 otrosPueblos:
   - Todos los pueblos del Valle
-ambito: fuera
-fueraNombres: 'Reineta Blanca'
 antig: Más de 100 años
 quote: ''
 estado: 'Varios ejemplares localizados: Casa Xinxoan (Ochagavía), Casa Bidondo (Oronz), Casa Arrese (Ezcároz), Casa Landa (Esparza), Casa Mikeleiz (Izalzu), Casa Ezker (Igal), Casa Morea (Ibilzieta).'
-potencial: Interés por su rusticidad de cultivo, permanencia del fruto en el árbol sin caída prematura, sabor (_“mucho mejor que las reinetas de ahora”_ cultivadas también en el valle), su importancia, valoración  y tradición local.
+potencial: Interés por su rusticidad en cultivo, permanencia del fruto en el árbol sin caída prematura, sabor (_“mucho mejor que las reinetas de ahora”_ cultivadas también en el valle), su importancia, valoración  y tradición local.
 fruto: |-
   Manzana aplanada, tamaño medio. 
 
