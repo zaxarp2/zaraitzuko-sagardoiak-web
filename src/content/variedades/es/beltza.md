@@ -13,15 +13,14 @@ colorAlt: '#a06b3e'
 pueblos:
   - Ochagavía
   - Esparza
-  - Oronz
 fotos:
   - src: /fotos/beltza/beltza-04.jpg
     pie: ''
   - src: /fotos/beltza/beltza-03.jpg
     pie: ''
-  - src: /fotos/beltza/beltza-02.jpg
-    pie: ''
   - src: /fotos/beltza/beltza-06.jpg
+    pie: ''
+  - src: /fotos/beltza/beltza-02.jpg
     pie: ''
   - src: /fotos/beltza/beltza-05.jpg
     pie: ''
