@@ -47,7 +47,7 @@ fruto: |-
 molecular: |-
   No está recogida en otros lugares.
 
-  En 2026, se recoge y analiza una Beltza en Oronz (Casa Bidondo), de apariencia similar a ésta. Pero no coincide su perfil genético: se trata de dos variedades diferentes, según la analítica molecular. A su vez, la Beltza de Oronz coincide con la variedad recogida como Beltza en Ochagavía en la prospección de 1986, presente en el Banco de Germoplasma de la UPNA y diferente a la localizada en este trabajo.
+  En 2026, se recoge y analiza una Beltza en Oronz (Casa Bidondo), de apariencia similar a ésta. Pero no coincide su perfil genético: se trata de dos variedades diferentes, según la analítica molecular. A su vez, la Beltza de Oronz coincide con la variedad recogida como Beltza en Ochagavía en la prospección realizada por Gobierno de Navarra en 1986, presente en el Banco de Germoplasma de la UPNA y diferente a la localizada en este trabajo.
 valoracion: Variedad especialmente apreciada por su sabor, su larga conservación y su vinculación con la cultura local. Es una de las variedades más valoradas.
 abundancia: |-
   En Ochagavía era una de las variedades más conocidas y extendidas, presente en numerosas casas. 
