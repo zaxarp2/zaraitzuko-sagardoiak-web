@@ -44,21 +44,17 @@ molecular: No está registrada fuera del Valle. Sólo hay constancia de su prese
 valoracion: |-
   
   Las personas de Esparza que la consumen y la mantienen, la valoran muy positivamente.
-abundancia: Cosecha en Agosto. Cuando se recoge está lista para consumir. No se conserva mucho una vez recogida (hasta septiembre).
+abundancia: ''
 origen: ''
 recogida: Cosecha en agosto. Cuando se recoge ya está lista para consumir. No se conserva mucho una vez recogida (hasta septiembre).
 usos: Consumo en fresco.
 otrasCar: ''
 obs: |-
-  Agostera es un homónimo: variedades diferentes con el mismo nombre y la característica común de tener maduración temprana. 
+  Agostera es un homónimo que agrupa a variedades diferentes con el mismo nombre y la característica común de tener maduración temprana. 
 
   Se han citado en varios pueblos y se describen en las siguientes fichas.
 
-  En Royo et. al. (2009) se describe una Agostera en Izalzu[[1]](#_ftn1), 
-
-
-
-
+  En la publicación _El Manzano autóctono de Navarra_ [[1]](#_ftn1),  se describe una Agostera en Izalzu, pero no coincide con ninguna de las  Agosteras aquí descritas.
 
   [[1]](#_ftnref1) Royo, B., González, J., Laquidain, M.J., Miranda, C. (2009). El Manzano autóctono de Navarra. Catálogo de las accesiones del Banco de Germoplasma de la Universidad Pública de Navarra. Universidad Pública de Navarra.
 epocaLabel: Cosecha en agosto
