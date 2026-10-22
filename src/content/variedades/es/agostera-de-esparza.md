@@ -29,18 +29,21 @@ otrosPueblos: []
 antig: Al menos 80 años
 quote: ''
 estado: Sólo un ejemplar localizado, en Esparza (Casa Maisterra).
-potencial: Interés para multiplicación en el valle por su maduración  temprana y apreciado sabor.
+potencial: Interés para multiplicación en el Valle por su maduración temprana y apreciado sabor.
 fruto: |-
   Manzana de forma aplanada-globulosa y tamaño pequeño-medio. 
 
-  Color de fondo verdoso y color superficial rojo estriado. Piel lisa y brillante. Presencia de russeting en la cavidad del pedúnculo. 
+  Color de fondo verdoso y color superficial rojo estriado. 
 
-  Pedúnculo corto, grosor medio. Carne de color blanquecina-verdosa, de firmeza, acidez y dulzor medio.
+  Piel lisa y brillante. Presencia de russeting en la cavidad del pedúnculo. 
+
+  Pedúnculo corto, grosor medio. 
+
+  Carne de color blanquecina-verdosa, de firmeza, acidez y dulzor medio.
 molecular: No está registrada fuera del Valle. Sólo hay constancia de su presencia aquí.
 valoracion: |-
-  Las personas de Esparza que la conocen y la consumen la valoran muy positivamente.
-
-  Las personas de Esparza que la conocen, la consumen o la han consumido y la mantienen, la valoran muy positivamente.
+  
+  Las personas de Esparza que la consumen y la mantienen, la valoran muy positivamente.
 abundancia: Cosecha en Agosto. Cuando se recoge está lista para consumir. No se conserva mucho una vez recogida (hasta septiembre).
 origen: ''
 recogida: Cosecha en agosto. Cuando se recoge ya está lista para consumir. No se conserva mucho una vez recogida (hasta septiembre).
