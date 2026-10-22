@@ -5,6 +5,8 @@ name: Agostera de Ibilcieta
 status:
   - confirmed
 epoca: temprana
+ambito: valle
+fueraNombres: ''
 extension: minoritaria
 color: '#8c9d52'
 colorAlt: '#a8b46a'
@@ -20,7 +22,6 @@ fotos:
   - src: /uploads/20260905_133103.webp
     pie: ''
 otrosPueblos: []
-ambito: valle
 antig: 100 urte baino gehiago
 quote: ''
 estado: Bi ale lokalizatuak (Morea Etxea).

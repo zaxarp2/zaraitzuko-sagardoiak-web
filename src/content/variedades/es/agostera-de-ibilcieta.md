@@ -5,6 +5,8 @@ name: Agostera de Ibilcieta
 status:
   - confirmed
 epoca: temprana
+ambito: valle
+fueraNombres: ''
 extension: minoritaria
 color: '#8c9d52'
 colorAlt: '#a8b46a'
@@ -22,15 +24,16 @@ fotos:
   - src: /uploads/20260905_133103.webp
     pie: ''
 otrosPueblos: []
-ambito: valle
 antig: Más de 100 años
 quote: ''
-estado: Dos ejemplares localizados (Casa Morea), uno centenario y otro joven, procedente del anterior e injertado hace pocos años. Recientemente ha injertado otro en un _“Golden que era muy malo”._
+estado: Dos ejemplares localizados (Casa Morea), uno centenario y otro joven, procedente del anterior e injertado hace pocos años. Recientemente se ha injertado otro _"en un Golden que era muy malo”._
 potencial: De interés por su carácter temprano, vistosidad, sabor y singularidad.
 fruto: |-
   Manzana de forma globulosa y tamaño medio-grande.
 
-  Color de fondo verde-amarillento intenso, ausencia de sobrecolor. Piel lisa y brillante, sin russeting. 
+  Color de fondo verde-amarillento intenso, ausencia de sobrecolor. 
+
+  Piel lisa y brillante, sin russeting. 
 
   Rabillo de longitud y grosor medios. 
 
@@ -45,7 +48,7 @@ recogida: |-
   Se las considera delicadas en este sentido: _“hay que recogerlas rápido sino se caen y estropean”_.
 usos: Consumo en fresco y en compota.
 otrasCar: |-
-  Es una variedad rústica, resistente a plagas y enfermedades, árboles de buena presencia y aspecto sano. 
+  Es una variedad rústica, resistente a plagas y enfermedades, con árboles de aspecto sano. 
 
   De buena producción y segura.
 obs: ''
