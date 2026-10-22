@@ -44,7 +44,7 @@ fruto: |-
 molecular: |-
   Las muestras analizadas de Muturbeltz de Ochagavía e Izalzu coinciden con la variedad denominada Mutur Beltza, presente en el Banco de Germoplasma de Navarra y recogida en  Ochagavía en la prospección realizada en 1986 por Gobierno de Navarra.
 
-  No obstante, existen diferencias morfológicas y fenológicas considerables entre la descrita como Mutur Beltza procedente de Ochagavía (BGM180) en la  publicación _El manzano autóctono de Navarra. Catálogo de accesiones del Banco de Germoplasma de la Universidad Pública de Navarra_ (Royo et al., 2009), con la identificada en el Valle. Por ejemplo, en la descripción de fruto o en la época de maduración, llamando la atención que puedan deberse a diferentes características climáticas, edáficas o de manejo (como tipo de portainjertos, etc.).
+  No obstante, existen diferencias morfológicas y fenológicas considerables entre la descrita como Mutur Beltza procedente de Ochagavía (BGM180) en la  publicación _El manzano autóctono de Navarra. Catálogo de accesiones del Banco de Germoplasma de la Universidad Pública de Navarra_ (Royo et al., 2009), con la identificada en el Valle. Por ejemplo, en la descripción de fruto o en la época de maduración, llamando la atención que puedan deberse sólo a las diferentes características climáticas, de suelo o de manejo (como tipo de portainjertos empleado, etc.).
 valoracion: Una de las variedades mejor valoradas, muy especialmente por su sabor, pero también por su presencia y carácter local.
 abundancia: En Ochagavía e Izalzu era una de las variedades más conocidas y extendidas. Es de las que primero nombran al preguntar por variedades antiguas.
 origen: ''
