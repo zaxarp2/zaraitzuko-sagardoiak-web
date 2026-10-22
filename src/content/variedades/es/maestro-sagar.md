@@ -46,13 +46,9 @@ molecular: Las tres muestras analizadas de diferentes Maestro Sagar del Valle (D
 valoracion: Muy apreciada por su rusticidad, permanencia del fruto en el árbol, sabor, buena conservación tras la recogida y carácter local.
 abundancia: Una de las variedades más extendidas, presente en prácticamente todos los pueblos del valle y en numerosas casas.
 origen: |-
-  Probablemente la entrada al Valle sería por múltiples vías, teniendo en cuenta que la Reineta Blanca es una variedad muy antigua y de amplia distribución, nombrada ya en el S.XVI en Francia, considerada la originaria de todas las demás Reinetas (en el S.XIX hay descritas más de 80 variedades[[1]](#_ftn1)).
+  Probablemente la entrada al Valle sería por múltiples vías, teniendo en cuenta que la Reineta Blanca es una variedad muy antigua y de amplia distribución, nombrada ya en el S.XVI en Francia, considerada la originaria de todas las demás Reinetas (en el S.XIX había descritas más de 80 variedades[[1]](#_ftn1)).
 
-
-
-
-
-  [[1]](#_ftnref1) Leroy, André (1873). _Dictionnaire de pomologie_
+  [[1]](#_ftnref1) Leroy, André (1873). _Dictionnaire de pomologie._
 recogida: Cosecha en otoño, se consume desde el momento de la recogida. Se conserva hasta comienzos de la primavera.
 usos: Consumo en fresco y asadas.
 otrasCar: ''
