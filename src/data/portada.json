@@ -25,11 +25,11 @@
     },
     "manzanas": {
       "titulo": "Las <em>manzanas</em> del Valle.",
-      "entradilla": "Cada ficha recoge la descripción local, la valoración de las personas que la conocen, el diagnóstico de la variedad, características de interés para su reintroducción, la descripción morfológica del fruto y el análisis molecular de su identidad varietal. Pincha en una variedad para abrir su ficha completa."
+      "entradilla": "Cada ficha recoge el estado de conservación, los pueblos donde se ha localizado, algunas características de interés para su reintroducción, el conocimiento local asociado a la variedad, la valoración de las personas que la conocen, la descripción morfológica del fruto y el análisis molecular de su identidad varietal. Pincha en una variedad para abrir su ficha completa."
     },
     "peras": {
       "titulo": "Las <em>peras</em> del Valle.",
-      "entradilla": "Junto a los manzanos, en las casas del Valle se conservan perales antiguos. Durante el proyecto se han analizado molecularmente 8 muestras de peral, todas diferentes entre sí."
+      "entradilla": "Junto a los manzanos, en las casas del Valle se conservan perales antiguos y otros frutales. De momento, se están analizando y describiendo 19 variedades de peral aparentemente diferentes. De algunas de ellas, no existe constancia en ningún otro lugar."
     },
     "diario": {
       "titulo": "Cuaderno de <em>campo</em>.",
@@ -41,7 +41,7 @@
       "bloques": [
         {
           "titulo": "Qué queremos",
-          "texto": "Que las variedades locales de manzano y peral, y el conocimiento que las acompaña, sigan vivas en el Valle: localizarlas, documentarlas, multiplicarlas por injerto y repartirlas entre las casas y los pueblos."
+          "texto": "Que las variedades locales de manzano, peral y otros frutales, y el conocimiento que las acompaña, sigan vivas en el Valle: localizarlas, documentarlas, multiplicarlas y repartirlas entre las casas y los pueblos."
         },
         {
           "titulo": "Cómo lo hacemos",
@@ -49,7 +49,7 @@
         },
         {
           "titulo": "Con quién",
-          "texto": "Trabajamos junto a Arrea, la Red de Semillas de Navarra y el Grupo de Fruticultura de la UPNA, con el apoyo de la Junta del Valle de Salazar y Gobierno de Navarra. Y, sobre todo, con las personas y las casas del Valle que han cuidado estos árboles."
+          "texto": "Trabajamos junto a la Red de Semillas de Navarra, Arrea-asociación agroecológica, el Grupo de Fruticultura de la UPNA, con el apoyo de la Junta del Valle de Salazar y el Gobierno de Navarra. Y, sobre todo, con las personas y las casas del Valle que han mantenido estos árboles y la cultura agroalimentaria asociada."
         }
       ],
       "socioTitulo": "¿Quieres formar parte?",
