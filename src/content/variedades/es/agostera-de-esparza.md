@@ -5,6 +5,8 @@ name: Agostera de Maisterra
 status:
   - confirmed
 epoca: temprana
+ambito: valle
+fueraNombres: ''
 extension: ''
 color: '#8c9d52'
 colorAlt: '#a8b46a'
@@ -24,10 +26,9 @@ fotos:
   - src: /uploads/IMG-20260824-WA0021.webp
     pie: ''
 otrosPueblos: []
-ambito: valle
 antig: Al menos 80 años
 quote: ''
-estado: Un ejemplar localizado en Esparza (Casa Maisterra).
+estado: Sólo un ejemplar localizado, en Esparza (Casa Maisterra).
 potencial: Interés para multiplicación en el valle por su maduración  temprana y apreciado sabor.
 fruto: |-
   Manzana de forma aplanada-globulosa y tamaño pequeño-medio. 

@@ -5,6 +5,8 @@ name: Agostera de Maisterra
 status:
   - confirmed
 epoca: temprana
+ambito: valle
+fueraNombres: ''
 extension: ''
 color: '#8c9d52'
 colorAlt: '#a8b46a'
@@ -21,7 +23,6 @@ fotos:
   - src: /uploads/IMG-20260824-WA0021.webp
     pie: ''
 otrosPueblos: []
-ambito: valle
 antig: Gutxienez 70-80 urte
 quote: ''
 estado: Ale bat lokalizatua Esparzan (Maisterra Etxea). Beste bat Eseberri Etxean (berresteke).
