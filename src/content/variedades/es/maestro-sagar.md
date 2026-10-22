@@ -32,7 +32,7 @@ otrosPueblos:
   - Todos los pueblos del Valle
 antig: Más de 100 años
 quote: ''
-estado: 'Varios ejemplares localizados: Casa Xinxoan (Ochagavía), Casa Bidondo (Oronz), Casa Arrese (Ezcároz), Casa Landa (Esparza), Casa Mikeleiz (Izalzu), Casa Ezker (Igal), Casa Morea (Ibilzieta).'
+estado: 'Varios ejemplares localizados: Casa Xin Xoan (Ochagavía), Casa Bidondo (Oronz), Casa Arrese (Ezcároz), Casa Landa (Esparza), Casa Mikeleiz (Izalzu), Casa Ezker (Igal), Casa Morea (Ibilzieta).'
 potencial: Interés por su rusticidad en cultivo, permanencia del fruto en el árbol sin caída prematura, sabor (_“mucho mejor que las reinetas de ahora”_ cultivadas también en el valle), su importancia, valoración  y tradición local.
 fruto: |-
   Manzana aplanada, tamaño medio. 
