@@ -45,7 +45,7 @@ molecular: |-
   Las muestras analizadas de Muturbeltz de Ochagavía e Izalzu coinciden con la variedad denominada Mutur Beltza, presente en el Banco de Germoplasma de Navarra y recogida en  Ochagavía en la prospección realizada en 1986 por Gobierno de Navarra.
 
   No obstante, existen diferencias morfológicas y fenológicas considerables entre la descrita como Mutur Beltza procedente de Ochagavía (BGM180) en la  publicación _El manzano autóctono de Navarra. Catálogo de accesiones del Banco de Germoplasma de la Universidad Pública de Navarra_ (Royo et al., 2009), con la identificada en el Valle. Por ejemplo, en la descripción de fruto o en la época de maduración, llamando la atención que puedan deberse sólo a las diferentes características climáticas, de suelo o de manejo (como tipo de portainjertos empleado, etc.).
-valoracion: Una de las variedades mejor valoradas, muy especialmente por su sabor, pero también por su presencia y carácter local.
+valoracion: Una de las variedades mejor valoradas, muy especialmente por su sabor, pero también por su buena presencia y carácter local.
 abundancia: En Ochagavía e Izalzu era una de las variedades más conocidas y extendidas. Es de las que primero nombran al preguntar por variedades antiguas.
 origen: ''
 recogida: Cosecha a finales de septiembre, principios de octubre. _“Es de las primeras variedades de otoño en madurar. No aguanta mucho en el árbol, hay que cogerla rápido para que no se caiga”._  Se conservan hasta Navidad como tarde.
@@ -54,7 +54,7 @@ usos: |-
 
    Aún la siguen consumiendo en las casas donde se ha mantenido.
 otrasCar: ''
-obs: En Ezcároz, la han citado algunas personas, otras entrevistadas no la nombran cuando se les pregunta por variedades antiguas ni les suena el nombre.
+obs: En Ezcároz, la han citado algunas personas. Otras entrevistadas no la mencionan cuando se les pregunta por variedades antiguas, tampoco han oído el nombre.
 epocaLabel: Finales de septiembre · principios de octubre
 lang: es
 tags:
