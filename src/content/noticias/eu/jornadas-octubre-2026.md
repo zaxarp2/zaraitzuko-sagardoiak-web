@@ -6,6 +6,7 @@ title: Zaraitzu Ibarreko tokiko fruta-arbolen barietateen kontserbazio jardunald
 resumen: Urriaren 16an eta 17an, Ezkarozen. Proiektuaren emaitzak, NUPeko Nafarroako sagarrondo-bilduma, Zaraitzuko Sagardoiak elkartearen aurkezpena, txertaketa tailerra eta haraneko barietateak, protagonistak berak gidari.
 lang: eu
 ---
+
 **Urriaren 16an, ostirala, eta 17an, larunbata**, tokiko fruta-arbolen barietateen kontserbazioari buruzko jardunaldiak egingo ditugu **Ezkarozen**. Proiektuaren emaitzak aurkeztuko ditugu, kontserbazioko beste ekimen batzuk ezagutuko ditugu eta txertatzen ikasiko dugu. Eta, batez ere, haraneko sagarrei buruz hitz egingo dugu hobekien ezagutzen dituztenekin.
 
 Jardunaldiak guztiontzat irekiak dira. Hobeto antolatzeko, izena ematea eskatzen dizugu: **[izen-ematea hemen](https://forms.gle/VjUXkvPVT8Pgemep7)**.
