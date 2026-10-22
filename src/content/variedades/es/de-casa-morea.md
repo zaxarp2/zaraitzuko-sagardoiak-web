@@ -49,8 +49,6 @@ molecular: |-
 
   Por otro lado, esta variedad coincide con la variedad antigua estadounidense del S.XIX, denominada Winter Banana[[1]](#_ftn1),  que según algunos autores pudo llegar desde Europa al *Nuevo Mund*o[[2]](#_ftn2).
 
-  _____________
-
   [[1]](#_ftnref1) Urrestarazu, J., Denancé, C., Ravon, E. et al. Analysis of the genetic diversity and structure across a wide range of germplasm reveals prominent gene flow in apple at the European level. BMC Plant Biol 16, 130 (2016). https://doi.org/10.1186/s12870-016-0818-0
 
   [[2]](#_ftnref2) [https://es.wikipedia.org/wiki/Winter_Banana](https://es.wikipedia.org/wiki/Winter_Banana)
