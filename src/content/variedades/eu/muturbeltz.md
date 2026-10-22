@@ -5,7 +5,9 @@ name: Muturbeltz
 status:
   - confirmed
 epoca: media
-extension: minoritaria
+ambito: ''
+fueraNombres: ''
+extension: ''
 color: '#b8842c'
 colorAlt: '#d4a851'
 pueblos:
