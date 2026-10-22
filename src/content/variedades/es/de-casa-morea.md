@@ -43,9 +43,9 @@ fruto: |-
 molecular: |-
   Coincide con la variedad recogida como Agostera en Izalzu en 1986, presente en el Banco de Germoplasma de Navarra.
 
-  La denominación o clasificación como Agostera parece errónea, ya que no se trata de una variedad de maduración temprana, por lo que no resulta lógico que la denominaran así. 
+  Su denominación como Agostera parece errónea, ya que no se trata de una variedad de maduración temprana.
 
-  Por otro lado, la variedad de Casa Morea, coincide con la variedad antigua estadounidense del S.XIX, denominada Winter Banana[[1]](#_ftn1),  que según algunos autores pudo llegar de Europa[[2]](#_ftn2).
+  Por otro lado, esta variedad de Casa Morea, coincide con la variedad antigua estadounidense del S.XIX, denominada Winter Banana[[1]](#_ftn1),  que según algunos autores pudo llegar desde Europa[[2]](#_ftn2).
 
   _____________
 
