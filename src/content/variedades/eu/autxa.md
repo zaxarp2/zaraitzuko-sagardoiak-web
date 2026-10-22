@@ -5,6 +5,8 @@ name: Autxa
 status:
   - confirmed
 epoca: media
+ambito: fuera
+fueraNombres: Arizkun-01 / Naranjina / Colorada
 extension: extendida
 color: '#a93838'
 colorAlt: '#c95050'
@@ -18,8 +20,6 @@ fotos:
   - src: /fotos/autxa/autxa-01.jpg
   - src: /fotos/autxa/autxa-05.jpg
 otrosPueblos: []
-ambito: fuera
-fueraNombres: 'Arizkun-01 / Naranjina / Colorada'
 antig: 100 urte baino gehiago
 quote: ''
 estado: Bi ale mendetsuak Ochagavían (Mendi Etxea, Pistolo Etxea), bata egoera onean, bestea oso zaharkitua.

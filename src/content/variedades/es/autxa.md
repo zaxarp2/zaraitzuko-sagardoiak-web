@@ -5,6 +5,8 @@ name: Autxa
 status:
   - confirmed
 epoca: media
+ambito: fuera
+fueraNombres: Arizkun-01 / Naranjina / Colorada
 extension: extendida
 color: '#a93838'
 colorAlt: '#c95050'
@@ -23,18 +25,20 @@ fotos:
   - src: /fotos/autxa/autxa-05.jpg
     pie: ''
 otrosPueblos: []
-ambito: fuera
-fueraNombres: 'Arizkun-01 / Naranjina / Colorada'
 antig: Más de 100 años
 quote: ''
-estado: Dos ejemplares centenarios localizados en Ochagavía (Casa Menddi, Casa Pistolo), uno en buen estado de conservación, el otro muy envejecido y abandonado. En Ezcároz se ha identificado otro árbol de esta variedad pero sin nombre (Casa Arrese).
+estado: Dos ejemplares centenarios localizados en Ochagavía (Casa Menddi, Casa Pistolo), uno en buen estado de conservación, el otro muy envejecido y abandonado. En Ezcároz se ha identificado otro árbol de esta variedad pero en la casa que se mantiene (Casa Arrese), no recuerdan cómo la llamaban.
 potencial: Variedad de interés para su conservación por su valoración general, vistosidad, rusticidad y tradición en el Valle.
 fruto: |-
-  Manzana globulosa-cónica, tamaño mediano-grande. Color de fondo amarillo y color superficial rojo oscuro. Piel lisa y brillante con abundante pruina. 
+  Manzana globulosa-cónica, tamaño mediano-grande. 
+
+  Color de fondo amarillo y color superficial rojo oscuro. 
+
+  Piel lisa y brillante con abundante pruina. 
 
   Rabillo de longitud y grosor medios. 
 
-  Carne amarillenta, baja firmeza y acidez, dulzor medio.
+  Carne amarillenta, firmeza y acidez baja, dulzor medio.
 molecular: Variedad tradicional minoritaria, presente en el Banco de Germoplasma de Navarra y recogida como Arizkun-01 (pueblo cercano a la frontera vascofrancesa, como Ochagavía), Naranjina y Colorada.
 valoracion: En la Casa donde aún se mantiene y se consume la valoran muy positivamente, especialmente por el sabor. No obstante, otras personas del pueblo la describen como _“sosa”._
 abundancia: En Ochagavía era una variedad muy conocida y presente en varias casas, pero en la mayoría ha desaparecido.
