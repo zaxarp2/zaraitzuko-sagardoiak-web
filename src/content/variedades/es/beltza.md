@@ -36,7 +36,7 @@ estado: |-
   Varios ejemplares localizados, algunos de ellos centenarios y muy envejecidos. En Ochagavía (Casa Pedro Andía, Casa Portal, Casa Sangüesino), en Esparza (Casa Balisa, procedente de Ochagavía).
 
   Quedan más árboles vivos. En los últimos años se han realizado nuevos injertos con púas procedentes del _Beltzo_ centenario de Ochagavía, por hortelanos locales. También se han reintroducido ejemplares con este proyecto de recuperación.
-potencial: Gran interés de cara a su reintroducción por su apreciado sabor, larga conservación, presencia centenaria en el valle y ausencia de registros en otros lugares.
+potencial: Variedad de gran interés para su reintroducción por su apreciado sabor, larga conservación, rusticidad, presencia centenaria en el valle y ausencia de registros en otros lugares.
 fruto: |-
   Manzana achatada, tamaño pequeño-mediano. 
 
@@ -48,9 +48,7 @@ fruto: |-
 molecular: |-
   No está recogida en otros lugares.
 
-  En 2025, se analiza una Beltza de Oronz (Casa Bidondo), que coincide con la variedad recogida como Beltza en Ochagavía en 1986 y presente en el Banco de Germoplasma de la UPNA. 
-
-  Se trata de dos variedades diferentes según su análisis genético.
+  En 2026, se recoge y analiza una Beltza en Oronz (Casa Bidondo), de apariencia similar a ésta. Pero no coincide su perfil genético: se trata de dos variedades diferentes, según la analítica molecular. A su vez, la Beltza de Oronz coincide con la variedad recogida como Beltza en Ochagavía en la prospección de 1986, presente en el Banco de Germoplasma de la UPNA y diferente a la localizada en este trabajo.
 valoracion: Variedad especialmente apreciada por su sabor, su larga conservación y su vinculación con la cultura local. Es una de las variedades más valoradas.
 abundancia: |-
   En Ochagavía era una de las variedades más conocidas y extendidas, presente en numerosas casas. 
