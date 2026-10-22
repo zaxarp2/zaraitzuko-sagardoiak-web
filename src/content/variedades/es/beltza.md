@@ -57,14 +57,14 @@ abundancia: |-
 origen: Una informante mayor cuenta haber oído que _“esta manzana la trajo un fraile de un país del norte de Europa a un convento que existía en Izalzu hace mucho tiempo”._
 recogida: 'Cosecha en octubre. Maduración tardía: se conservan hasta finales de primavera. _“La beltza es la más ácida, pero para marzo, abril, es buenísima para comer cruda”._'
 usos: |-
-  Consumo en fresco, preferentemente después de un tiempo almacenadas para que acaben de madurar. De las más valoradas para asar: _“sueltan un almíbar muy bueno, superdulces”_. También se emplean elaboradas en compota, cocidas con canela y azúcar o a veces cocidas con orejones e higos. Es la más empleada _“porque aunque se cuece no se queda blanda, se queda bastante entera”_
+  Consumo en fresco, preferentemente después de un tiempo almacenadas para que acaben de madurar. De las más valoradas para asar: _“sueltan un almíbar muy bueno, superdulces”_. También se emplean elaboradas en compota, cocidas con canela y azúcar o a veces cocidas con orejones e higos. Es la más empleada _“porque aunque se cuece no se queda blanda, se queda bastante entera”._
 
-  En navidades era muy común su consumo como postre. Su empleo en las principales celebraciones demuestra su valoración local y aún actualmente la siguen preparando  en algunas casas para esas fechas.
+  En navidades era muy común prepararla en postres. Su empleo en celebraciones especiales demuestra su valoración local. Actualmente aún la siguen elaborando en algunas casas para esas fechas.
 otrasCar: ''
 obs: |-
   Las **homonimias** (variedades diferentes que tienen el mismo nombre), son muy comunes en la terminología de los cultivares tradicionales y suelen hacer alusión a características del fruto, como color de la piel (por ejemplo, Beltza, en alusión al color oscuro) o época de maduración (por ejemplo, Agosteras, De invierno),  etc.
 
-  También son comunes en el conocimiento ecológico tradicional las **sinonimias:** denominaciones diferentes para una misma variedad, normalmente en pueblos distintos (Por ejemplo, manzana Roja y Manzana de Rosanz, la misma variedad con nombres diferentes en Izalzu y Esparza respectivamente).
+  También son comunes en el conocimiento ecológico tradicional las **sinonimias:** denominaciones diferentes para una misma variedad, normalmente en pueblos distintos (Por ejemplo, manzana Roja y Manzana de Rosanz: la misma variedad con nombres diferentes en Izalzu y Esparza respectivamente).
 epocaLabel: Cosecha en octubre · maduración tardía
 lang: es
 tags:
