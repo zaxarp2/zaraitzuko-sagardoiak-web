@@ -47,7 +47,7 @@ molecular: |-
 
   Su denominación como Agostera parece errónea, ya que no se trata de una variedad de maduración temprana.
 
-  Por otro lado, esta variedad coincide con la variedad antigua estadounidense del S.XIX, denominada Winter Banana[[1]](#_ftn1),  que según algunos autores pudo llegar desde Europa[[2]](#_ftn2).
+  Por otro lado, esta variedad coincide con la variedad antigua estadounidense del S.XIX, denominada Winter Banana[[1]](#_ftn1),  que según algunos autores pudo llegar desde Europa al *Nuevo Mund*o[[2]](#_ftn2).
 
   _____________
 
