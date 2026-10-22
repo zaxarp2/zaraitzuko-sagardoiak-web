@@ -5,6 +5,8 @@ name: Agostera de Txapao/Agostera de Blaixko
 status:
   - confirmed
 epoca: temprana
+ambito: fuera
+fueraNombres: Aldunate-01 Navarra
 extension: ''
 color: '#b8352c'
 colorAlt: '#d9614f'
@@ -22,8 +24,6 @@ fotos:
   - src: /uploads/WhatsApp Image 2026-08-28 at 06.30.50.webp
     pie: 'Foto: Kike Pascual'
 otrosPueblos: []
-ambito: fuera
-fueraNombres: 'Aldunate-01 Navarra, Beauty of Bath'
 antig: 100 urte baino gehiago
 quote: ''
 estado: Hainbat ale aurkitu dira Otsagabian (Txapao Etxea, Gayarre Etxea, Pedro Blas Etxea) eta Izaltzun (Juana Etxea, Blaixkoko bordaletik ekarria).

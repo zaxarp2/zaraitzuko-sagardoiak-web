@@ -5,6 +5,8 @@ name: Agostera de Txapao/Agostera de Blaixko
 status:
   - confirmed
 epoca: temprana
+ambito: fuera
+fueraNombres: Aldunate-01 Navarra
 extension: ''
 color: '#b8352c'
 colorAlt: '#d9614f'
@@ -23,8 +25,6 @@ fotos:
   - src: /uploads/WhatsApp Image 2026-08-28 at 06.30.50.webp
     pie: 'Foto: Kike Pascual'
 otrosPueblos: []
-ambito: fuera
-fueraNombres: 'Aldunate-01 Navarra, Beauty of Bath'
 antig: Más de 100 años
 quote: ''
 estado: Varios ejemplares localizados en Ochagavía (Casa Txapao, Casa Gayarre, Casa Pedro Blas), en Izalzu (Casa Juana, procedente del bordal de Blaixko).
@@ -32,7 +32,9 @@ potencial: De interés por su carácter temprano, vistosidad y singularidad.
 fruto: |-
   Forma aplanada globulosa, tamaño mediano.
 
-  Color de fondo amarillo. Color superficial rojo-rosado, tamaño grande, forma estriada. Piel lisa, mate. Russeting ausente. 
+  Color de fondo amarillo. Color superficial rojo-rosado de tamaño grande y forma estriada. 
+
+  Piel lisa, mate. Russeting ausente. 
 
   Pedúnculo de longitud y grosor medios. 
 
