@@ -62,13 +62,9 @@ recogida: |-
 usos: Consumo en fresco y en compota.
 otrasCar: ''
 obs: |-
-  En Casa Gayarre reinjertaron y repartieron en Ochagavía varios ejemplares procedentes del Agostero de Txapao en la primera década del 2000. Gracias a elllos, se ha mantenido la variedad en Ochagavía (el árbol antiguo del que injertaron ha desaparecido).
+  En Casa Gayarre reinjertaron y repartieron en Ochagavía varios ejemplares procedentes del Agostero de Txapao en la primera década del 2000. Gracias a ellos, se ha mantenido la variedad en Ochagavía (el árbol antiguo del que injertaron desapareció al hacer la carretera).
 
   En la publicación El manzano autóctono en Navarra[[1]](#_ftn1), se describe una variedad Agostera (BGM176) recogida en Izalzu. Sin embargo, es Winter Banana (Urrestarazu et al., 2016), variedad que madura en otoño, por lo que se trata de un error. De hecho, en la descripción fenológica de la variedad aparece como época de recolección media (no temprana).
-
-
-
-
 
   [[1]](#_ftnref1) Royo, B., González, J., Laquidain, M.J., Miranda, C. (2009). El Manzano autóctono de Navarra. Catálogo de las accesiones del Banco de Germoplasma de la Universidad Pública de Navarra. Universidad Pública de Navarra.
 lang: es
