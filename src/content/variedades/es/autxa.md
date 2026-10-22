@@ -49,7 +49,7 @@ origen: |-
 recogida: Se recogen de principios a mediados de octubre, por el Pilar, y se consumen desde ese momento. Se conservan hasta Navidad.
 usos: Consumo en fresco principalmente. También en compota.
 otrasCar: 'Se considera una variedad resistente a plagas y enfermedades. Tanto el árbol como el fruto suelen estar bastante sanos, pese a no recibir tratamientos. Es de producción abundante y vecera: _“cuando trae, trae mucha”._'
-obs: En la publicación El manzano autóctono de Navarra (Royo, 2009), está recogida una manzana Autxa de Ochagavía (BGM177), pero no coinciden los resultados genéticos, tampoco la descripción del fruto ni las imágenes.
+obs: En la publicación El manzano autóctono de Navarra (Royo, 2009), está recogida una manzana Autxa de Ochagavía (BGM177), pero no coinciden los resultados genéticos entre ambas, tampoco la descripción del fruto ni las imágenes.
 epocaLabel: Mediados de octubre
 lang: es
 tags:
