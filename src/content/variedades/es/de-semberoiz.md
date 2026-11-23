@@ -5,6 +5,8 @@ name: De Semberoiz
 status:
   - confirmed
 epoca: media
+ambito: valle
+fueraNombres: ''
 extension: minoritaria
 color: '#b8842c'
 colorAlt: '#c89940'
@@ -20,7 +22,6 @@ fotos:
   - src: /fotos/de-semberoiz/de-semberoiz-04.jpg
     pie: ''
 otrosPueblos: []
-ambito: valle
 antig: Más de 100 años.
 quote: ''
 estado: Dos ejemplares localizados en Esparza (Casa Mailua), jóvenes, injertados de otro árbol de un familiar, que a su vez injertó en su parcela, cuando iban a desaparecer los ejemplares antiguos de Casa Semberoiz para construir nueva vivienda.
@@ -33,7 +34,10 @@ fruto: |-
   Pedúnculo corto y grueso. 
 
   Carne amarillenta, firmeza media, acidez baja y dulzor medio.
-molecular: ''
+molecular: |-
+  Hasta el momento, sólo constatada su existencia en Salazar.
+
+  No hay registros fuera del Valle.
 valoracion: Apreciada por su sabor, vistosidad y vinculación local.
 abundancia: ''
 origen: ''
